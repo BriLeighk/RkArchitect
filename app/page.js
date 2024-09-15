@@ -33,18 +33,16 @@ export default function Home() {
               RK Architect, PA | RK Builders, Inc.
             </h1>
             <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10 rounded-lg border-2 border-[#936F27] shadow-lg shadow-black" />
-            <p className="mt-4 text-lg leading-6 text-gray-200">
-              Expert Architectural Services
-            </p>
+
             <div className="flex justify-center items-center mt-4 gap-4">
               <a href="mailto:rkarchitect24@gmail.com">
-                <FaEnvelope className="text-gray-200 text-3xl" />
+                <FaEnvelope className="text-[#936F27] text-3xl" />
               </a>
               <a href="https://www.linkedin.com/in/rkarchitect" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-gray-200 text-3xl" />
+                <FaLinkedin className="text-[#936F27] text-3xl" />
               </a>
               <a href="https://www.instagram.com/robertkarchitect/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-gray-200 text-3xl" />
+                <FaInstagram className="text-[#936F27] text-3xl" />
               </a>
             </div>
             

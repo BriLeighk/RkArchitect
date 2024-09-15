@@ -18,14 +18,14 @@ export default function Testimonials() {
           <figure className="mt-10">
             <blockquote className="text-center text-sm font-semibold leading-8 text-white sm:text-lg sm:leading-9">
               <p>
-                “We have been working with Robert on the construction of an extension to our home in North Miami Beach.  
+                <span className=" font-bold text-2xl">“ </span> We have been working with Robert on the construction of an extension to our home in North Miami Beach.  
                 Referring to this merely as an extension, however, understates the scope of the work.  We are replacing and enhancing 
                 our HVAC and septic systems, resurfacing much of the property's area and creating a visually attractive and inviting 
                 frontage for the house.  Robert has been leading the way throughout.  No detail has been too small to escape his attention.  
                 He has successfully navigated for us the mazes of the building codes and the demands of the building inspectors.  
                 He is always accessible and responsive.  What started as an architectural assignment has continued through the 
                 construction phase, with Robert's RK Builders partnering with Thompson Construction and Remodel to move the process 
-                along professionally, expeditiously and in full legal compliance.  We could not be more pleased.”
+                along professionally, expeditiously and in full legal compliance.  We could not be more pleased. <span className="font-bold text-2xl">”</span>
               </p>
             </blockquote>
             <figcaption className="mt-10">
