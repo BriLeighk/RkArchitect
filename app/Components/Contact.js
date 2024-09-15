@@ -78,7 +78,7 @@ export default function Contacts() {
             <textarea id="message" name="message" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-24"></textarea>
           </div>
           <div>
-            <button type="submit" className="w-full py-2 px-4 text-white rounded-md border-2 border-[#F2F4E6] hover:border-[#1E1412] hover:bg-[#F2F4E6] hover:text-[#1E1412] transition-all duration-300">Send</button>
+            <button type="submit" className="w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] hover:border-[#1E1412] hover:bg-[#F2F4E6] hover:text-[#1E1412] transition-all duration-300">Send</button>
           </div>
         </form>
         {message && <p className="mt-4 text-sm text-gray-300 transition-opacity duration-1000 ease-out">{message}</p>}
