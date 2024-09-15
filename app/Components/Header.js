@@ -63,7 +63,7 @@ export default function Header() {
                         <img
                             alt="RK Architect Logo"
                             src="/rk-architect-logo.jpg"
-                            className="h-14 w-auto"
+                            className="h-20 w-auto"
                         />
                     </a>
                 </div>
@@ -74,15 +74,15 @@ export default function Header() {
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                        <Bars3Icon aria-hidden="true" className="h-8 w-8" />
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12 lg:justify-center lg:w-full">
+                <div className="hidden lg:flex lg:gap-x-12 lg:justify-center lg:w-full mr-16">
                     {navigation.map((item) => (
                         <button
                             key={item.name}
                             onClick={() => handleScroll(item.href)}
-                            className="text-sm font-semibold leading-6 text-white cursor-pointer"
+                            className="text-md font-semibold leading-6 text-white cursor-pointer"
                         >
                             {item.name}
                         </button>
@@ -99,7 +99,7 @@ export default function Header() {
                             <img
                                 alt="RK Architect Logo"
                                 src="/rk-architect-logo.jpg"
-                                className="h-14 w-auto"
+                                className="h-20 w-auto"
                             />
                         </a>
                         <button

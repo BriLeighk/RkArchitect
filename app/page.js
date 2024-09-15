@@ -29,8 +29,8 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-2xl py-10 sm:py-20 lg:py-20" data-aos="fade-up">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl pt-0" style={{ color: '#F2F4E6' }}>
-              RK Architect, PA | RK Builders, Inc.
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
+              RK Architect, PA <br /> <span className="text-3xl">RK Builders, Inc. </span> 
             </h1>
             <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10 rounded-lg border-2 border-[#936F27] shadow-lg shadow-black" />
 
