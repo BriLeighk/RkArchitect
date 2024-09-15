@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 export default function AboutSection() {
   const videoRef = useRef(null);
 
-
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
     if (videoRef.current) {
@@ -14,7 +13,19 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <div className="py-10 sm:py-20 p-4">
+    <div className="relative isolate py-10 sm:py-20 p-4">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
+      >
+        <div
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        />
+      </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 mt-0">
         
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:grid lg:w-full lg:max-w-none lg:pl-20 lg:grid-cols-2 mx-auto">
@@ -34,7 +45,7 @@ export default function AboutSection() {
               or building that I designed, the process is efficient, as I can make decisions on the fly and avoid the dynamics 
               that occur between contractors & architects, requests for information, delays in waiting for information, etc.
                 <br /> <br />
-              Being on the job site during inspections, I often can respond to an inspector’s questions with information, 
+              Being on the job site during inspections, I often can respond to an inspector's questions with information, 
               sign offs, etc., that results in a higher percentage of approved inspections. This capability saves a client 
               much time and expense during construction.
                 
@@ -69,8 +80,8 @@ export default function AboutSection() {
               mph to 185 mph Hurricanes.
               <br /> <br />
               As Hurricanes, Tornadoes, Fires, etc., become more common and intense, it is vital 
-              that buildings, especially a person’s home, is designed and built to withstand natural disasters.
-              A person’s home is their sanctuary, to feel secure, and safe, emotionally and physically.
+              that buildings, especially a person's home, is designed and built to withstand natural disasters.
+              A person's home is their sanctuary, to feel secure, and safe, emotionally and physically.
               <br /> <br />
               My project portfolio includes the design and/or construction of multifamily buildings 
               (a large-scale 490 Unit Hotel Resort in the Caribbean Islands), restaurants, large medical 

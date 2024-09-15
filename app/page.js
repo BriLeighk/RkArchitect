@@ -4,6 +4,7 @@ import About from "./Components/About";
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Header from "./Components/Header";
 import Contacts from "./Components/Contact";
+import Testimonials from "./Components/Testimonials";
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl pt-0" style={{ color: '#F2F4E6' }}>
               RK Architect, PA | RK Builders, Inc.
             </h1>
-            <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10" />
+            <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10 rounded-lg border-2 border-white shadow-lg shadow-black" />
             <p className="mt-4 text-lg leading-6 text-gray-200">
               Expert Architectural Services
             </p>
@@ -53,6 +54,9 @@ export default function Home() {
 
       <div id="about">
         <About />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
       </div>
       <div id="contact">
         <Contacts />

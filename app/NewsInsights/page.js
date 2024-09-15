@@ -23,25 +23,47 @@ export default function NewsInsights() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-10 sm:py-20 lg:py-20" data-aos="fade-up">
+        <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl pt-0" style={{ color: '#F2F4E6' }}>
-              RK Architect, PA | RK Builders, Inc.
+              News & Insights
             </h1>
-            <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10" />
-            <p className="mt-4 text-lg leading-6 text-gray-200">
-              Expert Architectural Services
-            </p>
-            <div className="flex justify-center items-center mt-4 gap-4">
-              <a href="mailto:rkarchitect24@gmail.com">
-                <FaEnvelope className="text-gray-200 text-3xl" />
-              </a>
-              <a href="https://www.linkedin.com/in/rkarchitect" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-gray-200 text-3xl" />
-              </a>
-              <a href="https://www.instagram.com/robertkarchitect/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-gray-200 text-3xl" />
-              </a>
+            <div className="flex justify-center items-center flex-col lg:flex-row gap-12 mt-20">
+            <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/0a6D5G30RiE" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="mx-auto rounded-lg border-2 border-white"
+                ></iframe>
+                <div className="flex flex-col items-center lg:items-start mt-4 text-center align-top">
+                    <p className="text-2xl leading-6 text-gray-200 lg:self-start">Destination Miami</p>
+                    
+                    <div className="flex flex-col items-start mt-8">
+                        <div className="flex flex-row items-center">
+                            <img src="/CBS4.png" alt="Airing" className="w-16 h-auto text-white mx-auto" />
+                            <div className="flex flex-col pl-4">
+                                <p className="text-lg leading-6 text-gray-100 text-left">WFOR Ch. 4 (CBS - Miami)</p>
+                                <p className="text-sm leading-6 text-gray-300 text-left">Saturday, April 29th, 2023 @ 12:30 pm EST</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-row items-center mt-4">
+                            <img src="/igtv.png" alt="Airing" className="w-16 h-auto text-white mx-auto" />
+                            <div className="flex flex-col pl-4">
+                                <p className="text-lg leading-6 text-gray-100 text-left">IGTV: Thursday</p>
+                                <p className="text-sm leading-6 text-gray-300 text-left">May 4th on @interiorselfie​</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                
+
             </div>
             
           </div>
