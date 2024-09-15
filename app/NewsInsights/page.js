@@ -1,11 +1,8 @@
 "use client";
-
-import About from "./Components/About";
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import Header from "./Components/Header";
-import Contacts from "./Components/Contact";
+import Header from '../Components/Header';
 
-export default function Home() {
+export default function NewsInsights() {
 
   return (
     <div className="">
@@ -51,12 +48,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="about">
-        <About />
-      </div>
-      <div id="contact">
-        <Contacts />
-      </div>
     </div>
   );
 }
