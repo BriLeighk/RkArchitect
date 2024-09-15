@@ -36,13 +36,13 @@ export default function Home() {
 
             <div className="flex justify-center items-center mt-4 gap-4">
               <a href="mailto:rkarchitect24@gmail.com">
-                <FaEnvelope className="text-[#936F27] text-3xl" />
+                <FaEnvelope className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
               <a href="https://www.linkedin.com/in/rkarchitect" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-[#936F27] text-3xl" />
+                <FaLinkedin className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
               <a href="https://www.instagram.com/robertkarchitect/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-[#936F27] text-3xl" />
+                <FaInstagram className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
             </div>
             

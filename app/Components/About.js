@@ -32,7 +32,7 @@ export default function AboutSection() {
           <div className="">
             <div className="">
               <h1 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">About Me</h1>
-              <p className="mt-6 text-xl leading-8 text-gray-300">
+              <p className="mt-6 text-2xl leading-8 text-gray-300">
               I wanted to be an architect since the 7th grade. After applying to colleges my senior year in 
               high school, it took me 2 years and a semester to just get accepted into Architecture School at 
               Auburn University. After 7 years, and a semester, I graduated with a professional degree in Architecture.
@@ -69,7 +69,7 @@ export default function AboutSection() {
           <div className="lg:pr-4">
             <div className="max-w-none text-base leading-7 text-gray-300 lg:max-none">
               <h2 className="text-2xl font-bold tracking-tight text-[#F2F4E6]">My Values</h2>
-              <p className="mt-6 text-lg">
+              <p className="mt-6 text-xl">
               One of the most important things for me is to design something the client loves, and exceed their expectations 
               on what is possible. It is always best to strive for the ideal, without having to compromise any feature the client desires. 
               <br/> <br/>
