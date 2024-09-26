@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react'
 
 // Navigation bar
 const navigation = [
-    { name: 'About', href: 'about' }, // Link to About section
-    { name: 'Contact', href: 'contact' }, // Link to Newsletter section
-    { name: 'News & Insights', href: '/news-insights' }, // Link to Resource Library page 
-    { name: 'Inspections & Repairs', href: '/inspections-and-repairs' }, // Link to Dashboard page 
-    { name: 'Architecture & Builds', href: '/architecture-and-builds' } // Link to Dashboard page 
+    
+    { name: 'About', href: 'about' },
+    { name: 'Contact', href: 'contact' },
+    { name: 'News & Insights', href: '/news-insights' }, 
+    { name: 'Inspections & Repairs', href: '/inspections-and-repairs' },
+    { name: 'Architecture & Builds', href: '/architecture-and-builds' },
+    
 ]
 
 export default function Header() {

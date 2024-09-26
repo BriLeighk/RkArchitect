@@ -35,21 +35,13 @@ export default function AboutSection() {
             <div className="">
               <h1 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">About Me</h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-              I wanted to be an architect since the 7th grade. After applying to colleges my senior year in 
-              high school, it took me 2 years and a semester to just get accepted into Architecture School at 
-              Auburn University. After 7 years, and a semester, I graduated with a professional degree in Architecture.
+              My journey to becoming an architect began in the 7th grade. I always knew I wanted to design buildings that not only stand strong but also inspire. After a challenging college application process, I was accepted into the Architecture School at Auburn University, where I earned my professional degree after 7 years of study.
                 <br /> <br />
-              Prior to graduation, I was recruited by a prestigious firm in Boston, MA, Jung Brannen Associates. 
-              After leaving Boston, I practiced independently as an Architect and Building Contractor ever since.
+                Before graduating, I had the privilege of being recruited by the prestigious firm Jung Brannen Associates in Boston, MA. This experience laid the foundation for my career, but my true passion has always been working independently, where I can combine my skills as both an Architect and a Building Contractor. For years, I’ve had the pleasure of bringing clients' visions to life, while ensuring precision, accuracy, and efficiency throughout every project.
                 <br /> <br />
-              I have always been fascinated by the idea of designing buildings, focusing on details, precision and accuracy, 
-              and seeing my creation become a reality. When I design, I build the structure in my mind. When I build a home 
-              or building that I designed, the process is efficient, as I can make decisions on the fly and avoid the dynamics 
-              that occur between contractors & architects, requests for information, delays in waiting for information, etc.
+                When I design, I’m not just creating something on paper—I’m constructing the entire building in my mind. This allows me to anticipate challenges and streamline the construction process, making real-time decisions and avoiding the usual back-and-forth between architects and contractors. As a result, I’m able to complete projects more efficiently, saving my clients valuable time and money.
                 <br /> <br />
-              Being on the job site during inspections, I often can respond to an inspector's questions with information, 
-              sign offs, etc., that results in a higher percentage of approved inspections. This capability saves a client 
-              much time and expense during construction.
+                Being on-site during inspections allows me to directly address questions and ensure smoother approvals, further reducing delays and costs. This hands-on approach is one of the key ways I deliver real value to my clients during construction.
                 
               </p>
             </div>
@@ -72,24 +64,24 @@ export default function AboutSection() {
             <div className="max-w-none text-base leading-7 text-gray-300 lg:max-none">
               <h2 className="text-2xl font-bold tracking-tight text-[#F2F4E6]">My Values</h2>
               <p className="mt-6">
-              One of the most important things for me is to design something the client loves, and exceed their expectations 
-              on what is possible. It is always best to strive for the ideal, without having to compromise any feature the client desires. 
+              I believe the cornerstone of great architecture is designing something the client truly loves—while exceeding their expectations. I always strive to achieve the ideal outcome without compromising any features that matter to my clients.
               <br/> <br/>
-              As an Architect & Building Contractor, my focus has always been designing & building 
-              for residential or commercial purposes, of uncompromising strength and reliability. 
-              Practicing primarily in South Florida (the High Velocity Hurricane Zone) is a 
-              perfect fit, since buildings here are disaster resistant – designed to withstand 170 
-              mph to 185 mph Hurricanes.
+              As both an Architect and a Building Contractor, my focus is on creating structures of uncompromising strength and reliability, whether they’re residential or commercial. Living and working in South Florida’s High Velocity Hurricane Zone has only strengthened my commitment to building disaster-resistant homes that can withstand the powerful hurricanes our region faces. I specialize in designing homes capable of withstanding winds from 170 mph to 185 mph, ensuring safety and security in an increasingly unpredictable climate.
               <br /> <br />
-              As Hurricanes, Tornadoes, Fires, etc., become more common and intense, it is vital 
-              that buildings, especially a person's home, is designed and built to withstand natural disasters.
-              A person's home is their sanctuary, to feel secure, and safe, emotionally and physically.
-              <br /> <br />
-              My project portfolio includes the design and/or construction of multifamily buildings 
-              (a large-scale 490 Unit Hotel Resort in the Caribbean Islands), restaurants, large medical 
-              offices, and custom homes.
+              With natural disasters like hurricanes, tornadoes, and fires becoming more frequent and severe, it’s more important than ever to design homes that offer sanctuary—places where people feel safe and secure, both physically and emotionally.
               </p>
             </div>
+           
+
+            <div className="max-w-none text-base leading-7 text-gray-300 lg:max-none">
+            <h2 className="mt-10 mb-4 text-xl font-bold tracking-tight text-[#F2F4E6]">My Portfolio</h2>
+
+              <p>
+                My work includes the design and construction of multifamily buildings, such as a large-scale 490-unit hotel resort in the Caribbean, as well as restaurants, medical offices, and custom homes. Every project I undertake reflects my commitment to excellence, whether it’s a disaster-resistant home or a commercial building built for long-term success.
+                </p>
+              
+            </div>
+            
           </div>
 
           
