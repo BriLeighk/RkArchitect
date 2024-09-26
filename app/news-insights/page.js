@@ -48,7 +48,7 @@ export default function NewsInsights() {
                     <div className="flex flex-col items-center lg:items-start mt-4 text-center align-top">
                         <p className="text-2xl leading-6 text-gray-200 lg:self-start">Destination Miami</p>
                         
-                        <div className="flex flex-col items-start mt-8">
+                        <div className="flex flex-col items-start mt-6">
                             <div className="flex flex-row items-center">
                                 <img src="/CBS4.png" alt="Airing" className="w-16 h-auto text-white mx-auto" />
                                 <div className="flex flex-col pl-4">
@@ -64,9 +64,9 @@ export default function NewsInsights() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-row items-center gap-2 max-w-[400px] mt-10">
-                            <p className="text-sm leading-6 text-gray-300 lg:text-left">Should write something here to explain the experience and what it acomplished. 
-                                Brief synopsis of the video, what it's about, and what it achieved.
+                        <div className="flex flex-row items-center gap-2 max-w-[400px] mt-6">
+                            <p className="text-sm leading-6 text-gray-300 lg:text-left">
+                            I was honored to be featured on Destination Miami through WFOR Channel 4 (CBS - Miami) on April 29th, 2023, where my work as an architect and builder was showcased. Additionally, my feature aired on IGTV on May 4th via the popular platform @interiorselfie, alongside other notable businesses in design, events, and architecture.
                             </p>
                         </div>  
                     </div>                 
