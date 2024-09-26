@@ -6,8 +6,8 @@ import { useState, useEffect } from 'react'
 const navigation = [
     { name: 'About', href: 'about' }, // Link to About section
     { name: 'Contact', href: 'contact' }, // Link to Newsletter section
-    { name: 'News & Insights', href: '/NewsInsights' }, // Link to Resource Library page 
-    { name: 'Projects', href: '/Projects' } // Link to Dashboard page 
+    { name: 'News & Insights', href: '/news-insights' }, // Link to Resource Library page 
+    { name: 'Inspections & Repairs', href: '/inspections-and-repairs' } // Link to Dashboard page 
 ]
 
 export default function Header() {
@@ -63,7 +63,7 @@ export default function Header() {
                         <img
                             alt="RK Architect Logo"
                             src="/rk-architect-logo.jpg"
-                            className="h-20 w-auto"
+                            className="h-14 sm:h-16 md:h-20 w-auto"
                         />
                     </a>
                 </div>
@@ -99,7 +99,7 @@ export default function Header() {
                             <img
                                 alt="RK Architect Logo"
                                 src="/rk-architect-logo.jpg"
-                                className="h-20 w-auto"
+                                className="h-14 sm:h-16 md:h-20 w-auto"
                             />
                         </a>
                         <button

@@ -14,6 +14,7 @@ export default function AboutSection() {
 
   return (
     <div className="relative isolate py-10 sm:py-20 p-4">
+      
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
@@ -27,6 +28,7 @@ export default function AboutSection() {
         />
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 mt-0">
+            
         
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:grid lg:w-full lg:max-w-none lg:pl-20 lg:grid-cols-2 mx-auto">
           <div className="">
@@ -55,12 +57,12 @@ export default function AboutSection() {
         </div>
       
         <div className="lg:sticky lg:top-32 lg:col-start-2 lg:row-span-2 lg:row-start-1 flex-col w-full flex justify-center items-center" data-aos="fade-up">
-            <img src="/profile-image.jpg" alt="about" className="w-[240px] sm:w-[300px] h-full object-cover rounded-lg shadow-lg border-2 border-[#936F27]" />
+            <img src="/profile-image.jpg" alt="about" className="w-[240px] sm:w-[300px] h-full object-cover rounded-lg shadow-lg shadow-black border-2 border-[#936F27]" />
             <p className="text-white text-2xl sm:text-4xl font-bold mt-4">Robert Kirchgessner</p>
             <p className="text-gray-300 text-xl sm:text-3xl">Architect | Builder</p>
             <div className="flex flex-col text-left mt-8">
-              <p className="text-gray-300 text-sm sm:text-xl text-center">Licensed Architect in the States of <br /> FL, AZ, GA, IN, KY, NC, OH, SC, & VA</p>
-              <p className="text-gray-300 text-sm sm:text-xl text-center mt-2">Building Contractor - FL</p>
+              <p className="text-gray-300 text-sm sm:text-xl text-center">Licensed Architect in the States of <br /> <span className="text-gray-300"> FL, AZ, GA, IN, KY, NC, OH, SC, & VA </span> </p>
+              <p className="text-gray-300 text-sm sm:text-xl text-center mt-2">Building Contractor - <span className="text-gray-300">FL</span></p>
             </div>
             
         </div>
