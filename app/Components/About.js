@@ -13,7 +13,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <div className="relative isolate py-10 sm:py-20 p-4">
+    <div className="bg-[#140D0C] relative isolate py-10 sm:py-20 p-4">
       
       <div
         aria-hidden="true"

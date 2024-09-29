@@ -29,7 +29,7 @@ export default function CodringtonAve() {
   }, []);
 
   return (
-    <div className="">
+    <div className="bg-[#140D0C]">
       <Header />
 
       {/* Hero Sectidon */}

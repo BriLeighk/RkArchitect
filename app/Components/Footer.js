@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer>
-      <div className="relative grid grid-cols-3 items-center">
+      <div className="bg-[#140D0C] relative grid grid-cols-3 items-center">
         <div className="text-[#8E784D] text-left p-4 text-xs pt-8"> @ 2022 RK Architect, PA</div>
 
         <div className="grid grid-cols-3 gap-4 justify-items-center justify-self-center">

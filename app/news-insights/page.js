@@ -7,7 +7,7 @@ import { Transition } from '@headlessui/react';
 export default function NewsInsights() {
 
   return (
-    <div className="">
+    <div className="bg-[#140D0C]">
       <Header />
 
 
@@ -82,8 +82,8 @@ export default function NewsInsights() {
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
                       src="/WildfireAftermathImage.png"
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
-                      <p className="text-md sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires <br /> & Fire Tornadoes?</p>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
                       
                       <div className="">
                       <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
@@ -106,8 +106,8 @@ export default function NewsInsights() {
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
                       src="/BalconyReconstruction.png"
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
-                      <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Dangerous Balcony Construction - <br /> Liability Risk</p>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Dangerous Balcony Construction - Liability Risk</p>
                       
                       <div className="">
                       <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
@@ -129,8 +129,8 @@ export default function NewsInsights() {
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
                       src="/BuildingMaintenance.png"
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
-                      <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">The Importance of Building <br />  Maintenance</p>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">The Importance of Building Maintenance</p>
                       
                       <div className="">
                       <div className="flex flex-row items-start mt-4 gap-2 mx-auto">

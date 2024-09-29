@@ -6,7 +6,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function BuildToResistsWildfires() {
   return (
-    <div className="text-gray-300">
+    <div className="text-gray-300 bg-[#140D0C]">
       <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div

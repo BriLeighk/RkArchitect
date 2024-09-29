@@ -32,7 +32,7 @@ export default function SubmitTestimonial() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="bg[#140D0C] min-h-screen flex flex-col">
         <Header />
 
       <main className="flex-grow">

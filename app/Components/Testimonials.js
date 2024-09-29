@@ -42,7 +42,7 @@ export default function Testimonials() {
   }, [totalPages]);
 
   return (
-    <section className="relative isolate  mx-6 lg:mx-14 py-10 sm:py-24">
+    <section className="bg-[#140D0C] relative isolate  mx-6 lg:mx-14 py-10 sm:py-24">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"

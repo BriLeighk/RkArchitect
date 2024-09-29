@@ -27,7 +27,7 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
   }, []);
 
   return (
-    <div className="">
+    <div className="bg-[#140D0C]">
       <Header />
 
       {/* Hero Sectidon */}

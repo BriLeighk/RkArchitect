@@ -31,7 +31,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
       <Header />
 
       {/* Hero Sectidon */}
-      <div className="relative isolate px-6 pt-20 lg:px-8">
+      <div className="bg-[#140D0C] relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"

@@ -8,7 +8,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function ArchitectureAndBuilds() {
 
   return (
-    <div className="">
+    <div className="bg-[#140D0C]">
       <Header />
 
 
@@ -67,7 +67,7 @@ export default function ArchitectureAndBuilds() {
                         src="/hero-image.png"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1100 Courtyard Home</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
                       
@@ -84,7 +84,7 @@ export default function ArchitectureAndBuilds() {
                         src="/chenmed-center.jpg"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed Centers</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
                       
@@ -101,7 +101,7 @@ export default function ArchitectureAndBuilds() {
                         src="/1130.jpg"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1130 Home Design</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                       
@@ -118,8 +118,8 @@ export default function ArchitectureAndBuilds() {
                         src="/240-codrington-ave.jpg"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">240 Condrigton Ave</p>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">240 Codrington Ave</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Builder</p>
                       
                       
@@ -134,7 +134,7 @@ export default function ArchitectureAndBuilds() {
                         src="/islands-hotel-resort.jpg"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Island Hotel Resort</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                       
@@ -150,11 +150,9 @@ export default function ArchitectureAndBuilds() {
                         src="/830-boca-house.jpg"
                     ></img>
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">830 Boca Raton House</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Builder</p>
-                      
-                      
+                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
               </div>
 

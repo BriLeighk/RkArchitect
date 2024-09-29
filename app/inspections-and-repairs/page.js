@@ -8,7 +8,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function InspectionsAndRepairs() {
 
   return (
-    <div className="">
+    <div className="bg-[#140D0C]">
       <Header />
 
 
@@ -59,7 +59,7 @@ export default function InspectionsAndRepairs() {
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
                       src="/InspectionAndRepairMF.jpg"
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Inspection & Repair Project <br /> of Multifamily Building</p>
                       
                       <div className="">
@@ -82,7 +82,7 @@ export default function InspectionsAndRepairs() {
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
                       src="/SunAndLakeMF.jpg"
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top">
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Sun & Lake Multifamily <br />  Inspection & Repair</p>
                       
                       <div className="">

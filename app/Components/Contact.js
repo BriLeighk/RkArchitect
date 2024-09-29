@@ -50,7 +50,7 @@ export default function Contacts() {
 
   return (
     <div>
-      <div className="relative isolate overflow-hidden">
+      <div className="bg-[#140D0C] mt-40 relative isolate overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
@@ -66,33 +66,33 @@ export default function Contacts() {
         
           {/* Contact Section */}
           <div className="grid justify-start grid-cols-3 mt-20">
-            <div className="flex flex-col p-4 mx-auto lg:mx-20">
-              <h2 className="text-2xl sm:text-4xl font-bold mb-16 text-white">Get in Touch</h2>
+            <div className="flex flex-col px-4 mx-auto">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-16 text-white">Get in Touch</h2>
             
 
             <div className="flex flex-col gap-2 text-left mb-20">
               <div className="flex flex-row gap-2 text-left">
-                  <FontAwesomeIcon icon={faHome} className="text-md lg:text-lg text-[#8E784D]" />
+                  <FontAwesomeIcon icon={faHome} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
                   <a 
                     href="https://www.google.com/maps?q=500+E+Broward+Blvd,+Suite+1710,+Fort+Lauderdale,+FL+33394" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-xs lg:text-sm leading-6 text-gray-300 hover:text-[#8E784D] transition-all duration-300"
+                    className="text-xs sm:text-sm leading-6 text-gray-300 hover:text-[#8E784D] transition-all duration-300"
                   >
-                    500 E Broward Blvd, Suite 1710, <br /> Fort Lauderdale, FL 33394
+                    500 E Broward Blvd, <br /> Suite 1710, Fort <br /> Lauderdale, FL 33394
                   </a>
                 </div>
 
                 <div className="flex flex-row items-center gap-2">
-                  <FontAwesomeIcon icon={faPhone} className="text-md lg:text-lg text-[#8E784D]" />
-                  <p href="tel:+15619805271" className="text-xs lg:text-sm leading-6 text-white hover:text-[#8E784D] cursor-pointer transition-all duration-300">
+                  <FontAwesomeIcon icon={faPhone} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
+                  <p href="tel:+15619805271" className="text-xs sm:text-sm leading-6 text-white hover:text-[#8E784D] cursor-pointer transition-all duration-300">
                     +1 (561) 980-5271
                   </p>
                 </div>
 
                 <div className="flex flex-row items-center gap-2">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-md lg:text-lg text-[#8E784D]" />
-                  <p href="mailto:rkarchitect24@gmail.com" className="text-xs lg:text-sm leading-6 text-gray-300 hover:text-[#8E784D] cursor-pointer transition-all duration-300">
+                  <FontAwesomeIcon icon={faEnvelope} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
+                  <p href="mailto:rkarchitect24@gmail.com" className="text-xs sm:text-sm leading-6 text-gray-300 hover:text-[#8E784D] cursor-pointer transition-all duration-300">
                     rkarchitect24@gmail.com
                   </p>
                 </div>
@@ -103,7 +103,7 @@ export default function Contacts() {
             
             
           
-        <div className="px-8 lg:mx-10 mb-12 col-span-2">
+        <div className="px-4 pl-16 lg:mx-10 mb-12 col-span-2">
           
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>

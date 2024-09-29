@@ -14,7 +14,7 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <div className="relative isolate px-6 pt-20 lg:px-8 z-[10] min-h-screen">
+      <div className="bg-[#140D0C] relative isolate px-6 pt-20 lg:px-8 z-[10]">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
@@ -38,13 +38,13 @@ export default function Home() {
 
             <div className="flex justify-center items-center mt-4 gap-4">
               <a href="mailto:rkarchitect24@gmail.com">
-                <FaEnvelope className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
+                <FaEnvelope className="text-[#8E784D] text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
               <a href="https://www.linkedin.com/in/rkarchitect" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
+                <FaLinkedin className="text-[#8E784D] text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
               <a href="https://www.instagram.com/robertkarchitect/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-white text-3xl hover:text-[#936F27] transition-all duration-300" />
+                <FaInstagram className="text-[#8E784D] text-3xl hover:text-[#936F27] transition-all duration-300" />
               </a>
             </div>
             
