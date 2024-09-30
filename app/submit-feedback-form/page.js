@@ -44,7 +44,7 @@ export default function SubmitTestimonial() {
         <section className="bg-[#1E1412] mt-48 m-10 p-10 relative isolate overflow-hidden mx-[10%] sm:mx-[14%] md:mx-[18%] lg:mx-[22%] py-0 shadow-lg rounded-lg">
           <div className="mx-auto max-w-2xl lg:max-w-4xl ">
             <h1 className="text-center text-2xl font-bold leading-8 text-white sm:text-3xl md:text-4xl sm:leading-9 mt-8">Feedback Form</h1>
-            <p className="text-center text-gray-200 mt-4 text-xs sm:text-sm md:text-md lg:text-lg  mx-auto">I sincerely appreciate the opportunity to work with you and bring your project to life. Your feedback is incredibly valuable to me as I continuously strive to provide the best service possible. If you have a few moments, I would greatly appreciate it if you could share your thoughts and experience by filling out the short form below.</p>
+            <p className="text-center text-gray-200 mt-4 text-xs sm:text-sm md:text-md lg:text-lg  mx-auto max-w-2xl">I sincerely appreciate the opportunity to work with you and bring your project to life. Your feedback is incredibly valuable to me as I continuously strive to provide the best service possible. If you have a few moments, I would greatly appreciate it if you could share your thoughts and experience by filling out the short form below.</p>
             <form onSubmit={handleSubmit} className="space-y-4 mx-auto max-w-2xl mt-10">
               <div>
                 <label className="block text-sm font-medium">Name</label>
@@ -116,7 +116,7 @@ export default function SubmitTestimonial() {
                  
                 </label>
                   
-                  <label className="block text-sm sm:text-md md:text-lg">Disclaimer</label>
+                  <label className="block text-sm sm:text-md md:text-lg max-w-2xl">Disclaimer</label>
 
                 </div>
               
@@ -165,7 +165,7 @@ export default function SubmitTestimonial() {
 
         .rating label:hover,
         .rating label:hover ~ label {
-          color: #ff9e0b;
+          color: #936F27;
         }
 
         .rating input:checked ~ label {

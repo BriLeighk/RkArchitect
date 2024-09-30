@@ -59,10 +59,12 @@ export default function AboutSection() {
             
         </div>
 
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-none lg:grid-cols-2 lg:pl-20 mt-2 text-center">
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-none lg:grid-cols-2 lg:pl-20 mt-2 text-left">
           <div className="lg:pr-4">
             <div className="max-w-none text-base leading-7 text-gray-300 lg:max-none">
-              <h2 className="text-2xl font-bold tracking-tight text-[#F2F4E6]">My Values</h2>
+
+              <h2 className="text-2xl font-bold tracking-tight text-[#F2F4E6] lg:mt-8">My Values</h2>
+              
               <p className="mt-6">
               I believe the cornerstone of great architecture is designing something the client truly loves—while exceeding their expectations. I always strive to achieve the ideal outcome without compromising any features that matter to my clients.
               <br/> <br/>
@@ -70,17 +72,12 @@ export default function AboutSection() {
               <br /> <br />
               With natural disasters like hurricanes, tornadoes, and fires becoming more frequent and severe, it’s more important than ever to design homes that offer sanctuary—places where people feel safe and secure, both physically and emotionally.
               </p>
-            </div>
-           
-
-            <div className="max-w-none text-base leading-7 text-gray-300 lg:max-none">
-            <h2 className="mt-10 mb-4 text-xl font-bold tracking-tight text-[#F2F4E6]">My Portfolio</h2>
-
+              <br />
               <p>
                 My work includes the design and construction of multifamily buildings, such as a large-scale 490-unit hotel resort in the Caribbean, as well as restaurants, medical offices, and custom homes. Every project I undertake reflects my commitment to excellence, whether it’s a disaster-resistant home or a commercial building built for long-term success.
                 </p>
-              
             </div>
+
             
           </div>
 
