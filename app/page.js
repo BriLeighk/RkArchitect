@@ -8,6 +8,7 @@ import Testimonials from "./Components/Testimonials";
 import Footer from "./Components/Footer";
 
 export default function Home() {
+  
   return (
     <div className="">
       <Header />
@@ -32,9 +33,9 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#FFFFFF' }}>
               RK Architect, PA <br /> <span className="text-3xl text-gray-300">RK Builders, Inc. </span> 
             </h1>
-            <img src="/hero-image.png" alt="RK Architects" className="mx-auto mt-10 rounded-lg border-2 border-[#936F27] shadow-lg shadow-black" />
-
-           
+            <div className="relative mx-auto mt-10 rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
+              <img src="/hero-image.png" alt="RK Architects" className="animate-zoomInOut" />
+            </div>
 
             <div className="flex justify-center items-center mt-4 gap-4">
               <a href="mailto:rkarchitect24@gmail.com">
