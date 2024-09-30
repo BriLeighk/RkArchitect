@@ -68,7 +68,8 @@ export default function SubmitTestimonial() {
             <p className="text-center text-gray-200 mt-4 text-xs sm:text-sm md:text-md lg:text-lg  mx-auto max-w-2xl">I sincerely appreciate the opportunity to work with you and bring your project to life. Your feedback is incredibly valuable to me as I continuously strive to provide the best service possible. If you have a few moments, I would greatly appreciate it if you could share your thoughts and experience by filling out the short form below.</p>
             <form onSubmit={handleSubmit} className="space-y-4 mx-auto max-w-2xl mt-10">
               <div>
-                <label className="block text-sm font-medium">Name</label>
+                <label className="block text-sm text-white">Name</label>
+                <p className='text-xs text-gray-300 text-left'>Please provide your name.</p>
                 <input
                   type="text"
                   value={name}
@@ -78,7 +79,8 @@ export default function SubmitTestimonial() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium">Location</label>
+                <label className="block text-sm text-white">Location</label>
+                <p className='text-xs text-gray-300 text-left'>Please provide the location where the project was completed (City, State).</p>
                 <input
                   type="text"
                   value={location}
@@ -88,7 +90,8 @@ export default function SubmitTestimonial() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium">Testimonial</label>
+                <label className="block text-sm text-white">Feedback</label>
+                <p className='text-xs text-gray-300 text-left'>It was a pleasure working with you. Please share your thoughts on my work.</p>
                 <textarea
                   value={text}
                   onChange={(e) => setText(e.target.value.slice(0, maxTextLength))}
@@ -97,9 +100,11 @@ export default function SubmitTestimonial() {
                 />
                 <p className="text-xs text-gray-400">{text.length}/{maxTextLength} characters</p>
               </div>
-              <div className='grid grid-cols-3'>
-                <label className="block text-xs font-medium grid-span-1 my-auto">Rating</label>
-                <div className="rating flex flex-row-reverse justify-center grid-span-2">
+              <div className=''>
+              <label className="block text-sm text-white">Rating</label>
+              <p className='text-xs text-gray-300 text-left'>Please rate your overall experience.</p>
+               
+                <div className="rating flex flex-row-reverse justify-center">
                   {[...Array(5)].map((_, index) => {
                     const star = 5 - index;
                     return (
@@ -138,17 +143,18 @@ export default function SubmitTestimonial() {
                  
                 </label>
                   
-                  <label className="block text-sm sm:text-md md:text-lg max-w-2xl">Disclaimer</label>
+                  <label className="block text-sm sm:text-md md:text-lg max-w-2xl text-white">Disclaimer</label>
 
                 </div>
               
-                <p className="text-xs sm:text-sm md:text-md text-gray-400 ml-6">With your permission, your feedback may be featured in the Testimonials section of my website to help others understand what it’s like to work with me.</p>
-                
+                <p className="text-xs sm:text-sm md:text-md text-gray-400 ml-6">
+                By checking this box, you grant permission for your feedback to be featured in the Testimonials section of my website, helping others understand what it’s like to work with me.
+                </p>
               </div>
               <div>
                 <button
                   type="submit"
-                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-[#1E1412] font-bold' : 'bg-[#666] border-none'}`}
+                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-[#1E1412] font-bold' : 'bg-[#666] border-gray-500'}`}
                   disabled={!isChecked}
                 >
                   Submit
