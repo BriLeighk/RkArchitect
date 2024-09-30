@@ -148,7 +148,7 @@ export default function SubmitTestimonial() {
               <div>
                 <button
                   type="submit"
-                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-[#1E1412] font-bold' : 'bg-[#666] border-[#666]'}`}
+                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-[#1E1412] font-bold' : 'bg-[#666] border-none'}`}
                   disabled={!isChecked}
                 >
                   Submit
