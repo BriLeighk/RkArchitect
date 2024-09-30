@@ -24,13 +24,19 @@ export default function Contacts() {
       const name = form.name.value;
       const email = form.email.value;
       const userMessage = form.message.value;
-  
+
+      // Check if the message length is greater than 0
+      if (userMessage.length === 0) {
+        setMessage("Message cannot be empty.");
+        return;
+      }
+
       const templateParams = {
         from_name: name,
         from_email: email,
         message: userMessage,
       };
-  
+
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
