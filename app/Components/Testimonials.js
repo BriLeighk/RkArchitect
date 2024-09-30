@@ -42,7 +42,7 @@ export default function Testimonials() {
   }, [totalPages]);
 
   return (
-    <section className="bg-[#140D0C] relative isolate mx-6 lg:mx-14 py-10 sm:py-24">
+    <section className="bg-[#1E1412] relative isolate py-10 sm:py-24">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
@@ -55,7 +55,7 @@ export default function Testimonials() {
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
       </div> 
-      <div className="mx-auto p-6">
+      <div className="mx-auto p-6 mx-6 lg:mx-14">
         <div className="relative mb-20">
           <h1 className="text-left p-2 text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">What My Clients <br /> Are Saying</h1>
           <div className="absolute -top-6 -left-4 lg:-top-8 lg:-left-8 bg-[#936F27] text-white rounded-full h-12 w-12 lg:h-16 lg:w-16 flex items-center justify-center -z-10">

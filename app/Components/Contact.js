@@ -55,8 +55,8 @@ export default function Contacts() {
 
 
   return (
-    <div>
-      <div className="bg-[#140D0C] mt-40 relative isolate overflow-hidden">
+    <div className="bg-[#1E1412]">
+      <div className=" relative isolate overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
