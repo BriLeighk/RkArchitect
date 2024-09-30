@@ -86,7 +86,7 @@ export default function Contacts() {
                 <div className="flex flex-row items-center gap-2">
                   <FontAwesomeIcon icon={faPhone} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
                   <p href="tel:+15619805271" className="text-xs sm:text-sm leading-6 text-white hover:text-[#8E784D] cursor-pointer transition-all duration-300">
-                    +1 (561) 980-5271
+                    +1 (877) 390-2394
                   </p>
                 </div>
 
