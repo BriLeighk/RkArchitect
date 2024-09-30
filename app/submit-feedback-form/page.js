@@ -1,7 +1,9 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../firebase'; // Adjust the path as necessary
 
 export default function SubmitTestimonial() {
   const [name, setName] = useState('');
@@ -10,11 +12,26 @@ export default function SubmitTestimonial() {
   const [rating, setRating] = useState(0);
   const [message, setMessage] = useState('');
   const [isChecked, setIsChecked] = useState(false); // New state for checkbox
+  const [token, setToken] = useState('');
+  const [showPopup, setShowPopup] = useState(false); // New state for popup
+
+  const maxTextLength = 500; // Character limit for the text field
+
+  useEffect(() => {
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const token = await user.getIdToken();
+        setToken(token);
+      }
+    });
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!isChecked) {
       setMessage('You must agree to the disclaimer.');
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
       return;
     }
     const response = await fetch('/api/testimonials', {
@@ -22,7 +39,7 @@ export default function SubmitTestimonial() {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, location, text, rating }),
+      body: JSON.stringify({ name, location, text, rating, token }),
     });
 
     if (response.ok) {
@@ -32,8 +49,12 @@ export default function SubmitTestimonial() {
       setText('');
       setRating(0);
       setIsChecked(false); // Reset checkbox
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
     } else {
       setMessage('Failed to submit testimonial.');
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
     }
   };
 
@@ -70,10 +91,11 @@ export default function SubmitTestimonial() {
                 <label className="block text-sm font-medium">Testimonial</label>
                 <textarea
                   value={text}
-                  onChange={(e) => setText(e.target.value)}
+                  onChange={(e) => setText(e.target.value.slice(0, maxTextLength))}
                   className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
                   required
                 />
+                <p className="text-xs text-gray-400">{text.length}/{maxTextLength} characters</p>
               </div>
               <div className='grid grid-cols-3'>
                 <label className="block text-xs font-medium grid-span-1 my-auto">Rating</label>
@@ -126,14 +148,19 @@ export default function SubmitTestimonial() {
               <div>
                 <button
                   type="submit"
-                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-white' : 'bg-[#666] border-[#6666]'}`}
+                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#936F27] transition-all duration-300 mt-4 mb-8 ${isChecked ? 'hover:border-[#1E1412] hover:bg-[#936F27] hover:text-[#1E1412] font-bold' : 'bg-[#666] border-[#666]'}`}
                   disabled={!isChecked}
                 >
                   Submit
                 </button>
               </div>
             </form>
-            {message && <p className="mt-4">{message}</p>}
+            {showPopup && (
+              <div className="fixed bottom-4 right-4 bg-[#C69635] text-[#1E1412] p-4 rounded shadow-lg transition-opacity duration-300 ease-in-out z-50">
+                {message}
+              </div>
+            )}
+            
           </div>
         </section>
       </main>
