@@ -29,7 +29,7 @@ export default function CourtyardHome() {
   }, []);
 
   return (
-    <div className="bg-[#140D0C]">
+    <div className="bg-[#1E1412]">
       <Header />
 
       {/* Hero Sectidon */}
@@ -50,7 +50,7 @@ export default function CourtyardHome() {
         <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
-              1130 Custom Home & Courtyard Design
+              1100 Custom Home & Courtyard Design
             </h1>
             <em className="text-xl font-bold">Precision, Ingenuity, and Client Satisfaction</em>
             <img src="/hero-image.png" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
@@ -67,7 +67,7 @@ export default function CourtyardHome() {
             <a href="/architecture-and-builds">
             <IoIosArrowRoundBack className="mt-10 text-[#8E784D] text-4xl" style={{ strokeWidth: '20px' }} />
             </a>
-            <div className="max-w-5xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
+            <div className="max-w-5xl mx-auto bg-[#261916] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
               {imageUrls.length > 0 && (
                 <Masonry
                   breakpointCols={{ default: 4, 1100: 4, 700: 3 }}

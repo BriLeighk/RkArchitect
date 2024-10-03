@@ -27,7 +27,7 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
   }, []);
 
   return (
-    <div className="bg-[#140D0C]">
+    <div className="bg-[#1E1412]">
       <Header />
 
       {/* Hero Sectidon */}
@@ -64,7 +64,7 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
             <a href="/inspections-and-repairs">
             <IoIosArrowRoundBack className="mt-10 text-[#8E784D] text-4xl" style={{ strokeWidth: '20px' }} />
             </a>
-            <div className="max-w-5xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
+            <div className="max-w-5xl mx-auto bg-[#261916] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
               {imageUrls.length > 0 && (
                 <>
                   <div className="grid grid-cols-4 gap-4 items-center">

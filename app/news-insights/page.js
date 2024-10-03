@@ -7,7 +7,7 @@ import { Transition } from '@headlessui/react';
 export default function NewsInsights() {
 
   return (
-    <div className="bg-[#140D0C]">
+    <div className="bg-[#1E1412]">
       <Header />
 
 
@@ -34,9 +34,9 @@ export default function NewsInsights() {
 
             {/* Destination Miami */}
             <div className="flex justify-center items-center flex-col lg:flex-row gap-12 mt-20">
-                <div className="relative w-full max-w-2xl h-0 pb-[56.25%] lg:pb-[30%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black">
+                <div className="relative w-[22em] h-[12em] sm:w-[32em] sm:h-[18em] lg:w-[38em] lg:h-[21em] rounded-lg border-2 border-[#936F27] shadow-lg shadow-black">
                     <iframe 
-                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        className="w-full h-full rounded-lg"
                         src="https://www.youtube.com/embed/0a6D5G30RiE?vq=hd1080" 
                         title="YouTube video player" 
                         frameBorder="0" 
