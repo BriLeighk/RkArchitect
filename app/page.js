@@ -5,12 +5,34 @@ import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Header from "./Components/Header";
 import Contacts from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
-import Footer from "./Components/Footer";
+import Gallery from "./Components/Gallery";
+import {useState, useEffect} from 'react';
+import CrossfadeImage from 'react-crossfade-image';
 
 export default function Home() {
+  const images = ["/hero-image.png", "/interior.jpg", "/interior2.jpg"];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 20000); // Change image every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   
   return (
     <div className="">
+      <style jsx>{`
+        @keyframes zoomInOut {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+        }
+      `}</style>
       <Header />
 
 
@@ -33,8 +55,18 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#FFFFFF' }}>
               RK Architect, PA <br /> <span className="text-3xl text-gray-300">RK Builders, Inc. </span> 
             </h1>
-            <div className="relative mx-auto mt-10 rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-              <img src="/hero-image.png" alt="RK Architects" className="animate-zoomInOut" />
+            <div className="relative mx-auto mt-10 rounded-sm border-2 border-[#8E784D] shadow-lg shadow-black overflow-hidden">
+              <CrossfadeImage
+                src={images[currentImageIndex]}
+                duration={2000} // Duration of the crossfade
+                timingFunction="ease-in-out"
+                style={{
+                  animation: 'zoomInOut 18s',
+                  width: '100%',
+                  height: 'auto',
+                }} // Apply the zoom effect directly as inline styles
+                alt="RK Architects"
+              />
             </div>
 
             <div className="flex justify-center items-center mt-4 gap-4">
@@ -54,9 +86,12 @@ export default function Home() {
       </div>
 
       
-
+      
       <div id="about" className="z-[-10]">
         <About />
+      </div>
+      <div id="gallery">
+        <Gallery />
       </div>
       <div id="testimonials">
         <Testimonials />

@@ -45,12 +45,12 @@ export default function ArchitectureAndBuilds() {
               My commitment to efficiency and streamlined processes helps you avoid unnecessary delays and costly errors. I leverage my deep industry knowledge to make smart, cost-effective decisions at every stage of your project, delivering maximum value without compromising quality.
               </p>
 
-              <h6 className="font-bold text-lg mt-10 text-whites"><span className="text-[#8E784D]">✦</span> Meticulous Attention to Every Detail</h6>
+              <h6 className="font-bold text-lg mt-10 text-white"><span className="text-[#8E784D]">✦</span> Meticulous Attention to Every Detail</h6>
               <p className="text-md text-gray-300">
               I believe that the success of every project lies in the details. From design nuances to construction execution, I ensure that no aspect is overlooked, providing you with a finished product that meets the highest standards of quality and precision.
               </p>
 
-              <h6 className="font-bold text-lg mt-10 text-whites"><span className="text-[#8E784D]">✦</span> Turning Client Visions into Tangible Realities</h6>
+              <h6 className="font-bold text-lg mt-10 text-white"><span className="text-[#8E784D]">✦</span> Turning Client Visions into Tangible Realities</h6>
               <p className="text-md text-gray-300">
               Understanding and capturing your vision is at the core of what I do. I work closely with my clients to transform their ideas into beautiful, functional spaces that reflect their unique needs and preferences. My goal is to exceed expectations, delivering a final result that aligns with your vision.
               </p>
@@ -152,6 +152,20 @@ export default function ArchitectureAndBuilds() {
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">830 Boca Raton House</p>
+                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  </div> 
+              </div>
+
+              {/*1036 Jefferson House */}
+              <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                  <a href="/1036-jefferson-house">
+                    <img 
+                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                        src="/1036-jefferson-house.jpg"
+                    ></img>
+                  </a>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1036 Jefferson House</p>
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
               </div>
