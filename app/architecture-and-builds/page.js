@@ -115,7 +115,7 @@ export default function ArchitectureAndBuilds() {
                   <a href="/240-codrington-ave">
                     <img 
                         className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/240-codrington-ave.jpg"
+                        src="/240house.jpg"
                     ></img>
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -169,6 +169,8 @@ export default function ArchitectureAndBuilds() {
                       <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
               </div>
+
+              
 
             </div>
             </div>
