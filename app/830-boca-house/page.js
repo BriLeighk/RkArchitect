@@ -53,7 +53,7 @@ export default function BocaHouse() {
               Boca Raton House Build
             </h1>
             <em className="text-xl font-bold">Ensuring Construction Accuracy</em>
-            <img src="/830-boca-house.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/house3.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this project, I maintained construction accuracy throughout every phase. From the foundation to the finishing touches, attention to detail and adherence to precise construction standards were key in delivering a home that meets the highest levels of quality and craftsmanship.</h4>

@@ -53,7 +53,7 @@ export default function CourtyardHome() {
               1130 Custom Hurricane-Resistant Design
             </h1>
             <em className="text-xl font-bold">Strength and Seamless Integration</em>
-            <img src="/1130.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/1130home.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> This project was designed and built to withstand the extreme forces of 175 mph hurricane winds, ensuring long-term safety and resilience in high-velocity storm zones. The structural design was meticulously planned, incorporating advanced materials and engineering to meet the strictest building codes for hurricane resistance.</h4>

@@ -98,7 +98,7 @@ export default function ArchitectureAndBuilds() {
                   <a href="/1130-ongoing-project">
                     <img 
                         className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/1130.jpg"
+                        src="/1130home.jpg"
                     ></img>
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -147,7 +147,7 @@ export default function ArchitectureAndBuilds() {
                   <a href="/830-boca-house">
                     <img 
                         className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/830-boca-house.jpg"
+                        src="/house3.jpg"
                     ></img>
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
