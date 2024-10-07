@@ -10,3 +10,19 @@
 .my-masonry-grid_column > img {
   margin-bottom: 30px;
 }
+
+
+/* Add this to your CSS file or within a <style> tag in your component */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1E1412; /* Background of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #5A3A2F; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #1E1412; /* Padding around the thumb */
+}

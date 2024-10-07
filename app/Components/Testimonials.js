@@ -58,7 +58,7 @@ export default function Testimonials() {
       <div className="mx-auto p-6 mx-6 lg:mx-14">
         <div className="relative mb-20">
           <h1 className="text-left p-2 text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">What My Clients <br /> Are Saying</h1>
-          <div className="absolute -top-6 -left-4 lg:-top-8 lg:-left-8 bg-[#936F27] text-white rounded-full h-12 w-12 lg:h-16 lg:w-16 flex items-center justify-center -z-10">
+          <div className="absolute -top-6 -left-4 lg:-top-8 lg:-left-8 bg-[#8E784D] text-white rounded-full h-12 w-12 lg:h-16 lg:w-16 flex items-center justify-center -z-10">
             <FontAwesomeIcon icon={faQuoteRight} />
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function Testimonials() {
             <button
               key={pageIndex}
               onClick={() => handlePageChange(pageIndex)}
-              className={`w-2 h-2 rounded-full ${currentPage === pageIndex ? 'bg-[#936F27]' : 'bg-transparent border border-[#936F27]'}`}
+              className={`w-2 h-2 rounded-full ${currentPage === pageIndex ? 'bg-[#8E784D]' : 'bg-transparent border border-[#936F27]'}`}
             />
           ))}
         </div>
