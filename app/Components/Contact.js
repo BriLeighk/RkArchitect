@@ -57,7 +57,7 @@ export default function Contacts() {
 
 
   return (
-    <div className="bg-[#1E1412]">
+    <div className="bg-[#140D0C]">
       <div className=" relative isolate overflow-hidden">
         <div
           aria-hidden="true"
@@ -122,7 +122,7 @@ export default function Contacts() {
             
           
           <div className="flex justify-center md:mt-16">
-            <div className="p-8 mx-4 lg:mx-10 mb-12 bg-[#261916] shadow-lg shadow-black rounded-sm my-auto w-full">
+            <div className="p-8 mx-4 lg:mx-10 mb-12 bg-[#1E1412] shadow-lg shadow-black rounded-sm my-auto w-full">
             
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>

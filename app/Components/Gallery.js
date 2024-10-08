@@ -6,7 +6,7 @@ import '../page.css';
 export default function GallerySection() {
 
   return (
-    <div className="bg-[#1E1412] relative isolate py-20 lg:py-32 z-[10]">
+    <div className="bg-[#140D0C] relative isolate py-20 lg:py-32 z-[10]">
       
       <div
         aria-hidden="true"

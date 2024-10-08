@@ -37,7 +37,7 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <div className="bg-[#1E1412] relative isolate px-6 pt-20 lg:px-8 z-[10]">
+      <div className="bg-[#140D0C] relative isolate px-6 pt-20 lg:px-8 z-[10]">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
