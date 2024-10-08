@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 20000); // Change image every 10 seconds
+    }, 12000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -61,7 +61,7 @@ export default function Home() {
                 duration={2000} // Duration of the crossfade
                 timingFunction="ease-in-out"
                 style={{
-                  animation: 'zoomInOut 18s',
+                  animation: 'zoomInOut 10s',
                   width: '100%',
                   height: 'auto',
                 }} // Apply the zoom effect directly as inline styles
