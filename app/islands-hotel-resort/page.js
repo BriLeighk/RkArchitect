@@ -29,7 +29,7 @@ export default function IslandsHotelResort() {
   }, []);
 
   return (
-    <div className="bg-[#1E1412]">
+    <div className="bg-[#140D0C]">
       <Header />
 
       {/* Hero Sectidon */}
@@ -67,7 +67,7 @@ export default function IslandsHotelResort() {
             <a href="/architecture-and-builds">
             <IoIosArrowRoundBack className="mt-10 text-[#8E784D] text-4xl" style={{ strokeWidth: '20px' }} />
             </a>
-            <div className="max-w-5xl mx-auto bg-[#261916] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
+            <div className="max-w-5xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
               {imageUrls.length > 0 && (
                 <Masonry
                   breakpointCols={{ default: 4, 1100: 3, 700: 2 }}

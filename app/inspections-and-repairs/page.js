@@ -8,7 +8,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function InspectionsAndRepairs() {
 
   return (
-    <div className="bg-[#1E1412]">
+    <div className="bg-[#140D0C]">
       <Header />
 
 
@@ -34,7 +34,7 @@ export default function InspectionsAndRepairs() {
             </h1>
             <em className="text-xl font-bold"> Ensuring Safety, Compliance, and Long-Term Investment Success</em>
 
-            <div className="max-w-4xl mx-auto bg-[#261916] rounded-lg shadow-lg px-5 pb-4 ">
+            <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Comprehensive Structural & Electrical Building Safety Inspections</h4>
               <p className="text-md text-gray-300">
               With decades of hands-on experience in inspecting multifamily buildings, I provide in-depth structural and electrical safety inspections to ensure your property complies with the highest safety standards. My inspections identify both visible and hidden issues to safeguard your investment from unexpected risks.

@@ -8,7 +8,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function ArchitectureAndBuilds() {
 
   return (
-    <div className="bg-[#1E1412]">
+    <div className="bg-[#140D0C]">
       <Header />
 
 
@@ -34,7 +34,7 @@ export default function ArchitectureAndBuilds() {
             </h1>
             <em className="text-xl font-bold"> Delivering Expertise, Efficiency, and Precision to Bring Your Vision to Life</em>
 
-            <div className="max-w-4xl mx-auto bg-[#261916] rounded-lg shadow-lg px-5 pb-4 ">
+            <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Trusted Expertise, Decades of Proven Experience</h4>
               <p className="text-md text-gray-300">
               With an extensive portfolio spanning multifamily buildings, commercial spaces, and custom homes, my expertise ensures that every project is handled with the highest level of professionalism and precision. My experience in the field allows me to anticipate potential challenges and offer solutions that lead to successful outcomes.

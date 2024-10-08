@@ -7,7 +7,7 @@ import { Transition } from '@headlessui/react';
 export default function NewsInsights() {
 
   return (
-    <div className="bg-[#1E1412]">
+    <div className="bg-[#140D0C]">
       <Header />
 
 

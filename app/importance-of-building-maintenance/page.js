@@ -6,7 +6,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function ImportanceOfBuildingMaintenance() {
   return (
-    <div className="bg-[#1E1412] text-gray-300">
+    <div className="bg-[#140D0C] text-gray-300">
       <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
@@ -31,7 +31,7 @@ export default function ImportanceOfBuildingMaintenance() {
         
       </div>
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-[#261916] rounded-lg">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
         <img src="/Maintenance_1.jpg" alt="Fire Resistant Home" className="w-full max-w-sm mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
