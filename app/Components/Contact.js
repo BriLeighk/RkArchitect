@@ -121,7 +121,8 @@ export default function Contacts() {
             
             
           
-          <div className="p-8 mx-4 lg:mx-10 mb-12 bg-[#261916] shadow-lg shadow-black rounded-sm my-auto max-w-2xl">
+          <div className="flex justify-center md:mt-16">
+            <div className="p-8 mx-4 lg:mx-10 mb-12 bg-[#261916] shadow-lg shadow-black rounded-sm my-auto w-full">
             
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
@@ -137,8 +138,8 @@ export default function Contacts() {
                 <select id="inquiry" name="inquiry" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black" value={inquiryType} onChange={(e) => setInquiryType(e.target.value)} required>
                   <option value="" disabled>Please Select</option> 
                   <option value="Architecture">Architecture</option>
-                  <option value="Construction">Construction</option>
-                  <option value="Building">Building</option>
+                  <option value="Construction">Construction/Building</option>
+                  <option value="Building">Stuctural Inspections</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -153,7 +154,7 @@ export default function Contacts() {
             {message && <p className="mt-4 text-sm text-gray-300 transition-opacity duration-1000 ease-out">{message}</p>}
           </div>
         </div>
-        
+        </div> 
       </div>
     <Footer />
     </div>

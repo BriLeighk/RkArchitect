@@ -53,7 +53,7 @@ export default function CodringtonAve() {
               240 Codrington Ave Build
             </h1>
             <em className="text-xl font-bold">Commitment to Accuracy and Strength: Hurricane-Resistant Construction</em>
-            <img src="/240-codrington-ave.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/240house.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this home, I ensured construction accuracy at every stage of the project. The home was designed with a strong steel frame structure, engineered to withstand hurricane winds of up to 175 mph, providing the highest level of protection in storm-prone areas.</h4>
