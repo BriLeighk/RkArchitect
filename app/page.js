@@ -24,17 +24,19 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>RK Architect, PA & RK Builders</title>
-        <meta name="description" content="RK Architect, PA & RK Builders - Innovative architectural designs and construction solutions." />
-        <link rel="canonical" href="https://robertkarchitect.com" />
+        <title>RK Architect, PA | RK Builders, Inc. - Disaster Resistant Homes</title>
+        <meta name="description" content="Robert Kirchgessner - Architect & Builder specializing in disaster-resistant homes, multifamily building inspections, and more." />
+        <link rel="canonical" href="https://robertkarchitect.com" /> 
         <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFC9D8DQT9"></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+
+            gtag('config', 'G-LFC9D8DQT9');
           `}
         </script>
         <script type="application/ld+json">
@@ -87,6 +89,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#FFFFFF' }}>
               RK Architect, PA <br /> <span className="text-3xl text-gray-300">RK Builders, Inc. </span> 
             </h1>
+            <h2 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">Disaster Resistant Homes & Inspections</h2>
             <div className="relative mx-auto mt-10 rounded-sm border-2 border-[#8E784D] shadow-lg shadow-black overflow-hidden">
               <CrossfadeImage
                 src={images[currentImageIndex]}

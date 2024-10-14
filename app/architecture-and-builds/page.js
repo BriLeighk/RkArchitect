@@ -102,23 +102,38 @@ export default function ArchitectureAndBuilds() {
                   </div> 
                 </div>
 
-                {/* ChenMed Primary Care Medical Centers */}
+                {/* ChenMed Intune Small Medical Center */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <a href="/chenmed-primary-care-medical-centers">
+                  <a href="/chenmed-primary-care-medical-centers-intune">
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                      src="/chenmed-center.jpg"
-                      alt="ChenMed Centers"
+                      src="/chenmed-intune.jpg"
+                      alt="ChenMed Center - Intune Small Medical Center"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed Centers</p>
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed - Intune Medical Center</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
+                  </div> 
+                </div>
+
+                {/* ChenMed Majorca Medical Center */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                  <a href="/chenmed-primary-care-medical-centers-majorca">
+                    <img 
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/chenmed-majorca.jpg"
+                      alt="ChenMed Center - Majorca Medical Center"
+                    />
+                  </a>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed - Majorca Medical Center</p>
                     <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
                   </div> 
                 </div>
 
                 {/* 1130 Ongoing Project */}
-                <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/1130-ongoing-project">
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"

@@ -49,7 +49,7 @@ export default function AboutSection() {
         </div>
       
         <div className="lg:sticky lg:top-32 lg:col-start-2 lg:row-span-2 lg:row-start-1 flex-col w-full flex justify-center items-center" data-aos="fade-up">
-            <img src="/profile-image.png" alt="about" className="w-[240px] sm:w-[300px] h-full object-cover rounded-sm shadow-lg shadow-black border-2 border-[#8E784D]" />
+            <img src="/profile-image.png" alt="Profile of Robert Kirchgessner" className="w-[240px] sm:w-[300px] h-full object-cover rounded-sm shadow-lg shadow-black border-2 border-[#8E784D]" />
             <p className="text-white text-2xl sm:text-4xl font-bold mt-4">Robert Kirchgessner</p>
             <p className="text-gray-300 text-xl sm:text-3xl">Architect | Builder</p>
             <div className="flex flex-col text-left mt-8">

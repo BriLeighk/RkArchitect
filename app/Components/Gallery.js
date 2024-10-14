@@ -31,7 +31,7 @@ export default function GallerySection() {
 
         {/* Second Row */}
         <div className="relative group">
-          <img src="/sculpture1.jpeg" alt="gallery" className="w-full h-full object-cover  shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
+          <img src="/sculpture1.jpeg" alt="The Artistic sculpture" className="w-full h-full object-cover shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="p-4 text-xs sm:text-sm leading-tight sm:leading-normal overflow-y-auto max-h-full custom-scrollbar">
               "The Artistic" - This piece captures the interplay of structure and elevation, reflecting the duality of stability and aspiration. It invites contemplation on the boundaries and extensions of human creativity.
@@ -39,7 +39,7 @@ export default function GallerySection() {
           </div>
         </div>
         <div className="relative group">
-          <img src="/sculpture2.jpeg" alt="gallery" className="w-full h-full object-cover  shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
+          <img src="/sculpture2.jpeg" alt="Stone sculpture" className="w-full h-full object-cover shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="p-4 text-xs sm:text-sm leading-tight sm:leading-normal overflow-y-auto max-h-full custom-scrollbar">
               "Stone" - This sculpture embodies the contrast between smoothness and texture, symbolizing the harmony of simplicity and complexity. It reflects the enduring nature of existence through its timeless form.
@@ -47,7 +47,7 @@ export default function GallerySection() {
           </div>
         </div>
         <div className="relative group">
-          <img src="/sculpture3.jpg" alt="gallery" className="w-full h-full object-cover  shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
+          <img src="/sculpture3.jpg" alt="The Archaic sculpture" className="w-full h-full object-cover shadow-lg shadow-black border-[0.5px] border-[#8E784D]" />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="p-4 text-xs sm:text-sm leading-tight sm:leading-normal overflow-y-auto max-h-full custom-scrollbar">
               "The Archaic" - This artwork evokes a sense of nostalgia and introspection, capturing the essence of a lived-in space. It explores the intersection of comfort and discomfort, inviting viewers to ponder the passage of time and memory.
