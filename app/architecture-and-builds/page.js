@@ -2,43 +2,13 @@
 import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function ArchitectureAndBuilds() {
   return (
     <div className="bg-[#140D0C]">
       <Head>
-        <title>Architecture & Builds | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Explore our architecture and builds portfolio. Discover our expertise in multifamily buildings, commercial spaces, and custom homes." />
-        <link rel="canonical" href="https://robertkarchitect.com/architecture-and-builds" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Architecture & Builds",
-            "description": "Explore our architecture and builds portfolio.",
-            "url": "https://robertkarchitect.com/architecture-and-builds",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>Architecture & Builds | Multifamily & Custom Homes | Florida Architect</title>
+        <meta name="description" content="Explore our portfolio of architecture and builds, including multifamily buildings, commercial spaces, and custom homes by RK Architect, PA & RK Builders." />
       </Head>
 
       <Header />
@@ -108,7 +78,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-intune.jpg"
-                      alt="ChenMed Center - Intune Small Medical Center"
+                      alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -123,7 +93,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-majorca.jpg"
-                      alt="ChenMed Center - Majorca Medical Center"
+                      alt="ChenMed Center - Majorca Medical Center - architecture, architect, safety inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -138,7 +108,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1130home.jpg"
-                      alt="1130 Home Design"
+                      alt="1130 Home Design - architecture, architect, disaster resistant homes"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -153,7 +123,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/240house.jpg"
-                      alt="240 Codrington Ave"
+                      alt="240 Codrington Ave - architecture, architect, multifamily building due-diligence inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -168,7 +138,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/islands-hotel-resort.jpg"
-                      alt="Island Hotel Resort"
+                      alt="Island Hotel Resort - architecture, architect, 40-50 year building safety inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -183,7 +153,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/house3.jpg"
-                      alt="830 Boca Raton House"
+                      alt="830 Boca Raton House - architecture, architect, safety inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -198,7 +168,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1036-jefferson-house.jpg"
-                      alt="1036 Jefferson House"
+                      alt="1036 Jefferson House - architecture, architect, disaster resistant homes"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
@@ -213,7 +183,7 @@ export default function ArchitectureAndBuilds() {
                     <img 
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/ne-miami-renovation-home.jpg"
-                      alt="42 NE Miami Renovation Home"
+                      alt="42 NE Miami Renovation Home - architecture, architect, multifamily building due-diligence inspections"
                     />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">

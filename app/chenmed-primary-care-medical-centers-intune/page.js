@@ -34,34 +34,6 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
       <Head>
         <title>ChenMed Primary Care Medical Centers | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Explore the ChenMed Primary Care Medical Centers Designed by RK Architect, PA. Precision, compliance, and accessibility in healthcare design." />
-        <link rel="canonical" href="https://robertkarchitect.com/chenmed-primary-care-medical-centers" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "ChenMed Primary Care Medical Centers",
-            "description": "Explore the ChenMed Primary Care Medical Centers by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/chenmed-primary-care-medical-centers",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -87,7 +59,7 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
               ChenMed Primary Care Medical Centers - Intune Small Medical Center
             </h1>
             <em className="text-xl font-bold">Precision, Compliance, and Accessibility</em>
-            <img src="/chenmed-intune.jpg" alt="ChenMed Center" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/chenmed-intune.jpg" alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Designing medical centers requires meticulous attention to detail, especially given the stringent code requirements for healthcare facilities. In this project, precision and accuracy were essential to ensure full compliance with the numerous regulations governing medical offices.</h4>
@@ -112,7 +84,7 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Image ${index + 1}`}
+                      alt={`ChenMed Intune Image ${index + 1} - architecture, architect, safety inspections`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

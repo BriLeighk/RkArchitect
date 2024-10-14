@@ -11,34 +11,6 @@ export default function ImportanceOfBuildingMaintenance() {
       <Head>
         <title>The Importance of Building Maintenance | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Learn about the importance of regular building maintenance to prevent costly repairs and ensure safety and compliance." />
-        <link rel="canonical" href="https://robertkarchitect.com/importance-of-building-maintenance" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "The Importance of Building Maintenance",
-            "description": "Learn about the importance of regular building maintenance to prevent costly repairs and ensure safety and compliance.",
-            "url": "https://robertkarchitect.com/importance-of-building-maintenance",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -68,7 +40,7 @@ export default function ImportanceOfBuildingMaintenance() {
       <div className="max-w-4xl mx-auto m-8 px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-        <img src="/Maintenance_1.jpg" alt="Building Maintenance" className="w-full max-w-sm mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
+        <img src="/Maintenance_1.jpg" alt="Building Maintenance - architecture, architect, safety inspections" className="w-full max-w-sm mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
         <div className="space-y-6">
             <p>
             I often see building owners delay necessary maintenance due to either trying to save on costs, or they do not think it is necessary.

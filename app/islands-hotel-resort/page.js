@@ -1,5 +1,4 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -11,6 +10,7 @@ import 'react-18-image-lightbox/style.css';
 import { IoIosArrowRoundBack } from "react-icons/io";
 import Masonry from 'react-masonry-css';
 import '../page.css'; // Ensure this path is correct
+import Head from 'next/head';
 
 export default function IslandsHotelResort() {
   const [imageUrls, setImageUrls] = useState([]);
@@ -34,34 +34,6 @@ export default function IslandsHotelResort() {
       <Head>
         <title>Islands Hotel Resort | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Explore the Islands Hotel Resort by RK Architect, PA & RK Builders. Earthquake-ready and hurricane-resistant design." />
-        <link rel="canonical" href="https://robertkarchitect.com/islands-hotel-resort" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Islands Hotel Resort",
-            "description": "Explore the Islands Hotel Resort by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/islands-hotel-resort",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -84,7 +56,7 @@ export default function IslandsHotelResort() {
               Islands Hotel Resort
             </h1>
             <em className="text-xl font-bold"> Earthquake-Ready and Hurricane-Resistant Design</em>
-            <img src="/islands-hotel-resort.jpg" alt="Island Hotel Resort - Designed and Built" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/islands-hotel-resort.jpg" alt="Island Hotel Resort - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> This large hotel resort was built using custom forms and earthquake pin connections, designed to withstand the forces of zone 2 earthquakes and 175 mph hurricane winds. The project’s structural integrity was a top priority, ensuring the resort is prepared for both seismic activity and extreme weather conditions.</h4>
@@ -109,7 +81,7 @@ export default function IslandsHotelResort() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Image ${index + 1}`}
+                      alt={`Island Hotel Resort Image ${index + 1} - architecture, architect, safety inspections`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

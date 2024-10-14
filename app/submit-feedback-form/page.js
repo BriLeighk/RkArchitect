@@ -62,36 +62,8 @@ export default function SubmitTestimonial() {
   return (
     <div className="bg-[#140D0C] ">
       <Head>
-        <title>Submit Feedback | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Submit your feedback and testimonials for RK Architect, PA & RK Builders. We value your input to improve our services." />
-        <link rel="canonical" href="https://robertkarchitect.com/submit-feedback-form" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Submit Feedback",
-            "description": "Submit your feedback and testimonials for RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/submit-feedback-form",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>Submit Feedback | Florida Architect & Builder | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Submit your feedback and testimonials for RK Architect, PA & RK Builders. We value your input to enhance our architecture and building services in Florida." />
       </Head>
       <Header />
       <main className="flex-grow">

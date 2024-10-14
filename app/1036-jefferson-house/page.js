@@ -34,34 +34,7 @@ export default function JeffersonHouse() {
       <Head>
         <title>Jefferson Personal Home | Architect & Builder</title>
         <meta name="description" content="Explore the Jefferson Personal Home by RK Architect, PA & RK Builders. A family legacy in design and build." />
-        <link rel="canonical" href="https://robertkarchitect.com/1036-jefferson-house" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Jefferson Personal Home",
-            "description": "Explore the Jefferson Personal Home by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/1036-jefferson-house",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        
       </Head>
 
       <Header />
@@ -87,7 +60,7 @@ export default function JeffersonHouse() {
              Jefferson Personal Home
             </h1>
             <em className="text-xl font-bold">A Family Legacy in Design and Build</em>
-            <img src="/1036-jefferson-house.jpg" alt="Jefferson Personal Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/1036-jefferson-house.jpg" alt="Jefferson Personal Home - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> 
@@ -112,7 +85,7 @@ export default function JeffersonHouse() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Jefferson House Image ${index + 1}`}
+                      alt={`Jefferson House Image ${index + 1} - architecture, architect, safety inspections`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

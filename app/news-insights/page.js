@@ -10,36 +10,8 @@ export default function NewsInsights() {
   return (
     <div className="bg-[#140D0C]">
       <Head>
-        <title>News & Insights | Architect & Builder</title>
-        <meta name="description" content="Stay updated with the latest news and insights from RK Architect, PA & RK Builders. Discover our expertise in multifamily building due-diligence inspections, 40-50 year building safety inspections, and disaster-resistant homes." />
-        <link rel="canonical" href="https://robertkarchitect.com/news-insights" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "News & Insights",
-            "description": "Latest news and insights from RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/news-insights",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>Architecture News & Insights | Safety Inspections & Disaster-Resistant Homes</title>
+        <meta name="description" content="Stay informed with RK Architect, PA & RK Builders' latest news on architecture, safety inspections, and disaster-resistant home designs." />
       </Head>
 
       <Header />

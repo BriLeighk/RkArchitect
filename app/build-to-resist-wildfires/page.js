@@ -11,34 +11,6 @@ export default function BuildToResistsWildfires() {
       <Head>
         <title>Build to Resist Wildfires | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Explore how to build homes that resist extreme wildfires and fire tornadoes. Learn about fire-resistant construction techniques and materials." />
-        <link rel="canonical" href="https://robertkarchitect.com/build-to-resist-wildfires" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Build to Resist Wildfires",
-            "description": "Explore how to build homes that resist extreme wildfires and fire tornadoes.",
-            "url": "https://robertkarchitect.com/build-to-resist-wildfires",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -96,13 +68,13 @@ export default function BuildToResistsWildfires() {
 
             <div className="grid grid-cols-3 gap-8 items-center">
               <div className="relative w-full max-w-4xl h-0 pb-[56.25%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-                <img src="/fire.png" alt="Fire Tornado" className="absolute top-0 left-0 w-full h-full object-cover" />
+                <img src="/fire.png" alt="Fire Tornado - architecture, architect, disaster resistant homes" className="absolute top-0 left-0 w-full h-full object-cover" />
               </div>
               <div className="relative w-full max-w-4xl h-0 pb-[56.25%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-                <img src="/WildfireAftermathImage.png" alt="Wildfire Aftermath" className="absolute top-0 left-0 w-full h-full object-cover" />
+                <img src="/WildfireAftermathImage.png" alt="Wildfire Aftermath - architecture, architect, safety inspections" className="absolute top-0 left-0 w-full h-full object-cover" />
               </div>
               <div className="relative w-full max-w-4xl h-0 pb-[56.25%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-                <img src="/woodframe.jpg" alt="Fire Safe Home" className="absolute top-0 left-0 w-full h-full object-cover" />
+                <img src="/woodframe.jpg" alt="Fire Safe Home - architecture, architect, 40-50 year building safety inspections" className="absolute top-0 left-0 w-full h-full object-cover" />
               </div>
             </div>
             

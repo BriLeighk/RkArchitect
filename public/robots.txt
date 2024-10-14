@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://robertkarchitect.com
+
+# Sitemaps
+Sitemap: https://robertkarchitect.com/sitemap.xml

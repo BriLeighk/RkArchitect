@@ -24,38 +24,8 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>RK Architect, PA | RK Builders, Inc. - Disaster Resistant Homes</title>
-        <meta name="description" content="Robert Kirchgessner - Architect & Builder specializing in disaster-resistant homes, multifamily building inspections, and more." />
-        <link rel="canonical" href="https://robertkarchitect.com" /> 
-        <meta name="robots" content="index, follow" />
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFC9D8DQT9"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-LFC9D8DQT9');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "RK Architect, PA & RK Builders",
-            "description": "RK Architect, PA & RK Builders - Innovative architectural designs and construction solutions.",
-            "url": "https://robertkarchitect.com",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>RK Architect, PA | RK Builders, Inc. -  | Disaster Resistant Homes & Inspections | Florida Architect</title>
+        <meta name="description" content="Discover RK Architect, PA & RK Builders, expert in disaster-resistant homes, multifamily building inspections, and safety compliance in Florida and many other states." />
       </Head>
 
       <style jsx>{`
@@ -99,7 +69,7 @@ export default function Home() {
                   width: '100%',
                   height: 'auto',
                 }} // Apply the zoom effect directly as inline styles
-                alt="RK Architects"
+                alt="RK Architects - architecture, architect, disaster resistant homes"
               />
             </div>
 

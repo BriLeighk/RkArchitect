@@ -32,34 +32,6 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
       <Head>
         <title>Sun & Lake Multifamily Inspection & Repair | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Comprehensive safety inspection and tailored repair solution for structural and electrical integrity in multifamily buildings." />
-        <link rel="canonical" href="https://robertkarchitect.com/sun-and-lake-multifamily-inspection-repair" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Sun & Lake Multifamily Inspection & Repair",
-            "description": "Comprehensive safety inspection and tailored repair solution for structural and electrical integrity in multifamily buildings.",
-            "url": "https://robertkarchitect.com/sun-and-lake-multifamily-inspection-repair",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -85,7 +57,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
               Sun & Lake Multifamily Inspection & Repair Project
             </h1>
             <em className="text-xl font-bold"> Comprehensive Safety Inspection and Tailored Repair Solution for Structural and Electrical Integrity</em>
-            <img src="/SunAndLakeMF.jpg" alt="Sun & Lake Multifamily Inspection & Repair" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/SunAndLakeMF.jpg" alt="Sun & Lake Multifamily Inspection & Repair - architecture, architect, multifamily building due-diligence inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-cols-2 justify-center items-center">
               <h4 className="font-bold text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Structural & Electrical Safety Inspection</h4>
@@ -106,7 +78,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
                       <img
                         key={index}
                         src={url}
-                        alt={`Image ${index + 1}`}
+                        alt={`Sun & Lake Image ${index + 1} - architecture, architect, safety inspections`}
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index);
@@ -120,7 +92,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
                       <img
                         key={index + 4}
                         src={url}
-                        alt={`Image ${index + 5}`}
+                        alt={`Sun & Lake Image ${index + 5} - architecture, architect, 40-50 year building safety inspections`}
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index + 4);

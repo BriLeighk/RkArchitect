@@ -32,36 +32,8 @@ export default function CourtyardHome() {
   return (
     <div className="bg-[#140D0C]">
       <Head>
-        <title>1100 Custom Home & Courtyard Design | Architect & Builder</title>
-        <meta name="description" content="Explore the 1100 Custom Home & Courtyard Design by RK Architect, PA & RK Builders. Precision, ingenuity, and client satisfaction." />
-        <link rel="canonical" href="https://robertkarchitect.com/1100-courtyard-home" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "1100 Custom Home & Courtyard Design",
-            "description": "Explore the 1100 Custom Home & Courtyard Design by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/1100-courtyard-home",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>Custom Courtyard Home Design | Florida Architect & Builder</title>
+        <meta name="description" content="Explore the 1100 Custom Home & Courtyard Design by RK Architect, PA & RK Builders, showcasing precision and client satisfaction in Florida." />
       </Head>
 
       <Header />
@@ -87,7 +59,7 @@ export default function CourtyardHome() {
               1100 Custom Home & Courtyard Design
             </h1>
             <em className="text-xl font-bold">Precision, Ingenuity, and Client Satisfaction</em>
-            <img src="/hero-image.png" alt="1100 Custom Home & Courtyard Design" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/hero-image.png" alt="1100 Custom Home & Courtyard Design - architecture, architect, multifamily building due-diligence inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> This project required a highly intricate design, demanding precise and accurate drawings, which ultimately saved valuable time during construction. The unique 36/54 angle of the site, combined with an open-air courtyard at the heart of the home, posed significant design challenges but resulted in a beautifully tailored solution that perfectly complemented the landscape and the client's vision.</h4>
@@ -112,7 +84,7 @@ export default function CourtyardHome() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Courtyard Home Image ${index + 1}`}
+                      alt={`Courtyard Home Image ${index + 1} - architecture, architect, 40-50 year building safety inspections`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

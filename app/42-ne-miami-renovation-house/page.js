@@ -31,44 +31,6 @@ export default function CourtyardHome() {
 
   return (
     <>
-      <Head>
-        <title>Architect & Builder | 42 NE Miami Renovation Home</title>
-        <meta name="description" content="Explore the craftsmanship and innovation of our custom renovation home at 42 NE 96th Street, Miami. Specializing in multifamily building due-diligence inspections, 40-50 year building safety inspections, and disaster-resistant homes." />
-        <link rel="canonical" href="https://robertkarchitect.com/42-ne-miami-renovation-house" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "RK Architect, PA & RK Builders",
-            "image": "https://robertkarchitect.com/rk-architect-logo.jpg",
-            "@id": "https://robertkarchitect.com",
-            "url": "https://robertkarchitect.com",
-            "telephone": "+1-877-390-2394",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "500 E Broward Blvd, Suite 1710",
-              "addressLocality": "Fort Lauderdale",
-              "addressRegion": "FL",
-              "postalCode": "33394",
-              "addressCountry": "US"
-            },
-            "sameAs": [
-              "https://www.linkedin.com/in/rkarchitect",
-              "https://www.instagram.com/robertkarchitect"
-            ]
-          })}
-        </script>
-      </Head>
       <div className="bg-[#140D0C]">
         <Header />
 
@@ -93,7 +55,7 @@ export default function CourtyardHome() {
                 42 NE 96th Street - Miami Renovation Home
               </h1>
               <h2 className="text-xl font-bold">Craftsmanship, Innovation, and Client-Centric Design</h2>
-              <img src="/ne-miami-renovation-home.jpg" alt="Custom Renovation Home by Architect and Builder" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+              <img src="/ne-miami-renovation-home.jpg" alt="Custom Renovation Home by Architect and Builder - architecture, architect, multifamily building due-diligence inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
             
               <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
                 <h4 className=" text-lg mt-10 text-white">
@@ -117,7 +79,7 @@ export default function CourtyardHome() {
                       <img
                         key={index}
                         src={url}
-                        alt={`Architect and Builder Image ${index + 1}`}
+                        alt={`Architect and Builder Image ${index + 1} - architecture, architect, 40-50 year building safety inspections`}
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index);

@@ -32,36 +32,8 @@ export default function CodringtonAve() {
   return (
     <div className="bg-[#140D0C]">
       <Head>
-        <title>240 Codrington Ave Build | Architect & Builder</title>
-        <meta name="description" content="Explore the 240 Codrington Ave Build by RK Architect, PA & RK Builders. Specializing in hurricane-resistant construction and structural integrity." />
-        <link rel="canonical" href="https://robertkarchitect.com/240-codrington-ave" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "240 Codrington Ave Build",
-            "description": "Explore the 240 Codrington Ave Build by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/240-codrington-ave",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
+        <title>240 Codrington Ave | Hurricane-Resistant Architecture in Florida</title>
+        <meta name="description" content="Discover the 240 Codrington Ave Build by RK Architect, PA & RK Builders, featuring hurricane-resistant construction and structural integrity." />
       </Head>
 
       <Header />
@@ -87,7 +59,7 @@ export default function CodringtonAve() {
               240 Codrington Ave Build
             </h1>
             <em className="text-xl font-bold">Commitment to Accuracy and Strength: Hurricane-Resistant Construction</em>
-            <img src="/240house.jpg" alt="240 Codrington Ave Build" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/240house.jpg" alt="240 Codrington Ave Build - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this home, I ensured construction accuracy at every stage of the project. The home was designed with a strong steel frame structure, engineered to withstand hurricane winds of up to 175 mph, providing the highest level of protection in storm-prone areas.</h4>
@@ -112,7 +84,7 @@ export default function CodringtonAve() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Codrington Ave Image ${index + 1}`}
+                      alt={`Codrington Ave Image ${index + 1} - architecture, architect, safety inspections, disaster resistant homes`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

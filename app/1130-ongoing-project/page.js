@@ -34,34 +34,6 @@ export default function CourtyardHome() {
       <Head>
         <title>1130 Custom Hurricane-Resistant Design | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Explore the 1130 Custom Hurricane-Resistant Design by RK Architect, PA & RK Builders. Built to withstand extreme forces of 175 mph hurricane winds." />
-        <link rel="canonical" href="https://robertkarchitect.com/1130-ongoing-project" />
-        <meta name="robots" content="index, follow" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "1130 Custom Hurricane-Resistant Design",
-            "description": "Explore the 1130 Custom Hurricane-Resistant Design by RK Architect, PA & RK Builders.",
-            "url": "https://robertkarchitect.com/1130-ongoing-project",
-            "publisher": {
-              "@type": "Organization",
-              "name": "RK Architect, PA & RK Builders",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
-              }
-            }
-          })}
-        </script>
       </Head>
 
       <Header />
@@ -87,7 +59,7 @@ export default function CourtyardHome() {
               1130 Custom Hurricane-Resistant Design
             </h1>
             <em className="text-xl font-bold">Strength and Seamless Integration</em>
-            <img src="/1130home.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/1130home.jpg" alt="1130 Custom Hurricane-Resistant Home - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> This project was designed and built to withstand the extreme forces of 175 mph hurricane winds, ensuring long-term safety and resilience in high-velocity storm zones. The structural design was meticulously planned, incorporating advanced materials and engineering to meet the strictest building codes for hurricane resistance.</h4>
@@ -112,7 +84,7 @@ export default function CourtyardHome() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Image ${index + 1}`}
+                      alt={`1130 Hurricane-Resistant Image ${index + 1} - architecture, architect, safety inspections`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);
