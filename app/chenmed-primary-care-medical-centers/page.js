@@ -1,4 +1,5 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -30,9 +31,42 @@ export default function ChenMedPrimaryCareMedicalCenters() {
 
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>ChenMed Primary Care Medical Centers | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore the ChenMed Primary Care Medical Centers by RK Architect, PA & RK Builders. Precision, compliance, and accessibility in healthcare design." />
+        <link rel="canonical" href="https://robertkarchitect.com/chenmed-primary-care-medical-centers" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "ChenMed Primary Care Medical Centers",
+            "description": "Explore the ChenMed Primary Care Medical Centers by RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/chenmed-primary-care-medical-centers",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -53,7 +87,7 @@ export default function ChenMedPrimaryCareMedicalCenters() {
               ChenMed Primary Care Medical Centers
             </h1>
             <em className="text-xl font-bold">Precision, Compliance, and Accessibility</em>
-            <img src="/chenmed-center.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/chenmed-center.jpg" alt="ChenMed Center" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Designing medical centers requires meticulous attention to detail, especially given the stringent code requirements for healthcare facilities. In this project, precision and accuracy were essential to ensure full compliance with the numerous regulations governing medical offices.</h4>
@@ -107,9 +141,7 @@ export default function ChenMedPrimaryCareMedicalCenters() {
         </div>
       </div>
 
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

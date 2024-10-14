@@ -1,5 +1,5 @@
 "use client";
-
+import Head from 'next/head'; // Import Head for SEO
 import About from "./Components/About";
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Header from "./Components/Header";
@@ -23,6 +23,39 @@ export default function Home() {
   
   return (
     <div className="">
+      <Head>
+        <title>RK Architect, PA & RK Builders</title>
+        <meta name="description" content="RK Architect, PA & RK Builders - Innovative architectural designs and construction solutions." />
+        <link rel="canonical" href="https://robertkarchitect.com" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "RK Architect, PA & RK Builders",
+            "description": "RK Architect, PA & RK Builders - Innovative architectural designs and construction solutions.",
+            "url": "https://robertkarchitect.com",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <style jsx>{`
         @keyframes zoomInOut {
           0%, 100% {
@@ -34,7 +67,6 @@ export default function Home() {
         }
       `}</style>
       <Header />
-
 
       {/* Hero Section */}
       <div className="bg-[#140D0C] relative isolate px-6 pt-20 lg:px-8 z-[10]">
@@ -85,8 +117,6 @@ export default function Home() {
         </div>
       </div>
 
-      
-      
       <div id="about" className="z-[-10]">
         <About />
       </div>
@@ -99,8 +129,6 @@ export default function Home() {
       <div id="contact">
         <Contacts />
       </div>
-
-      
     </div>
   );
 }

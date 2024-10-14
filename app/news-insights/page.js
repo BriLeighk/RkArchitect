@@ -1,17 +1,50 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 import { Transition } from '@headlessui/react';
-export default function NewsInsights() {
 
+export default function NewsInsights() {
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>News & Insights | Architect & Builder</title>
+        <meta name="description" content="Stay updated with the latest news and insights from RK Architect, PA & RK Builders. Discover our expertise in multifamily building due-diligence inspections, 40-50 year building safety inspections, and disaster-resistant homes." />
+        <link rel="canonical" href="https://robertkarchitect.com/news-insights" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "News & Insights",
+            "description": "Latest news and insights from RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/news-insights",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -25,7 +58,7 @@ export default function NewsInsights() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        
+
         <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
@@ -34,131 +67,117 @@ export default function NewsInsights() {
 
             {/* Destination Miami */}
             <div className="flex justify-center items-center flex-col lg:flex-row gap-12 mt-20">
-                <div className="relative w-[22em] h-[12em] sm:w-[32em] sm:h-[18em] lg:w-[38em] lg:h-[21em] rounded-lg border-2 border-[#936F27] shadow-lg shadow-black">
-                    <iframe 
-                        className="w-full h-full rounded-lg"
-                        src="https://www.youtube.com/embed/0a6D5G30RiE?vq=hd1080" 
-                        title="YouTube video player" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen
-                    ></iframe>
+              <div className="relative w-[22em] h-[12em] sm:w-[32em] sm:h-[18em] lg:w-[38em] lg:h-[21em] rounded-lg border-2 border-[#936F27] shadow-lg shadow-black">
+                <iframe
+                  className="w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/0a6D5G30RiE?vq=hd1080"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="flex flex-row gap-8">
+                <div className="flex flex-col items-center lg:items-start mt-4 text-center align-top">
+                  <p className="text-2xl leading-6 text-gray-200 lg:self-start">Destination Miami</p>
+
+                  <div className="flex flex-col items-start mt-6">
+                    <div className="flex flex-row items-center">
+                      <img src="/CBS4.png" alt="CBS Miami Airing" className="w-16 h-auto text-white mx-auto" />
+                      <div className="flex flex-col pl-4">
+                        <p className="text-lg leading-6 text-gray-100 text-left">WFOR Ch. 4 (CBS - Miami)</p>
+                        <p className="text-sm leading-6 text-gray-300 text-left">Saturday, April 29th, 2023 @ 12:30 pm EST</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-row items-center mt-4">
+                      <img src="/igtv.png" alt="IGTV Airing" className="w-16 h-auto text-white mx-auto" />
+                      <div className="flex flex-col pl-4">
+                        <p className="text-lg leading-6 text-gray-100 text-left">IGTV: Thursday</p>
+                        <p className="text-sm leading-6 text-gray-300 text-left">May 4th on @interiorselfie​</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center gap-2 max-w-[400px] mt-6">
+                    <p className="text-sm leading-6 text-gray-300 lg:text-left">
+                      I was honored to be featured on Destination Miami through WFOR Channel 4 (CBS - Miami) on April 29th, 2023, where my work as an architect and builder was showcased. Additionally, my feature aired on IGTV on May 4th via the popular platform @interiorselfie, alongside other notable businesses in design, events, and architecture.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-row gap-8">
-                    <div className="flex flex-col items-center lg:items-start mt-4 text-center align-top">
-                        <p className="text-2xl leading-6 text-gray-200 lg:self-start">Destination Miami</p>
-                        
-                        <div className="flex flex-col items-start mt-6">
-                            <div className="flex flex-row items-center">
-                                <img src="/CBS4.png" alt="Airing" className="w-16 h-auto text-white mx-auto" />
-                                <div className="flex flex-col pl-4">
-                                    <p className="text-lg leading-6 text-gray-100 text-left">WFOR Ch. 4 (CBS - Miami)</p>
-                                    <p className="text-sm leading-6 text-gray-300 text-left">Saturday, April 29th, 2023 @ 12:30 pm EST</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-row items-center mt-4">
-                                <img src="/igtv.png" alt="Airing" className="w-16 h-auto text-white mx-auto" />
-                                <div className="flex flex-col pl-4">
-                                    <p className="text-lg leading-6 text-gray-100 text-left">IGTV: Thursday</p>
-                                    <p className="text-sm leading-6 text-gray-300 text-left">May 4th on @interiorselfie​</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex flex-row items-center gap-2 max-w-[400px] mt-6">
-                            <p className="text-sm leading-6 text-gray-300 lg:text-left">
-                            I was honored to be featured on Destination Miami through WFOR Channel 4 (CBS - Miami) on April 29th, 2023, where my work as an architect and builder was showcased. Additionally, my feature aired on IGTV on May 4th via the popular platform @interiorselfie, alongside other notable businesses in design, events, and architecture.
-                            </p>
-                        </div>  
-                    </div>                 
-                </div>            
+              </div>
             </div>
-
-
 
             <div className="grid grid-cols-3 gap-8 items-center">
-               {/* Fire Resistant Homes */}
-               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <img 
-                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
-                      src="/WildfireAftermathImage.png"
-                  ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
-                      
-                      <div className="">
-                      <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
+              {/* Fire Resistant Homes */}
+              <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                <img
+                  className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
+                  src="/WildfireAftermathImage.png"
+                  alt="Fire Resistant Homes"
+                  onClick={() => window.location.href = '/build-to-resist-wildfires'}
+                />
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
+
+                  <div className="">
+                    <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
                       <a href="/build-to-resist-wildfires" className="flex flex-row gap-2">
-                              <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
-                              <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
-                          </a>
-                          
-                      </div>
-
-                      </div>
-                    
-                  </div> 
+                        <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
+                        <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-
 
               {/* Dangerous Balcony Construction */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <img 
-                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
-                      src="/BalconyReconstruction.png"
-                  ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Dangerous Balcony Construction - Liability Risk</p>
-                      
-                      <div className="">
-                      <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
+                <img
+                  className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
+                  src="/BalconyReconstruction.png"
+                  alt="Dangerous Balcony Construction"
+                  onClick={() => window.location.href = '/dangerous-balcony-construction'}
+                />
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Dangerous Balcony Construction - Liability Risk</p>
+
+                  <div className="">
+                    <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
                       <a href="/dangerous-balcony-construction" className="flex flex-row gap-2">
-                              <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
-                              <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
-                          </a>
-                          
-                      </div>
-
-                      </div>
-                  </div> 
+                        <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
+                        <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-
-              {/* Dangerous Balcony Construction */}
+              {/* Importance of Building Maintenance */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <img 
-                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
-                      src="/BuildingMaintenance.png"
-                  ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">The Importance of Building Maintenance</p>
-                      
-                      <div className="">
-                      <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
-                          
-                          <a href="/importance-of-building-maintenance" className="flex flex-row gap-2">
-                              <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
-                              <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
-                          </a>
-                          
-                      </div>
+                <img
+                  className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
+                  src="/BuildingMaintenance.png"
+                  alt="Building Maintenance"
+                  onClick={() => window.location.href = '/importance-of-building-maintenance'}
+                />
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">The Importance of Building Maintenance</p>
 
-                      </div>
-                  </div> 
+                  <div className="">
+                    <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
+                      <a href="/importance-of-building-maintenance" className="flex flex-row gap-2">
+                        <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
+                        <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-
             </div>
-             
-
-
           </div>
         </div>
       </div>
 
-
-      
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

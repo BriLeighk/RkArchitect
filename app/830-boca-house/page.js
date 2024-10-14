@@ -1,4 +1,5 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -30,9 +31,42 @@ export default function BocaHouse() {
 
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>Boca Raton House Build | Architect & Builder</title>
+        <meta name="description" content="Explore the Boca Raton House Build by RK Architect, PA & RK Builders. Specializing in construction accuracy, multifamily building due-diligence inspections, and disaster-resistant homes." />
+        <link rel="canonical" href="https://robertkarchitect.com/830-boca-house" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Boca Raton House Build",
+            "description": "Explore the Boca Raton House Build by RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/830-boca-house",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -53,16 +87,16 @@ export default function BocaHouse() {
               Boca Raton House Build
             </h1>
             <em className="text-xl font-bold">Ensuring Construction Accuracy</em>
-            <img src="/house3.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/house3.jpg" alt="Boca Raton House Build" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
-            <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
-              <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this project, I maintained construction accuracy throughout every phase. From the foundation to the finishing touches, attention to detail and adherence to precise construction standards were key in delivering a home that meets the highest levels of quality and craftsmanship.</h4>
+            <div className="mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
+              <h4 className="text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this project, I maintained construction accuracy throughout every phase. From the foundation to the finishing touches, attention to detail and adherence to precise construction standards were key in delivering a home that meets the highest levels of quality and craftsmanship.</h4>
 
               <div/>
             </div>
 
             <a href="/architecture-and-builds">
-            <IoIosArrowRoundBack className="mt-10 text-[#8E784D] text-4xl" style={{ strokeWidth: '20px' }} />
+              <IoIosArrowRoundBack className="mt-10 text-[#8E784D] text-4xl" style={{ strokeWidth: '20px' }} />
             </a>
             <div className="max-w-5xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 pt-4 ">
               {imageUrls.length > 0 && (
@@ -75,7 +109,7 @@ export default function BocaHouse() {
                     <img
                       key={index}
                       src={url}
-                      alt={`Image ${index + 1}`}
+                      alt={`Boca Raton House Image ${index + 1}`}
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);
@@ -104,9 +138,7 @@ export default function BocaHouse() {
         </div>
       </div>
 
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

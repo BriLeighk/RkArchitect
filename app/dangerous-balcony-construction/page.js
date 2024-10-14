@@ -1,4 +1,5 @@
 'use client'
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,6 +8,39 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function DangerousBalconyConstruction() {
   return (
     <div className="bg-[#140D0C] text-gray-300">
+      <Head>
+        <title>Dangerous Balcony Construction | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore the risks associated with dangerous balcony construction in multifamily buildings. Learn about structural integrity and safety compliance." />
+        <link rel="canonical" href="https://robertkarchitect.com/dangerous-balcony-construction" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Dangerous Balcony Construction",
+            "description": "Explore the risks associated with dangerous balcony construction in multifamily buildings.",
+            "url": "https://robertkarchitect.com/dangerous-balcony-construction",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
@@ -31,8 +65,8 @@ export default function DangerousBalconyConstruction() {
         
       </div>
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
-      <img src="/DangerousBalcony.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
+      <div className="max-w-4xl mx-auto m-8 px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
+      <img src="/DangerousBalcony.jpg" alt="Dangerous Balcony" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
         <div className="space-y-6">
           <p>
           Dangerous Balcony Structures may not be obvious when visually analyzing a Multifamily property, especially if damage is not yet present, unless you have some knowledge of construction, building permits, etc.
@@ -47,18 +81,17 @@ export default function DangerousBalconyConstruction() {
           These Balconies are NOT Structurally adequate, were NOT Engineered or Permitted and were NOT Reconstructed with Engineering or Permits.
           </p>
             
-            
                 <div className="grid grid-cols-2 gap-8 items-center">
                     <div>
                         <div className="relative w-full max-w-4xl h-0 pb-[100%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-                            <img src="/ReconstructionofImproperBalconySupport.png" alt="Fire Tornado" className="absolute top-0 left-0 w-full h-full object-cover" />
+                            <img src="/ReconstructionofImproperBalconySupport.png" alt="Improper Balcony Support" className="absolute top-0 left-0 w-full h-full object-cover" />
                         </div>
                         <p className="text-center mt-2 font-bold">Reconstruction of an Improper Balcony Support</p>
                     </div>
 
                     <div>
                         <div className="relative w-full max-w-4xl h-0 pb-[100%] mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black overflow-hidden">
-                            <img src="/ProperlyEngineeredBalconyInProgress-1024x768.jpg" alt="Fire Safe Home" className="absolute top-0 left-0 w-full h-full object-cover" />
+                            <img src="/ProperlyEngineeredBalconyInProgress-1024x768.jpg" alt="Properly Engineered Balcony" className="absolute top-0 left-0 w-full h-full object-cover" />
                         </div>
                         <p className="text-center mt-2 font-bold">Properly Engineered Balcony Supports in Progress</p>
                     </div>
@@ -78,7 +111,7 @@ export default function DangerousBalconyConstruction() {
           If such a condition is not noted during due diligence by an inspector, or corrected in a timely manner, the liability could expose the new owner to serious lawsuits if an accident occurs.
           </p>
           
-          <img src="/ProperlyEngineeredBalcony-1024x768.jpg" alt="Fire Safe Home Build" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
+          <img src="/ProperlyEngineeredBalcony-1024x768.jpg" alt="Properly Engineered Balcony" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
           
           <p>
           Life Safety is always paramount and care should be taken to investigate code violations or unpermitted work to eliminate liability.

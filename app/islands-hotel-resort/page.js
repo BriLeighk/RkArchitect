@@ -1,4 +1,5 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -30,9 +31,40 @@ export default function IslandsHotelResort() {
 
   return (
     <div className="bg-[#140D0C]">
-      <Header />
+      <Head>
+        <title>Islands Hotel Resort | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore the Islands Hotel Resort by RK Architect, PA & RK Builders. Earthquake-ready and hurricane-resistant design." />
+        <link rel="canonical" href="https://robertkarchitect.com/islands-hotel-resort" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Islands Hotel Resort",
+            "description": "Explore the Islands Hotel Resort by RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/islands-hotel-resort",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
 
-      {/* Hero Sectidon */}
+      <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -46,11 +78,10 @@ export default function IslandsHotelResort() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        
-        <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
+        <div className="mt-24 lg:mt-32 mb-10  flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
-              Hotel Resort
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl" style={{ color: '#F2F4E6' }}>
+              Islands Hotel Resort
             </h1>
             <em className="text-xl font-bold"> Earthquake-Ready and Hurricane-Resistant Design</em>
             <img src="/islands-hotel-resort.jpg" alt="Island Hotel Resort - Designed and Built" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />

@@ -1,4 +1,5 @@
 'use client'
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,6 +8,39 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function BuildToResistsWildfires() {
   return (
     <div className="text-gray-300 bg-[#140D0C]">
+      <Head>
+        <title>Build to Resist Wildfires | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore how to build homes that resist extreme wildfires and fire tornadoes. Learn about fire-resistant construction techniques and materials." />
+        <link rel="canonical" href="https://robertkarchitect.com/build-to-resist-wildfires" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Build to Resist Wildfires",
+            "description": "Explore how to build homes that resist extreme wildfires and fire tornadoes.",
+            "url": "https://robertkarchitect.com/build-to-resist-wildfires",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
@@ -31,7 +65,7 @@ export default function BuildToResistsWildfires() {
         
       </div>
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
+      <div className="max-w-4xl mx-auto m-8 px-4 sm:px-6 lg:px-8 py-10 bg-[#1E1412] rounded-lg">
       <img src="/construction.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8" />
         <div className="space-y-6">
           <p>

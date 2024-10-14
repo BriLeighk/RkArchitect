@@ -1,4 +1,5 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -30,9 +31,42 @@ export default function CourtyardHome() {
 
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>1130 Custom Hurricane-Resistant Design | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore the 1130 Custom Hurricane-Resistant Design by RK Architect, PA & RK Builders. Built to withstand extreme forces of 175 mph hurricane winds." />
+        <link rel="canonical" href="https://robertkarchitect.com/1130-ongoing-project" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "1130 Custom Hurricane-Resistant Design",
+            "description": "Explore the 1130 Custom Hurricane-Resistant Design by RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/1130-ongoing-project",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -107,9 +141,7 @@ export default function CourtyardHome() {
         </div>
       </div>
 
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

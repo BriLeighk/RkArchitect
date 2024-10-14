@@ -1,18 +1,49 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
-
 export default function ArchitectureAndBuilds() {
-
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>Architecture & Builds | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Explore our architecture and builds portfolio. Discover our expertise in multifamily buildings, commercial spaces, and custom homes." />
+        <link rel="canonical" href="https://robertkarchitect.com/architecture-and-builds" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Architecture & Builds",
+            "description": "Explore our architecture and builds portfolio.",
+            "url": "https://robertkarchitect.com/architecture-and-builds",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -32,158 +63,156 @@ export default function ArchitectureAndBuilds() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
               Architecture & Builds
             </h1>
-            <em className="text-xl font-bold"> Delivering Expertise, Efficiency, and Precision to Bring Your Vision to Life</em>
+            <em className="text-xl font-bold text-white"> Delivering Expertise, Efficiency, and Precision to Bring Your Vision to Life</em>
 
             <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Trusted Expertise, Decades of Proven Experience</h4>
               <p className="text-md text-gray-300">
-              With an extensive portfolio spanning multifamily buildings, commercial spaces, and custom homes, my expertise ensures that every project is handled with the highest level of professionalism and precision. My experience in the field allows me to anticipate potential challenges and offer solutions that lead to successful outcomes.
+                With an extensive portfolio spanning multifamily buildings, commercial spaces, and custom homes, my expertise ensures that every project is handled with the highest level of professionalism and precision. My experience in the field allows me to anticipate potential challenges and offer solutions that lead to successful outcomes.
               </p>
 
               <h6 className="font-bold text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Optimizing Processes to Save You Time & Money</h6>
               <p className="text-md text-gray-300">
-              My commitment to efficiency and streamlined processes helps you avoid unnecessary delays and costly errors. I leverage my deep industry knowledge to make smart, cost-effective decisions at every stage of your project, delivering maximum value without compromising quality.
+                My commitment to efficiency and streamlined processes helps you avoid unnecessary delays and costly errors. I leverage my deep industry knowledge to make smart, cost-effective decisions at every stage of your project, delivering maximum value without compromising quality.
               </p>
 
               <h6 className="font-bold text-lg mt-10 text-white"><span className="text-[#8E784D]">✦</span> Meticulous Attention to Every Detail</h6>
               <p className="text-md text-gray-300">
-              I believe that the success of every project lies in the details. From design nuances to construction execution, I ensure that no aspect is overlooked, providing you with a finished product that meets the highest standards of quality and precision.
+                I believe that the success of every project lies in the details. From design nuances to construction execution, I ensure that no aspect is overlooked, providing you with a finished product that meets the highest standards of quality and precision.
               </p>
 
               <h6 className="font-bold text-lg mt-10 text-white"><span className="text-[#8E784D]">✦</span> Turning Client Visions into Tangible Realities</h6>
               <p className="text-md text-gray-300">
-              Understanding and capturing your vision is at the core of what I do. I work closely with my clients to transform their ideas into beautiful, functional spaces that reflect their unique needs and preferences. My goal is to exceed expectations, delivering a final result that aligns with your vision.
+                Understanding and capturing your vision is at the core of what I do. I work closely with my clients to transform their ideas into beautiful, functional spaces that reflect their unique needs and preferences. My goal is to exceed expectations, delivering a final result that aligns with your vision.
               </p>
 
-
-            
               <div className="grid grid-cols-3 gap-8 items-center">
-                
-              {/* 1100 Courtyard Home */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                {/* 1100 Courtyard Home */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/1100-courtyard-home">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/hero-image.png"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/hero-image.png"
+                      alt="1100 Courtyard Home"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1100 Courtyard Home</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
-                      
-                      
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1100 Courtyard Home</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
                   </div> 
-              </div>
+                </div>
 
-
-              {/* ChenMed Primary Care Medical Centers */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                {/* ChenMed Primary Care Medical Centers */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/chenmed-primary-care-medical-centers">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/chenmed-center.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/chenmed-center.jpg"
+                      alt="ChenMed Centers"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed Centers</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
-                      
-                      
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed Centers</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
                   </div> 
-              </div>
+                </div>
 
-
-              {/* 1130 Ongoing Project */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                {/* 1130 Ongoing Project */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/1130-ongoing-project">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/1130home.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/1130home.jpg"
+                      alt="1130 Home Design"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1130 Home Design</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
-                      
-                      
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1130 Home Design</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
-              </div>
+                </div>
 
-
-              {/* 240 Codrington Ave */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                {/* 240 Codrington Ave */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/240-codrington-ave">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/240house.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/240house.jpg"
+                      alt="240 Codrington Ave"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">240 Codrington Ave</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Builder</p>
-                      
-                      
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">240 Codrington Ave</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Builder</p>
                   </div> 
-              </div>
+                </div>
 
-              {/* Large Hotel Resort */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                {/* Large Hotel Resort */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/islands-hotel-resort">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/islands-hotel-resort.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/islands-hotel-resort.jpg"
+                      alt="Island Hotel Resort"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Island Hotel Resort</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
-                      
-                      
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Island Hotel Resort</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
-              </div>
+                </div>
 
-              {/* 830 Boca House */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                {/* 830 Boca House */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/830-boca-house">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/house3.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/house3.jpg"
+                      alt="830 Boca Raton House"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">830 Boca Raton House</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">830 Boca Raton House</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
-              </div>
+                </div>
 
-              {/*1036 Jefferson House */}
-              <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                {/* 1036 Jefferson House */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/1036-jefferson-house">
                     <img 
-                        className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
-                        src="/1036-jefferson-house.jpg"
-                    ></img>
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/1036-jefferson-house.jpg"
+                      alt="1036 Jefferson House"
+                    />
                   </a>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1036 Jefferson House</p>
-                      <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1036 Jefferson House</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
                   </div> 
+                </div>
+
+                {/* 42 NE 96th Street - Miami Renovation Home */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                  <a href="/42-ne-miami-renovation-house">
+                    <img 
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/ne-miami-renovation-home.jpg"
+                      alt="42 NE Miami Renovation Home"
+                    />
+                  </a>
+                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">42 NE Miami Renovation Home</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  </div> 
+                </div>
               </div>
-
-              
-
             </div>
-            </div>
-
           </div>
         </div>
       </div>
 
-
-      
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

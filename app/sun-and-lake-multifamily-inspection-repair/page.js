@@ -1,4 +1,5 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -28,9 +29,42 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
 
   return (
     <div className="">
+      <Head>
+        <title>Sun & Lake Multifamily Inspection & Repair | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Comprehensive safety inspection and tailored repair solution for structural and electrical integrity in multifamily buildings." />
+        <link rel="canonical" href="https://robertkarchitect.com/sun-and-lake-multifamily-inspection-repair" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Sun & Lake Multifamily Inspection & Repair",
+            "description": "Comprehensive safety inspection and tailored repair solution for structural and electrical integrity in multifamily buildings.",
+            "url": "https://robertkarchitect.com/sun-and-lake-multifamily-inspection-repair",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
-      {/* Hero Sectidon */}
+      {/* Hero Section */}
       <div className="bg-[#140D0C] relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -51,7 +85,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
               Sun & Lake Multifamily Inspection & Repair Project
             </h1>
             <em className="text-xl font-bold"> Comprehensive Safety Inspection and Tailored Repair Solution for Structural and Electrical Integrity</em>
-            <img src="/SunAndLakeMF.jpg" alt="Fire Resistant Home" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <img src="/SunAndLakeMF.jpg" alt="Sun & Lake Multifamily Inspection & Repair" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
         
             <div className=" mx-auto max-w-3xl grid grid-cols-2 justify-center items-center">
               <h4 className="font-bold text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Structural & Electrical Safety Inspection</h4>
@@ -116,9 +150,7 @@ export default function SunAndLakeMultifamilyInspectionRepair() {
         </div>
       </div>
 
-
-     < Footer />
-
+      <Footer />
     </div>
   );
 }

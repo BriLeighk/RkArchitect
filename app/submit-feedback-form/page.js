@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase'; // Adjust the path as necessary
+import Head from 'next/head'; // Import Head for SEO
 
 export default function SubmitTestimonial() {
   const [name, setName] = useState('');
@@ -59,10 +60,42 @@ export default function SubmitTestimonial() {
   };
 
   return (
-    <div className="bg[#140D0C] min-h-screen flex flex-col">
+    <div className="bg-[#140D0C] ">
+      <Head>
+        <title>Submit Feedback | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Submit your feedback and testimonials for RK Architect, PA & RK Builders. We value your input to improve our services." />
+        <link rel="canonical" href="https://robertkarchitect.com/submit-feedback-form" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Submit Feedback",
+            "description": "Submit your feedback and testimonials for RK Architect, PA & RK Builders.",
+            "url": "https://robertkarchitect.com/submit-feedback-form",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#140D0C] mt-48 m-10 p-10 relative isolate overflow-hidden mx-[10%] sm:mx-[14%] md:mx-[18%] lg:mx-[22%] py-0 shadow-lg rounded-lg">
+        <section className="bg-[#1E1412] mt-48 p-10 relative isolate overflow-hidden max-w-4xl py-0 shadow-lg rounded-lg mx-auto m-8">
           <div className="mx-auto max-w-2xl lg:max-w-4xl ">
             <h1 className="text-center text-2xl font-bold leading-8 text-white sm:text-3xl md:text-4xl sm:leading-9 mt-8">Feedback Form</h1>
             <p className="text-center text-gray-200 mt-4 text-xs sm:text-sm md:text-md lg:text-lg  mx-auto max-w-2xl">I sincerely appreciate the opportunity to work with you and bring your project to life. Your feedback is incredibly valuable to me as I continuously strive to provide the best service possible. If you have a few moments, I would greatly appreciate it if you could share your thoughts and experience by filling out the short form below.</p>

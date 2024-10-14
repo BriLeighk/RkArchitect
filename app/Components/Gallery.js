@@ -20,7 +20,7 @@ export default function GallerySection() {
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
       </div>
-      <div className="mx-auto grid max-w-2xl lg:max-w-5xl justify-items-center grid-cols-3 gap-y-4 gap-x-10 lg:gap-x-28 mt-0">
+      <div className="grid max-w-2xl lg:max-w-5xl mx-auto px-8 justify-items-center grid-cols-3 gap-y-4 gap-x-10 lg:gap-x-28 mt-0">
         {/* First Row */}
         <div></div> {/* Empty cell */}
         <div className="text-center text-gray-300">

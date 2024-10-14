@@ -1,18 +1,49 @@
 "use client";
+import Head from 'next/head'; // Import Head for SEO
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
-
 export default function InspectionsAndRepairs() {
-
   return (
     <div className="bg-[#140D0C]">
+      <Head>
+        <title>Inspections and Repairs | RK Architect, PA & RK Builders</title>
+        <meta name="description" content="Comprehensive inspections and repair solutions for multifamily buildings. Ensure safety, compliance, and investment security." />
+        <link rel="canonical" href="https://robertkarchitect.com/inspections-and-repairs" />
+        <meta name="robots" content="index, follow" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Inspections and Repairs",
+            "description": "Comprehensive inspections and repair solutions for multifamily buildings.",
+            "url": "https://robertkarchitect.com/inspections-and-repairs",
+            "publisher": {
+              "@type": "Organization",
+              "name": "RK Architect, PA & RK Builders",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://robertkarchitect.com/rk-architect-logo.jpg"
+              }
+            }
+          })}
+        </script>
+      </Head>
+
       <Header />
 
 
-      {/* Hero Sectidon */}
       <div className="relative isolate px-6 pt-20 lg:px-8">
         <div
           aria-hidden="true"
@@ -56,8 +87,9 @@ export default function InspectionsAndRepairs() {
               {/* Inspection & Repair MF Building */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <img 
-                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                       src="/InspectionAndRepairMF.jpg"
+                      onClick={() => window.location.href = '/inspection-repair-project-multifamily'}
                   ></img>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Inspection & Repair Project <br /> of Multifamily Building</p>
@@ -79,8 +111,9 @@ export default function InspectionsAndRepairs() {
               {/* Sun & Lake MF Repair */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <img 
-                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black"
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                       src="/SunAndLakeMF.jpg"
+                      onClick={() => window.location.href = '/sun-and-lake-multifamily-inspection-repair'}
                   ></img>
                   <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Sun & Lake Multifamily <br />  Inspection & Repair</p>
@@ -101,17 +134,6 @@ export default function InspectionsAndRepairs() {
 
             </div>
             </div>
-
-            
-
-
-
-
-            
-
-        
-             
-
 
           </div>
         </div>
