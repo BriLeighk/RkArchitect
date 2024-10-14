@@ -89,7 +89,6 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#FFFFFF' }}>
               RK Architect, PA <br /> <span className="text-3xl text-gray-300">RK Builders, Inc. </span> 
             </h1>
-            <h2 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">Disaster Resistant Homes & Inspections</h2>
             <div className="relative mx-auto mt-10 rounded-sm border-2 border-[#8E784D] shadow-lg shadow-black overflow-hidden">
               <CrossfadeImage
                 src={images[currentImageIndex]}
