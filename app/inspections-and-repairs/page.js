@@ -7,7 +7,7 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function InspectionsAndRepairs() {
   return (
-    <div className="bg-[#140D0C]">
+    <div className="">
       <Head>
         <title>Inspections and Repairs | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Comprehensive inspections and repair solutions for multifamily buildings. Ensure safety, compliance, and investment security." />
@@ -17,18 +17,7 @@ export default function InspectionsAndRepairs() {
 
 
       <div className="relative isolate px-6 pt-20 lg:px-8">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-0"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#302a18] to-[#5A3A2F] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          />
-        </div>
+        
         
         <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
@@ -37,7 +26,7 @@ export default function InspectionsAndRepairs() {
             </h1>
             <em className="text-xl font-bold"> Ensuring Safety, Compliance, and Long-Term Investment Success</em>
 
-            <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
+            <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-14 sm:pb-8 min-h-auto overflow-visible">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Comprehensive Structural & Electrical Building Safety Inspections</h4>
               <p className="text-md text-gray-300">
               With decades of hands-on experience in inspecting multifamily buildings, I provide in-depth structural and electrical safety inspections to ensure your property complies with the highest safety standards. My inspections identify both visible and hidden issues to safeguard your investment from unexpected risks.

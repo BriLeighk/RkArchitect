@@ -8,7 +8,7 @@ import { Transition } from '@headlessui/react';
 
 export default function NewsInsights() {
   return (
-    <div className="bg-[#140D0C]">
+    <div className="">
       <Head>
         <title>Architecture News & Insights | Safety Inspections & Disaster-Resistant Homes</title>
         <meta name="description" content="Stay informed with RK Architect, PA & RK Builders' latest news on architecture, safety inspections, and disaster-resistant home designs." />
@@ -31,7 +31,7 @@ export default function NewsInsights() {
           />
         </div>
 
-        <div className="py-10 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
+        <div className="py-32 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
               News & Insights
@@ -83,11 +83,11 @@ export default function NewsInsights() {
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
                 <img
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
-                  src="/WildfireAftermathImage.png"
+                  src="/construction.jpg"
                   alt="Fire Resistant Homes"
                   onClick={() => window.location.href = '/build-to-resist-wildfires'}
                 />
-                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                <div className="flex flex-col items-center mx-auto lg:items-start text-center align-top h-[100px]">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
 
                   <div className="">
@@ -101,20 +101,20 @@ export default function NewsInsights() {
                 </div>
               </div>
 
-              {/* Dangerous Balcony Construction */}
+              {/* 𝐁𝐮𝐢𝐥𝐭 𝐭𝐨 𝐃𝐞𝐟𝐲 𝐍𝐚𝐭𝐮𝐫𝐞’𝐬 𝐅𝐮𝐫𝐲: 𝐀 𝐇𝐨𝐦𝐞 𝐭𝐡𝐚𝐭 𝐒𝐭𝐚𝐧𝐝𝐬 𝐒𝐭𝐫𝐨𝐧𝐠 𝐢𝐧 𝐭𝐡𝐞 𝐇𝐢𝐠𝐡 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐲 𝐇𝐮𝐫𝐫𝐢𝐜𝐚𝐧𝐞 𝐙𝐨𝐧𝐞 (𝐇𝐕𝐇𝐙) */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
                 <img
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
-                  src="/BalconyReconstruction.png"
-                  alt="Dangerous Balcony Construction"
-                  onClick={() => window.location.href = '/dangerous-balcony-construction'}
+                  src="/FireSameHomeBuild.jpg"
+                  alt="Build to Defy Nature’s Fury – A Home that Stands Strong in the High Velocity Hurricane Zone (HVHZ)"
+                  onClick={() => window.location.href = '/a-home-built-to-endure-hvhz'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Dangerous Balcony Construction - Liability Risk</p>
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Engineered for Extremes – A Home Built to Endure HVHZ</p>
 
                   <div className="">
                     <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
-                      <a href="/dangerous-balcony-construction" className="flex flex-row gap-2">
+                      <a href="/a-home-built-to-endure-hvhz" className="flex flex-row gap-2">
                         <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
                         <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
                       </a>
@@ -132,7 +132,7 @@ export default function NewsInsights() {
                   onClick={() => window.location.href = '/importance-of-building-maintenance'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">The Importance of Building Maintenance</p>
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Building Maintenance - Key to Safe Structures</p>
 
                   <div className="">
                     <div className="flex flex-row items-start mt-4 gap-2 mx-auto">

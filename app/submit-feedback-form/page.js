@@ -60,14 +60,14 @@ export default function SubmitTestimonial() {
   };
 
   return (
-    <div className="bg-[#140D0C] ">
+    <div className="">
       <Head>
         <title>Submit Feedback | Florida Architect & Builder | RK Architect, PA & RK Builders</title>
         <meta name="description" content="Submit your feedback and testimonials for RK Architect, PA & RK Builders. We value your input to enhance our architecture and building services in Florida." />
       </Head>
       <Header />
-      <main className="flex-grow">
-        <section className="bg-[#1E1412] mt-48 p-10 relative isolate overflow-hidden max-w-4xl py-0 shadow-lg rounded-lg mx-auto m-8">
+      <main className="flex-grow pt-32">
+        <section className="bg-[#1E1412] p-10 relative isolate overflow-hidden max-w-4xl py-0 shadow-lg shadow-[#140D0C] rounded-lg mx-auto m-8">
           <div className="mx-auto max-w-2xl lg:max-w-4xl ">
             <h1 className="text-center text-2xl font-bold leading-8 text-white sm:text-3xl md:text-4xl sm:leading-9 mt-8">Feedback Form</h1>
             <p className="text-center text-gray-200 mt-4 text-xs sm:text-sm md:text-md lg:text-lg  mx-auto max-w-2xl">I sincerely appreciate the opportunity to work with you and bring your project to life. Your feedback is incredibly valuable to me as I continuously strive to provide the best service possible. If you have a few moments, I would greatly appreciate it if you could share your thoughts and experience by filling out the short form below.</p>
@@ -142,7 +142,7 @@ export default function SubmitTestimonial() {
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
                   />
-                  <svg viewBox="0 0 64 64" height="1em sm:1.5em md:2em" width="1em sm:1.5em md:2em">
+                  <svg viewBox="0 0 64 64" height="1em" width="1em">
                       <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" className="path"></path>
                     </svg>
                  
