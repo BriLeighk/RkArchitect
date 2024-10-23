@@ -55,9 +55,9 @@ export default function ArchitectureAndBuilds() {
                       alt="1100 Courtyard Home"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1100 Courtyard Home</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">1100 Courtyard Home</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect</p>
                   </div> 
                 </div>
 
@@ -70,9 +70,9 @@ export default function ArchitectureAndBuilds() {
                       alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed - Intune Medical Center</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">ChenMed - Intune Medical Center</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect</p>
                   </div> 
                 </div>
 
@@ -85,9 +85,9 @@ export default function ArchitectureAndBuilds() {
                       alt="ChenMed Center - Majorca Medical Center - architecture, architect, safety inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">ChenMed - Majorca Medical Center</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">ChenMed - Majorca Medical Center</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect</p>
                   </div> 
                 </div>
 
@@ -100,9 +100,9 @@ export default function ArchitectureAndBuilds() {
                       alt="1130 Home Design - architecture, architect, disaster resistant homes"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1130 Home Design</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">1130 Home Design</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect & Builder</p>
                   </div> 
                 </div>
 
@@ -115,9 +115,9 @@ export default function ArchitectureAndBuilds() {
                       alt="240 Codrington Ave - architecture, architect, multifamily building due-diligence inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">240 Codrington Ave</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">240 Codrington Ave</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Builder</p>
                   </div> 
                 </div>
 
@@ -130,9 +130,9 @@ export default function ArchitectureAndBuilds() {
                       alt="Island Hotel Resort - architecture, architect, 40-50 year building safety inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Island Hotel Resort</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">Island Hotel Resort</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect & Builder</p>
                   </div> 
                 </div>
 
@@ -145,9 +145,9 @@ export default function ArchitectureAndBuilds() {
                       alt="830 Boca Raton House - architecture, architect, safety inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">830 Boca Raton House</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">830 Boca Raton House</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect & Builder</p>
                   </div> 
                 </div>
 
@@ -160,9 +160,9 @@ export default function ArchitectureAndBuilds() {
                       alt="1036 Jefferson House - architecture, architect, disaster resistant homes"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">1036 Jefferson House</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">1036 Jefferson House</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect & Builder</p>
                   </div> 
                 </div>
 
@@ -175,9 +175,25 @@ export default function ArchitectureAndBuilds() {
                       alt="42 NE Miami Renovation Home - architecture, architect, multifamily building due-diligence inspections"
                     />
                   </a>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                    <p className="text-md md:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">42 NE Miami Renovation Home</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300 lg:self-start text-center">Architect & Builder</p>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">42 NE Miami Renovation Home</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect & Builder</p>
+                  </div> 
+                </div>
+
+
+                {/* Johnny's Hungry Hoagies */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                  <a href="/johnnys-hungry-hoagies">
+                    <img 
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/jhh.jpg"
+                      alt="Johnny's Hungry Hoagies Restaurant Design - architecture, architect, multifamily building due-diligence inspections"
+                    />
+                  </a>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">Johnny's Hungry Hoagies Restaurant Design</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Architect</p>
                   </div> 
                 </div>
               </div>

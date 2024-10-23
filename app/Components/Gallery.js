@@ -4,19 +4,16 @@ import 'aos/dist/aos.css';
 import '../page.css';
 
 export default function GallerySection() {
-
   return (
-    <div className=" relative isolate py-20 lg:py-32 z-[10]">
-      
-      
+    <div className="relative isolate py-20 lg:py-32 z-[10]">
       <div className="grid max-w-2xl lg:max-w-5xl mx-auto px-8 justify-items-center grid-cols-3 gap-y-4 gap-x-10 lg:gap-x-28 mt-0">
         {/* First Row */}
         <div></div> {/* Empty cell */}
-        <div className="text-center text-gray-300">
+        <div className="col-span-3 sm:col-span-1 text-center text-gray-300">
           "The work of art does not represent; rather it presents; it brings something into presence."
           <div className="text-sm text-gray-500">Martin Heidegger</div>
         </div>
-        <div></div> {/* Empty cell */}
+        <div className="hidden sm:block"></div> {/* Empty cell */}
 
         {/* Second Row */}
         <div className="relative group">
@@ -45,15 +42,17 @@ export default function GallerySection() {
         </div>
 
         {/* Third Row */}
-        <blockquote className="text-center text-gray-300 text-sm sm:text-base">
-          "All of a sudden he will catch sight of something wonderfully beautiful in its nature."
-          <div className="text-xs sm:text-sm text-gray-500">Plato, The Symposium</div>
-        </blockquote>
-        <div></div> {/* Empty cell */}
-        <blockquote className="text-center text-gray-300 text-sm sm:text-base">
-          "Great things are done by a series of small things brought together."
-          <div className="text-xs sm:text-sm text-gray-500">Vincent Van Gogh</div>
-        </blockquote>
+        <div className="col-span-3 flex flex-col sm:grid sm:grid-cols-3 justify-center gap-x-10 lg:gap-x-28">
+          <blockquote className="text-center text-gray-300 text-sm sm:text-base">
+            "All of a sudden he will catch sight of something wonderfully beautiful in its nature."
+            <div className="text-xs sm:text-sm text-gray-500">Plato, The Symposium</div>
+          </blockquote>
+          <div className="hidden sm:block"></div> {/* Empty cell for larger screens */}
+          <blockquote className="text-center text-gray-300 text-sm sm:text-base">
+            "Great things are done by a series of small things brought together."
+            <div className="text-xs sm:text-sm text-gray-500">Vincent Van Gogh</div>
+          </blockquote>
+        </div>
       </div>
     </div>
   )

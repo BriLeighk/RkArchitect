@@ -53,8 +53,8 @@ export default function InspectionsAndRepairs() {
                       alt="Inspection and Repair Project of Multifamily Building - architecture, architect, safety inspections"
                       onClick={() => window.location.href = '/inspection-repair-project-multifamily'}
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Inspection & Repair Project <br /> of Multifamily Building</p>
+                  <div className="flex flex-col items-start align-top h-[100px] max-w-sm">
+                      <p className="text-lg sm:text-xl leading-6 text-gray-200 self-start text-left">Inspection & Repair of Multifamily Building</p>
                       
                       <div className="">
                       <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
@@ -78,8 +78,8 @@ export default function InspectionsAndRepairs() {
                       alt="Sun & Lake Multifamily Inspection & Repair - architecture, architect, multifamily building due-diligence inspections"
                       onClick={() => window.location.href = '/sun-and-lake-multifamily-inspection-repair'}
                   ></img>
-                  <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
-                      <p className="text-lg sm:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Sun & Lake Multifamily <br />  Inspection & Repair</p>
+                  <div className="flex flex-col items-start align-top h-[100px] max-w-sm">
+                      <p className="text-lg sm:text-xl leading-6 text-gray-200 self-start text-left">Sun & Lake Multifamily Inspection & Repair</p>
                       
                       <div className="">
                       <div className="flex flex-row items-start mt-4 gap-2 mx-auto">

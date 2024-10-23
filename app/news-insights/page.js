@@ -87,7 +87,7 @@ export default function NewsInsights() {
                   alt="Fire Resistant Homes"
                   onClick={() => window.location.href = '/build-to-resist-wildfires'}
                 />
-                <div className="flex flex-col items-center mx-auto lg:items-start text-center align-top h-[100px]">
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
 
                   <div className="">
@@ -109,7 +109,7 @@ export default function NewsInsights() {
                   alt="Build to Defy Nature’s Fury – A Home that Stands Strong in the High Velocity Hurricane Zone (HVHZ)"
                   onClick={() => window.location.href = '/a-home-built-to-endure-hvhz'}
                 />
-                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Engineered for Extremes – A Home Built to Endure HVHZ</p>
 
                   <div className="">
@@ -131,7 +131,7 @@ export default function NewsInsights() {
                   alt="Building Maintenance"
                   onClick={() => window.location.href = '/importance-of-building-maintenance'}
                 />
-                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px]">
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Building Maintenance - Key to Safe Structures</p>
 
                   <div className="">
