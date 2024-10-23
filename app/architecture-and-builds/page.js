@@ -196,6 +196,23 @@ export default function ArchitectureAndBuilds() {
                     <p className="text-xs sm:text-md leading-6 text-gray-300">Architect</p>
                   </div> 
                 </div>
+
+
+                {/* 5309 - Ground Up Build */}
+                <div className="flex justify-center items-center flex-col gap-8 mt-10">
+                  <a href="/5309-ground-up-build">
+                    <img 
+                      className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
+                      src="/5309.jpg"
+                      alt="Ground Up Construction Build - Contractor - architecture, architect, multifamily building due-diligence inspections"
+                    />
+                  </a>
+                  <div className="flex flex-col items-center text-center align-top h-[100px]">
+                    <p className="text-md md:text-xl leading-6 text-gray-200">5309 Ground Up Build</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Contractor</p>
+                  </div> 
+                </div>
+
               </div>
             </div>
           </div>
