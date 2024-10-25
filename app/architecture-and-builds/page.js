@@ -209,7 +209,7 @@ export default function ArchitectureAndBuilds() {
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
                     <p className="text-md md:text-xl leading-6 text-gray-200">5309 Ground Up Build</p>
-                    <p className="text-xs sm:text-md leading-6 text-gray-300">Contractor</p>
+                    <p className="text-xs sm:text-md leading-6 text-gray-300">Builder</p>
                   </div> 
                 </div>
 
