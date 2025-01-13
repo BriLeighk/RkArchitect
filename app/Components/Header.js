@@ -58,15 +58,15 @@ export default function Header() {
 
     return (
         <>
-        <header className="absolute inset-x-0 top-0 z-50">
-            <nav aria-label="Global" className="flex items-center justify-between p-6">
+        <header className="absolute inset-x-0 top-0 z-50 bg-[#1E1412] shadow-lg">
+            <nav aria-label="Global" className="flex items-center justify-between px-4 py-0">
                 <div className="">
-                    <a href="/" className="-m-1.5 p-1.5">
+                    <a href="/" className="-m-0.5 p-0.5">
                         <span className="sr-only">RK Architect, PA | RK Builders, Inc.</span>
                         <img
                             alt="RK Architect Logo"
                             src="/rk-architect-logo.jpg"
-                            className="h-14 sm:h-16 md:h-20 w-auto"
+                            className="h-16 sm:h-16 md:h-16 w-auto"
                         />
                     </a>
                 </div>
