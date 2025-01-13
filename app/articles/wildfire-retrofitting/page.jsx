@@ -15,7 +15,7 @@ const WildfireRetrofittingArticle = () => {
               <span className="text-sm font-sans uppercase tracking-wider text-gray-500">Climate & Construction</span>
             </div>
 
-            <h1 className="text-[3.5rem] leading-tight font-serif font-bold mb-6 text-gray-900">
+            <h1 className="text-[2rem] md:text-[3rem] lg:text-[3.5] leading-tight font-serif font-bold mb-6 text-gray-900">
               Retrofitting Homes to Stop Embers in Their Tracks: Lessons from California's Wildfires
             </h1>
 
@@ -94,7 +94,7 @@ const WildfireRetrofittingArticle = () => {
                     </li>
                     <li>
                       <strong className="text-gray-900 font-serif">Create Defensible Space</strong>
-                      <p className="mt-2 text-gray-700">Maintaining a cleared perimeter around your home, free of flammable vegetation and materials, acts as a critical buffer, reducing the chance of embers finding fuel close to your property.</p>
+                      <p className="mt-2 text-gray-700">Maintaining a cleared 5-foot perimeter around your home, free of flammable vegetation and materials, acts as a critical buffer, reducing the chance of embers finding fuel close to your property.</p>
                     </li>
                   </ol>
                 </div>
