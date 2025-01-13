@@ -111,7 +111,7 @@ const WildfireRetrofittingArticle = () => {
                     className="w-full h-auto rounded-lg"
                   />
                   <p className="text-sm text-gray-500 mt-2 italic">
-                    Another aerial perspective showing the selective nature of wildfire destruction, where patches of green vegetation remain amidst destroyed homes—highlighting the importance of proper home retrofitting. Credit: Robert Kirchgessner
+                    Another aerial perspective showing the selective nature of wildfire destruction, where patches of green vegetation remain amidst destroyed homes—highlighting the importance of proper home retrofitting. Credit: Josh Fields
                   </p>
                 </div>
 
