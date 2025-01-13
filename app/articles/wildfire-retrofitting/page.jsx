@@ -32,6 +32,17 @@ const WildfireRetrofittingArticle = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8 lg:col-start-3">
+              <div className="mb-12">
+                <img
+                  src="/aerial-devastation-view.jpeg"
+                  alt="Aerial view of wildfire devastation showing destroyed homes surrounded by intact forest"
+                  className="w-full h-auto rounded-lg"
+                />
+                <p className="text-sm text-gray-500 mt-2 italic">
+                  Aerial view of a neighborhood destroyed by wildfires, while surrounding forest remains largely intact. This pattern of destruction highlights how homes can become fuel for fires, perpetuating their spread. Credit: Josh Fields
+                </p>
+              </div>
+
               <div className="prose prose-lg max-w-none">
                 
                 
@@ -40,10 +51,22 @@ const WildfireRetrofittingArticle = () => {
                 These weak spots, such as vulnerable vents, combustible roofing, and exposed windows, are what we need to address. In many cases, these fires spread home-to-home through embers, while nearby trees remain intact. This reveals a dangerous cycle: embers ignite homes, homes become fuel, and hurricane winds carry more embers, creating widespread devastation.
                 <br/> <br/>
                 </p>
+                <div className="my-12">
+                  <img
+                    src="/demolished-homes.jpeg"
+                    alt="Side view of demolished buildings with standing trees"
+                    className="w-full h-auto rounded-lg"
+                  />
+                  <p className="text-sm text-gray-500 mt-2 italic">
+                    A stark illustration of how wildfires can devastate structures while leaving nearby vegetation intact, demonstrating the critical role of home hardening in wildfire defense. Credit: Josh Fields
+                  </p>
+                </div>
                 <h2 className="text-2xl font-serif mt-4 font-bold mb-4 text-gray-900">Understanding the Threat of Embers</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
                   Embers, or burning fragments carried by wind, are a leading cause of home ignitions during wildfires. Their ability to penetrate small openings and land on combustible materials makes them particularly dangerous. The <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" className="text-blue-800 hover:underline">National Fire Protection Association (NFPA)</a> emphasizes that addressing these vulnerabilities is crucial for enhancing a home's wildfire resistance.
                 </p>
+
+                
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Key Retrofitting Strategies</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">Enhancing your home's defenses against embers involves several targeted measures:</p>
@@ -80,6 +103,17 @@ const WildfireRetrofittingArticle = () => {
                 <p className="font-serif text-gray-700 leading-relaxed">
                 As noted in the <em>Los Angeles Times</em>, hurricane-force winds during California’s wildfires don’t just spread flames—they amplify embers, propelling them miles ahead of the fire and igniting homes well beyond the fire zone. This explains why some neighborhoods experience total devastation, while nearby natural areas, including trees, remain untouched. Homes that aren’t retrofitted become fuel for the fire, perpetuating this cycle of destruction. Retrofitting with fire-resistant materials and ember-proof solutions safeguards not only your property but also contributes to the safety and resilience of your entire community.
                 </p>
+
+                <div className="my-12">
+                  <img
+                    src="/aerial-devastation-viewx2.jpeg"
+                    alt="Aerial view of devastated homes with untouched patches of vegetation"
+                    className="w-full h-auto rounded-lg"
+                  />
+                  <p className="text-sm text-gray-500 mt-2 italic">
+                    Another aerial perspective showing the selective nature of wildfire destruction, where patches of green vegetation remain amidst destroyed homes—highlighting the importance of proper home retrofitting. Credit: Robert Kirchgessner
+                  </p>
+                </div>
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">My Commitment to Resilient Design</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
