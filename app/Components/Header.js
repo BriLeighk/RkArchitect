@@ -10,7 +10,7 @@ const navigation = [
     { name: 'News & Insights', href: '/news-insights' }, 
     { name: 'Inspections & Repairs', href: '/inspections-and-repairs' },
     { name: 'Architecture & Builds', href: '/architecture-and-builds' },
-    
+    { name: 'Wildfire Article', href: '/articles/wildfire-retrofitting' },
 ]
 
 export default function Header() {
