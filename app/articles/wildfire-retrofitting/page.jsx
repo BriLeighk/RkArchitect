@@ -47,7 +47,7 @@ const WildfireRetrofittingArticle = () => {
                 
                 
                 <p className="font-serif text-gray-800 leading-relaxed mt-4">
-                The recent devastation in California has left us all grappling with a pressing question: <b>How can we prevent such destruction in the future?</b> Wildfires, intensified by hurricane-force winds exceeding 100 mph, have demonstrated that embers can travel significant distances, igniting homes far beyond the immediate fire zone. <br/> <br/> As highlighted by fire safety experts in the Los Angeles Times, “Homes don’t burn because they’re engulfed by flames—they burn because embers find weak spots.” (<a href="https://www.theatlantic.com/health/archive/2024/08/our-houses-are-fuel-for-fires/679649/?utm_source=chatgpt.com" className="text-blue-800 hover:underline">The Atlantic</a>) 
+                The recent devastation in California has left us all grappling with a pressing question: <b>How can we prevent such destruction in the future?</b> Wildfires, intensified by hurricane-force winds exceeding 100 mph, have demonstrated that embers can travel significant distances, igniting homes far beyond the immediate fire zone. <br/> <br/> As highlighted by fire safety experts in the Los Angeles Times, "Homes don't burn because they're engulfed by flames—they burn because embers find weak spots." (<a href="https://www.theatlantic.com/health/archive/2024/08/our-houses-are-fuel-for-fires/679649/?utm_source=chatgpt.com" className="text-blue-800 hover:underline" target="_blank" rel="noopener noreferrer">The Atlantic</a>) 
                 These weak spots, such as vulnerable vents, combustible roofing, and exposed windows, are what we need to address. In many cases, these fires spread home-to-home through embers, while nearby trees remain intact. This reveals a dangerous cycle: embers ignite homes, homes become fuel, and hurricane winds carry more embers, creating widespread devastation.
                 <br/> <br/>
                 </p>
@@ -63,7 +63,7 @@ const WildfireRetrofittingArticle = () => {
                 </div>
                 <h2 className="text-2xl font-serif mt-4 font-bold mb-4 text-gray-900">Understanding the Threat of Embers</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
-                  Embers, or burning fragments carried by wind, are a leading cause of home ignitions during wildfires. Their ability to penetrate small openings and land on combustible materials makes them particularly dangerous. The <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" className="text-blue-800 hover:underline">National Fire Protection Association (NFPA)</a> emphasizes that addressing these vulnerabilities is crucial for enhancing a home's wildfire resistance.
+                  Embers, or burning fragments carried by wind, are a leading cause of home ignitions during wildfires. Their ability to penetrate small openings and land on combustible materials makes them particularly dangerous. The <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" className="text-blue-800 hover:underline" target="_blank" rel="noopener noreferrer">National Fire Protection Association (NFPA)</a> emphasizes that addressing these vulnerabilities is crucial for enhancing a home's wildfire resistance.
                 </p>
 
                 
@@ -101,7 +101,7 @@ const WildfireRetrofittingArticle = () => {
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-6 text-gray-900">Why Retrofitting Matters</h2>
                 <p className="font-serif text-gray-700 leading-relaxed">
-                As noted in the <em>Los Angeles Times</em>, hurricane-force winds during California’s wildfires don’t just spread flames—they amplify embers, propelling them miles ahead of the fire and igniting homes well beyond the fire zone. This explains why some neighborhoods experience total devastation, while nearby natural areas, including trees, remain untouched. Homes that aren’t retrofitted become fuel for the fire, perpetuating this cycle of destruction. Retrofitting with fire-resistant materials and ember-proof solutions safeguards not only your property but also contributes to the safety and resilience of your entire community.
+                As noted in the <em>Los Angeles Times</em>, hurricane-force winds during California's wildfires don't just spread flames—they amplify embers, propelling them miles ahead of the fire and igniting homes well beyond the fire zone. This explains why some neighborhoods experience total devastation, while nearby natural areas, including trees, remain untouched. Homes that aren't retrofitted become fuel for the fire, perpetuating this cycle of destruction. Retrofitting with fire-resistant materials and ember-proof solutions safeguards not only your property but also contributes to the safety and resilience of your entire community.
                 </p>
 
                 <div className="my-12">
@@ -117,15 +117,15 @@ const WildfireRetrofittingArticle = () => {
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">My Commitment to Resilient Design</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
-                As an <b>Architect and Builder</b>, I’ve dedicated my career to designing homes and buildings that can withstand hurricanes and other extreme conditions. My work in Florida’s High Velocity Hurricane Zone (HVHZ) has given me firsthand experience with disaster-resistant design, from implementing impact-rated windows and hurricane-proof roofing to integrating non-combustible materials for maximum resilience.
+                As an <b>Architect and Builder</b>, I've dedicated my career to designing homes and buildings that can withstand hurricanes and other extreme conditions. My work in Florida's High Velocity Hurricane Zone (HVHZ) has given me firsthand experience with disaster-resistant design, from implementing impact-rated windows and hurricane-proof roofing to integrating non-combustible materials for maximum resilience.
                 <br/> <br/>
-                Over the past few years, I’ve expanded my expertise by conducting extensive research on fire-resistant materials and construction techniques. Wildfires pose a unique challenge, but the principles of resilient design—protection against external forces, mitigation of vulnerabilities, and community-wide safety—remain the same.
+                Over the past few years, I've expanded my expertise by conducting extensive research on fire-resistant materials and construction techniques. Wildfires pose a unique challenge, but the principles of resilient design—protection against external forces, mitigation of vulnerabilities, and community-wide safety—remain the same.
                 <br/> <br/>
-                My goal is to apply what I’ve learned to develop homes that not only withstand wildfires but also help mitigate their spread. This includes integrating innovative materials like radiant heat barriers, ember-resistant vents, and fire-rated structural elements, alongside thoughtful design strategies like defensible spaces and fire-shutter-protected utility areas.
+                My goal is to apply what I've learned to develop homes that not only withstand wildfires but also help mitigate their spread. This includes integrating innovative materials like radiant heat barriers, ember-resistant vents, and fire-rated structural elements, alongside thoughtful design strategies like defensible spaces and fire-shutter-protected utility areas.
                 <br/> <br/>
-                I’m currently pitching this concept to investors, aiming to test and refine these fireproof solutions. The goal is to implement proven strategies on a larger scale, offering homeowners a way to protect what matters most while also contributing to the safety and sustainability of entire communities.
+                I'm currently pitching this concept to investors, aiming to test and refine these fireproof solutions. The goal is to implement proven strategies on a larger scale, offering homeowners a way to protect what matters most while also contributing to the safety and sustainability of entire communities.
                 <br/> <br/>
-                By combining my experience in hurricane-resilient architecture with cutting-edge fire-resistant technologies, I’m committed to creating homes that redefine what it means to be safe and prepared for the challenges of tomorrow.
+                By combining my experience in hurricane-resilient architecture with cutting-edge fire-resistant technologies, I'm committed to creating homes that redefine what it means to be safe and prepared for the challenges of tomorrow.
                 </p>
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Conclusion</h2>
@@ -138,7 +138,9 @@ const WildfireRetrofittingArticle = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
                   <div className="border border-gray-200 bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                     <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" 
-                       className="block">
+                       className="block"
+                       target="_blank" 
+                       rel="noopener noreferrer">
                       <div className="p-6">
                         <h3 className="font-serif font-bold text-lg mb-2 text-gray-900">NFPA's Guide on Retrofitting Homes</h3>
                         <p className="text-gray-700 text-sm mb-4">Comprehensive guidelines from the National Fire Protection Association on how to retrofit your home for wildfire protection, including detailed specifications and best practices.</p>
@@ -149,7 +151,9 @@ const WildfireRetrofittingArticle = () => {
                   
                   <div className="border border-gray-200 bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                     <a href="https://readyforwildfire.org/wp-content/uploads/2024/03/wildfire-home-retrfito-guide-1.26.21.pdf" 
-                       className="block">
+                       className="block"
+                       target="_blank" 
+                       rel="noopener noreferrer">
                       <div className="p-6">
                         <h3 className="font-serif font-bold text-lg mb-2 text-gray-900">CAL FIRE's Wildfire Home Retrofit Guide</h3>
                         <p className="text-gray-700 text-sm mb-4">Official California state guide providing step-by-step instructions for home hardening and creating defensible space around your property.</p>
@@ -164,7 +168,9 @@ const WildfireRetrofittingArticle = () => {
                 <div className="space-y-8 my-16">
                   <div className="border-l-4 border-gray-200 pl-6 hover:bg-gray-50 transition-colors">
                     <a href="https://apnews.com/article/oregon-wildfire-hazard-map-45c0335d93632580e07512a276dea7da" 
-                       className="block group">
+                       className="block group"
+                       target="_blank" 
+                       rel="noopener noreferrer">
                       <h3 className="font-serif font-bold text-lg mb-2 text-gray-900 group-hover:text-blue-700">Oregon Pioneers New Wildfire Risk Mapping System</h3>
                       <p className="text-gray-700 text-base mb-2">Oregon becomes the first state to implement a comprehensive wildfire risk assessment system for individual properties, setting a precedent for other states.</p>
                       <span className="text-sm text-gray-500 font-sans">Associated Press • 15 min read</span>
@@ -173,7 +179,9 @@ const WildfireRetrofittingArticle = () => {
 
                   <div className="border-l-4 border-gray-200 pl-6 hover:bg-gray-50 transition-colors">
                     <a href="https://www.architecturaldigest.com/story/los-angeles-fires-have-left-some-residents-desperate-to-protect-their-homes-after-losing-fire-insurance" 
-                       className="block group">
+                       className="block group"
+                       target="_blank" 
+                       rel="noopener noreferrer">
                       <h3 className="font-serif font-bold text-lg mb-2 text-gray-900 group-hover:text-blue-700">LA Residents Face Insurance Challenges Amid Rising Fire Risks</h3>
                       <p className="text-gray-700 text-base mb-2">How Los Angeles homeowners are adapting to new realities of fire protection as insurance companies retreat from high-risk areas.</p>
                       <span className="text-sm text-gray-500 font-sans">Architectural Digest • 8 min read</span>
@@ -182,7 +190,9 @@ const WildfireRetrofittingArticle = () => {
 
                   <div className="border-l-4 border-gray-200 pl-6 hover:bg-gray-50 transition-colors">
                     <a href="https://www.wsj.com/articles/los-angeles-a-testing-ground-for-startups-with-tech-to-defend-against-fires-63c7a5a7" 
-                       className="block group">
+                       className="block group"
+                       target="_blank" 
+                       rel="noopener noreferrer">
                       <h3 className="font-serif font-bold text-lg mb-2 text-gray-900 group-hover:text-blue-700">Tech Startups Pioneer New Fire Defense Solutions</h3>
                       <p className="text-gray-700 text-base mb-2">Innovative companies are developing cutting-edge technologies to protect homes from wildfires, with Los Angeles serving as a key testing ground.</p>
                       <span className="text-sm text-gray-500 font-sans">Wall Street Journal • 12 min read</span>
@@ -197,12 +207,16 @@ const WildfireRetrofittingArticle = () => {
                       <li className="flex items-start">
                         <span className="text-gray-400 mr-2">•</span>
                         <a href="https://www.theatlantic.com/health/archive/2024/08/our-houses-are-fuel-for-fires/679649/" 
-                           className="text-gray-700 hover:text-blue-700">The Atlantic: "Our Houses Are Fuel for Fires"</a>
+                           className="text-gray-700 hover:text-blue-700"
+                           target="_blank" 
+                           rel="noopener noreferrer">The Atlantic: "Our Houses Are Fuel for Fires"</a>
                       </li>
                       <li className="flex items-start">
                         <span className="text-gray-400 mr-2">•</span>
                         <a href="https://www.fire.ca.gov/home-hardening" 
-                           className="text-gray-700 hover:text-blue-700">CAL FIRE: Home Hardening Guidelines</a>
+                           className="text-gray-700 hover:text-blue-700"
+                           target="_blank" 
+                           rel="noopener noreferrer">CAL FIRE: Home Hardening Guidelines</a>
                       </li>
                     </ul>
                   </div>
@@ -212,17 +226,23 @@ const WildfireRetrofittingArticle = () => {
                       <li className="flex items-start">
                         <span className="text-gray-400 mr-2">•</span>
                         <a href="https://readyforwildfire.org/prepare-for-wildfire/hardening-your-home/" 
-                           className="text-gray-700 hover:text-blue-700">Ready For Wildfire: Home Hardening Guide</a>
+                           className="text-gray-700 hover:text-blue-700"
+                           target="_blank" 
+                           rel="noopener noreferrer">Ready For Wildfire: Home Hardening Guide</a>
                       </li>
                       <li className="flex items-start">
                         <span className="text-gray-400 mr-2">•</span>
                         <a href="https://firesafemarin.org/harden-your-home/fire-resistant-soffits-eaves/" 
-                           className="text-gray-700 hover:text-blue-700">Fire Safe Marin: Structural Protection</a>
+                           className="text-gray-700 hover:text-blue-700"
+                           target="_blank" 
+                           rel="noopener noreferrer">Fire Safe Marin: Structural Protection</a>
                       </li>
                       <li className="flex items-start">
                         <span className="text-gray-400 mr-2">•</span>
                         <a href="https://www.thisoldhouse.com/roofing/21018219/fire-resistant-roofing-and-siding" 
-                           className="text-gray-700 hover:text-blue-700">This Old House: Fire-Resistant Materials Guide</a>
+                           className="text-gray-700 hover:text-blue-700"
+                           target="_blank" 
+                           rel="noopener noreferrer">This Old House: Fire-Resistant Materials Guide</a>
                       </li>
                     </ul>
                   </div>
