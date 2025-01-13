@@ -8,9 +8,9 @@ const WildfireRetrofittingArticle = () => {
     <div className="min-h-screen">
       <Header/>
       
-      <div className="pt-32 bg-white">
+      <div className="pt-32 pb-8 bg-white">
         <article className="max-w-screen-2xl mx-auto px-4 lg:px-8">
-          <div className="max-w-[970px] mx-auto mb-16">
+          <div className="max-w-[970px] mx-auto mb-8">
             <div className="mb-4">
               <span className="text-sm font-sans uppercase tracking-wider text-gray-500">Climate & Construction</span>
             </div>
@@ -33,12 +33,20 @@ const WildfireRetrofittingArticle = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8 lg:col-start-3">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Understanding the Threat of Embers</h2>
+                
+                
+                <p className="font-serif text-gray-800 leading-relaxed mt-4">
+                The recent devastation in California has left us all grappling with a pressing question: <b>How can we prevent such destruction in the future?</b> Wildfires, intensified by hurricane-force winds exceeding 100 mph, have demonstrated that embers can travel significant distances, igniting homes far beyond the immediate fire zone. <br/> <br/> As highlighted by fire safety experts in the Los Angeles Times, “Homes don’t burn because they’re engulfed by flames—they burn because embers find weak spots.” (<a href="https://www.theatlantic.com/health/archive/2024/08/our-houses-are-fuel-for-fires/679649/?utm_source=chatgpt.com" className="text-blue-800 hover:underline">The Atlantic</a>) 
+                These weak spots, such as vulnerable vents, combustible roofing, and exposed windows, are what we need to address. In many cases, these fires spread home-to-home through embers, while nearby trees remain intact. This reveals a dangerous cycle: embers ignite homes, homes become fuel, and hurricane winds carry more embers, creating widespread devastation.
+                <br/> <br/>
+                </p>
+                <h2 className="text-2xl font-serif mt-4 font-bold mb-4 text-gray-900">Understanding the Threat of Embers</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
                   Embers, or burning fragments carried by wind, are a leading cause of home ignitions during wildfires. Their ability to penetrate small openings and land on combustible materials makes them particularly dangerous. The <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" className="text-blue-800 hover:underline">National Fire Protection Association (NFPA)</a> emphasizes that addressing these vulnerabilities is crucial for enhancing a home's wildfire resistance.
                 </p>
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Key Retrofitting Strategies</h2>
+                <p className="font-serif text-gray-800 leading-relaxed">Enhancing your home's defenses against embers involves several targeted measures:</p>
                 <div className="bg-gray-50 p-8 my-8 border-l-4 border-gray-300">
                   <ol className="list-decimal pl-6 space-y-6">
                     <li>
@@ -47,7 +55,7 @@ const WildfireRetrofittingArticle = () => {
                     </li>
                     <li>
                       <strong className="text-gray-900 font-serif">Strengthen Roofing, Eave Boards, and Soffits</strong>
-                      <p className="mt-2 text-gray-700">The roof and its perimeter are highly susceptible to ember attacks. Retrofitting with non-combustible roofing materials, such as metal or tile, and ensuring that eaves and overhangs are well-sealed can significantly reduce ignition risks. Additionally, using fire-resistant materials for soffits—the underside of the overhang—provides further protection.</p>
+                      <p className="mt-2 text-gray-700">The roof and its perimeter are highly susceptible to ember attacks. Retrofitting with non-combustible roofing materials, such as metal or cement tile, and ensuring that eaves and overhangs are well-sealed can significantly reduce ignition risks. Additionally, using fire-resistant materials for soffits—the underside of the overhang—provides further protection.</p>
                     </li>
                     <li>
                       <strong className="text-gray-900 font-serif">Use Fire-Resistant Cladding and Exterior Trim</strong>
@@ -55,7 +63,7 @@ const WildfireRetrofittingArticle = () => {
                     </li>
                     <li>
                       <strong className="text-gray-900 font-serif">Seal Gaps and Openings</strong>
-                      <p className="mt-2 text-gray-700">Small gaps around doors, windows, and walls serve as entry points for embers. Applying fire-resistant caulking and weatherstripping can effectively seal these openings.</p>
+                      <p className="mt-2 text-gray-700">Small gaps around doors, windows, walls, eaves, and soffits serve as entry points for embers. Applying fire-resistant caulking and weatherstripping can effectively seal these openings.</p>
                     </li>
                     <li>
                       <strong className="text-gray-900 font-serif">Install Impact-Rated Windows and Doors</strong>
@@ -70,20 +78,29 @@ const WildfireRetrofittingArticle = () => {
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-6 text-gray-900">Why Retrofitting Matters</h2>
                 <p className="font-serif text-gray-700 leading-relaxed">
-                  Hurricane-force winds during California's wildfires have propelled embers miles ahead of the flames, setting homes ablaze well beyond the fire zone. By retrofitting with fire-resistant materials and ember-proof solutions, you're not only safeguarding your property but also contributing to the safety and resilience of your entire community.
+                As noted in the <em>Los Angeles Times</em>, hurricane-force winds during California’s wildfires don’t just spread flames—they amplify embers, propelling them miles ahead of the fire and igniting homes well beyond the fire zone. This explains why some neighborhoods experience total devastation, while nearby natural areas, including trees, remain untouched. Homes that aren’t retrofitted become fuel for the fire, perpetuating this cycle of destruction. Retrofitting with fire-resistant materials and ember-proof solutions safeguards not only your property but also contributes to the safety and resilience of your entire community.
                 </p>
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">My Commitment to Resilient Design</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
-                  As an Architect and Builder, I have dedicated my career to designing disaster-resistant homes for hurricanes and other extreme conditions. While I have not yet designed a home specifically to withstand wildfires, I have conducted extensive research on fire-resistant materials and construction techniques. My goal is to apply my expertise in resilient design to develop homes that not only withstand wildfires but also mitigate their spread. I am currently pitching this concept to investors to begin testing and implementing these fireproof solutions, ensuring communities are better protected in the future.
+                As an <b>Architect and Builder</b>, I’ve dedicated my career to designing homes and buildings that can withstand hurricanes and other extreme conditions. My work in Florida’s High Velocity Hurricane Zone (HVHZ) has given me firsthand experience with disaster-resistant design, from implementing impact-rated windows and hurricane-proof roofing to integrating non-combustible materials for maximum resilience.
+                <br/> <br/>
+                Over the past few years, I’ve expanded my expertise by conducting extensive research on fire-resistant materials and construction techniques. Wildfires pose a unique challenge, but the principles of resilient design—protection against external forces, mitigation of vulnerabilities, and community-wide safety—remain the same.
+                <br/> <br/>
+                My goal is to apply what I’ve learned to develop homes that not only withstand wildfires but also help mitigate their spread. This includes integrating innovative materials like radiant heat barriers, ember-resistant vents, and fire-rated structural elements, alongside thoughtful design strategies like defensible spaces and fire-shutter-protected utility areas.
+                <br/> <br/>
+                I’m currently pitching this concept to investors, aiming to test and refine these fireproof solutions. The goal is to implement proven strategies on a larger scale, offering homeowners a way to protect what matters most while also contributing to the safety and sustainability of entire communities.
+                <br/> <br/>
+                By combining my experience in hurricane-resilient architecture with cutting-edge fire-resistant technologies, I’m committed to creating homes that redefine what it means to be safe and prepared for the challenges of tomorrow.
                 </p>
 
                 <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Conclusion</h2>
                 <p className="font-serif text-gray-800 leading-relaxed">
                   Retrofitting isn't just about compliance—it's about building resilience. By taking proactive measures to fortify your home against embers, you play a vital role in enhancing community safety and preventing future wildfire devastation.
                 </p>
-
-                <h2 className="text-2xl font-serif font-bold mt-12 mb-4 text-gray-900">Additional Resources</h2>
+                <br/>
+                <p className="font-serif text-gray-800 leading-relaxed">For more detailed guidance on retrofitting and wildfire preparedness, consider consulting resources from the <em>National Fire Protection Association and CAL FIRE</em>:</p>
+          
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
                   <div className="border border-gray-200 bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                     <a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2023/10/16/retrofitting-homes-for-wildfire" 
@@ -107,8 +124,9 @@ const WildfireRetrofittingArticle = () => {
                     </a>
                   </div>
                 </div>
-
-                <h2 className="text-2xl font-serif font-bold mt-12 mb-6 text-gray-900">Recent Developments</h2>
+                
+                <p className="font-serif text-gray-800 leading-relaxed">By implementing these strategies and utilizing available resources, we can work together to create safer, more resilient communities in the face of wildfire threats.</p>
+                <h2 className="text-2xl font-serif font-bold mt-20 mb-6 text-gray-900">Recent Developments in Wildfire Home Protection</h2>
                 <div className="space-y-8 my-16">
                   <div className="border-l-4 border-gray-200 pl-6 hover:bg-gray-50 transition-colors">
                     <a href="https://apnews.com/article/oregon-wildfire-hazard-map-45c0335d93632580e07512a276dea7da" 
