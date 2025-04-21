@@ -7,10 +7,9 @@ const navigation = [
     
     { name: 'About', href: 'about' },
     { name: 'Contact', href: 'contact' },
-    { name: 'News & Insights', href: '/news-insights' }, 
+    { name: 'News & Articles', href: '/news-articles' }, 
     { name: 'Inspections & Repairs', href: '/inspections-and-repairs' },
     { name: 'Architecture & Builds', href: '/architecture-and-builds' },
-    { name: 'Wildfire Article', href: '/articles/wildfire-retrofitting' },
 ]
 
 export default function Header() {

@@ -34,7 +34,7 @@ export default function NewsInsights() {
         <div className="py-32 sm:py-20 lg:py-20 flex justify-center items-center" data-aos="fade-up">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl pt-0" style={{ color: '#F2F4E6' }}>
-              News & Insights
+              News & Articles
             </h1>
 
             {/* Destination Miami */}
@@ -78,21 +78,47 @@ export default function NewsInsights() {
               </div>
             </div>
 
+            
+
             <div className="grid grid-cols-3 gap-8 items-center">
+
+            {/* Retrofitting Homes to Stop Embers in Their Tracks: Lessons from California's Wildfires */}
+            <div className="flex justify-center items-center flex-col gap-8 mt-20">
+                <img
+                  className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
+                  src="/aerial-devastation-view.jpeg"
+                  alt="Aerial Devastation View"
+                  onClick={() => window.location.href = '/articles/wildfire-retrofitting'}
+                />
+                <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
+                  <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Retrofitting Homes to Stop Embers in Their Tracks: Lessons from California's Wildfires</p>
+
+                  <div className="">
+                    <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
+                      <a href="/articles/wildfire-retrofitting" className="flex flex-row gap-2">
+                        <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
+                        <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               {/* Fire Resistant Homes */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
                 <img
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/construction.jpg"
                   alt="Fire Resistant Homes"
-                  onClick={() => window.location.href = '/build-to-resist-wildfires'}
+                  onClick={() => window.location.href = '/articles/build-to-resist-wildfires'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Can We Build to Resist Extreme Wildfires & Fire Tornadoes?</p>
 
                   <div className="">
                     <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
-                      <a href="/build-to-resist-wildfires" className="flex flex-row gap-2">
+                      <a href="/articles/build-to-resist-wildfires" className="flex flex-row gap-2">
                         <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
                         <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
                       </a>
@@ -107,14 +133,14 @@ export default function NewsInsights() {
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/FireSameHomeBuild.jpg"
                   alt="Build to Defy Nature’s Fury – A Home that Stands Strong in the High Velocity Hurricane Zone (HVHZ)"
-                  onClick={() => window.location.href = '/a-home-built-to-endure-hvhz'}
+                  onClick={() => window.location.href = '/articles/a-home-built-to-endure-hvhz'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Engineered for Extremes – A Home Built to Endure HVHZ</p>
 
                   <div className="">
                     <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
-                      <a href="/a-home-built-to-endure-hvhz" className="flex flex-row gap-2">
+                      <a href="/articles/a-home-built-to-endure-hvhz" className="flex flex-row gap-2">
                         <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
                         <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
                       </a>
@@ -129,14 +155,14 @@ export default function NewsInsights() {
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/BuildingMaintenance.png"
                   alt="Building Maintenance"
-                  onClick={() => window.location.href = '/importance-of-building-maintenance'}
+                  onClick={() => window.location.href = '/articles/importance-of-building-maintenance'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl leading-6 text-gray-200 lg:self-start text-center lg:text-left">Building Maintenance - Key to Safe Structures</p>
 
                   <div className="">
                     <div className="flex flex-row items-start mt-4 gap-2 mx-auto">
-                      <a href="/importance-of-building-maintenance" className="flex flex-row gap-2">
+                      <a href="/articles/importance-of-building-maintenance" className="flex flex-row gap-2">
                         <p className="text-white text-md leading-6 italic underline text-[#936F27] hover:text-[#8E784D] transition-all duration-300 cursor-pointer">Read More </p>
                         <FontAwesomeIcon icon={faSquareUpRight} className="text-[#936F27] text-2xl hover:text-[#8E784D] transition-all duration-300 cursor-pointer" />
                       </a>
@@ -144,6 +170,8 @@ export default function NewsInsights() {
                   </div>
                 </div>
               </div>
+
+              
             </div>
           </div>
         </div>
