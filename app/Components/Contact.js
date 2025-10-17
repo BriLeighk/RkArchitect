@@ -1,14 +1,16 @@
 import { useEffect, useRef } from 'react';
 import 'aos/dist/aos.css';
-import emailjs from 'emailjs-com';
 import { useState } from 'react';
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './Footer';
+import Script from 'next/script';
 
 export default function Contacts() {
     const [message, setMessage] = useState("");
     const [inquiryType, setInquiryType] = useState(""); // Set initial state to an empty string
+    const [honeypot, setHoneypot] = useState(""); // Honeypot field
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     useEffect(() => {
       if (message) {
@@ -19,8 +21,20 @@ export default function Contacts() {
       }
     }, [message]);
   
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
+      
+      // Honeypot check - if filled, it's likely a bot
+      if (honeypot) {
+        console.log('Bot detected via honeypot');
+        setMessage("Message sent"); // Fake success to fool bots
+        event.target.reset();
+        return;
+      }
+
+      if (isSubmitting) return;
+      setIsSubmitting(true);
+
       const form = event.target;
       const name = form.name.value;
       const email = form.email.value;
@@ -29,35 +43,64 @@ export default function Contacts() {
       // Check if the message length is greater than 0
       if (userMessage.length === 0) {
         setMessage("Message cannot be empty.");
+        setIsSubmitting(false);
         return;
       }
 
-      const templateParams = {
-        from_name: name,
-        from_email: email,
-        message: userMessage,
-        subject: inquiryType, // Pass inquiry type as subject
-      };
+      // Get reCAPTCHA token
+      if (!window.grecaptcha) {
+        setMessage("reCAPTCHA not loaded. Please refresh the page.");
+        setIsSubmitting(false);
+        return;
+      }
 
-      emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setMessage("Message sent");
-        form.reset(); // Clear the form
-      }, (error) => {
-        console.log('FAILED...', error);
-        setMessage("Message failed to send. Try again later.");
-      });
+      try {
+        const token = await window.grecaptcha.execute(
+          process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+          { action: 'submit_contact' }
+        );
+
+        // Send to API route for server-side processing
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message: userMessage,
+            inquiryType,
+            recaptchaToken: token,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setMessage("Message sent successfully!");
+          form.reset();
+          setInquiryType("");
+        } else {
+          setMessage(data.error || "Failed to send message. Please try again.");
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        setMessage("An error occurred. Please try again later.");
+      } finally {
+        setIsSubmitting(false);
+      }
     };
 
 
   return (
     <div className="">
+      {/* Load reCAPTCHA v3 */}
+      <Script
+        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+        strategy="lazyOnload"
+      />
+      
       <div className=" relative isolate overflow-hidden">
         
         
@@ -116,6 +159,20 @@ export default function Contacts() {
             <div className="p-8 mx-4 lg:mx-10 mb-12 bg-[#1E1412] shadow-lg shadow-black rounded-sm my-auto w-full">
             
             <form className="space-y-6" onSubmit={handleSubmit}>
+              {/* Honeypot field - hidden from real users */}
+              <div style={{ position: 'absolute', left: '-9999px' }} aria-hidden="true">
+                <label htmlFor="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                  tabIndex="-1"
+                  autoComplete="off"
+                />
+              </div>
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300">Full Name</label>
                 <input type="text" id="name" name="name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black" required />
@@ -139,7 +196,13 @@ export default function Contacts() {
                 <textarea id="message" name="message" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-24 shadow-lg shadow-black" required></textarea>
               </div>
               <div >
-                <button type="submit" className="w-full py-2 px-4 text-white rounded-md border-2 border-[#8E784D] hover:border-[#1E1412] hover:bg-[#8E784D] hover:text-[#1E1412] hover:font-bold transition-all duration-300 mt-10">Send</button>
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className={`w-full py-2 px-4 text-white rounded-md border-2 border-[#8E784D] hover:border-[#1E1412] hover:bg-[#8E784D] hover:text-[#1E1412] hover:font-bold transition-all duration-300 mt-10 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send'}
+                </button>
               </div>
             </form>
             {message && <p className="mt-4 text-sm text-gray-300 transition-opacity duration-1000 ease-out">{message}</p>}
