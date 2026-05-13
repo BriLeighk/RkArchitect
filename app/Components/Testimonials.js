@@ -45,7 +45,7 @@ export default function Testimonials() {
     <section className="relative isolate py-10 sm:py-24">
       <div className="mx-auto p-6 mx-6 lg:mx-14">
         <div className="relative mb-20">
-          <h1 className="text-left p-2 text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">What My Clients <br /> Are Saying</h1>
+          <h2 className="text-left p-2 text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">What My Clients <br /> Are Saying</h2>
           <div className="absolute -top-6 -left-4 lg:-top-8 lg:-left-8 bg-[#8E784D] text-white rounded-full h-12 w-12 lg:h-16 lg:w-16 flex items-center justify-center -z-10">
             <FontAwesomeIcon icon={faQuoteRight} />
           </div>

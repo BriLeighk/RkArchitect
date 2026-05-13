@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 
 export default function AboutSection() {
   const videoRef = useRef(null);
@@ -21,7 +22,7 @@ export default function AboutSection() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:grid lg:w-full lg:max-w-none lg:pl-20 lg:grid-cols-2 mx-auto">
           <div className="">
             <div className="">
-              <h1 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">About Me</h1>
+              <h2 className="text-3xl font-bold tracking-tight text-[#F2F4E6] sm:text-4xl">About Me</h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
               My journey to becoming an architect began in the 7th grade. I always knew I wanted to design buildings that not only stand strong but also inspire. After a challenging college application process, I was accepted into the Architecture School at Auburn University, where I earned my professional degree after 7 years of study.
                 <br /> <br />
@@ -37,7 +38,14 @@ export default function AboutSection() {
         </div>
       
         <div className="lg:sticky lg:top-32 lg:col-start-2 lg:row-span-2 lg:row-start-1 flex-col w-full flex justify-center items-center" data-aos="fade-up">
-            <img src="/profile-image.png" alt="Profile of Robert Kirchgessner" className="w-[240px] sm:w-[300px] h-full object-cover rounded-sm shadow-lg shadow-black border-2 border-[#8E784D]" />
+            <Image
+              src="/profile-image.png"
+              alt="Portrait of Robert Kirchgessner, architect and builder at RK Architect, P.A."
+              width={600}
+              height={750}
+              sizes="(max-width: 640px) 240px, 300px"
+              className="w-[240px] sm:w-[300px] h-full object-cover rounded-sm shadow-lg shadow-black border-2 border-[#8E784D]"
+            />
             <p className="text-white text-2xl sm:text-4xl font-bold mt-4">Robert Kirchgessner</p>
             <p className="text-gray-300 text-xl sm:text-3xl">Architect | Builder</p>
             <div className="flex flex-col text-left mt-8">

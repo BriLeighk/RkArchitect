@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -31,11 +31,6 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
 
   return (
     <div className="">
-      <Head>
-        <title>ChenMed Primary Care Medical Centers | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Explore the ChenMed Primary Care Medical Centers Designed by RK Architect, PA. Precision, compliance, and accessibility in healthcare design." />
-      </Head>
-
       <Header />
 
       {/* Hero Section */}
@@ -48,7 +43,14 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
               ChenMed Primary Care Medical Centers - Intune Small Medical Center
             </h1>
             <em className="text-xl font-bold">Precision, Compliance, and Accessibility</em>
-            <img src="/chenmed-intune.jpg" alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <Image
+              src="/chenmed-intune.jpg"
+              alt="ChenMed Intune medical center by RK Architect, P.A."
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10"
+            />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Designing medical centers requires meticulous attention to detail, especially given the stringent code requirements for healthcare facilities. In this project, precision and accuracy were essential to ensure full compliance with the numerous regulations governing medical offices.</h4>
@@ -70,10 +72,13 @@ export default function ChenMedPrimaryCareMedicalCentersIntune() {
                   columnClassName="my-masonry-grid_column"
                 >
                   {imageUrls.map((url, index) => (
-                    <img
-                      key={index}
+                    <Image
+                      key={url}
                       src={url}
-                      alt={`ChenMed Intune Image ${index + 1} - architecture, architect, safety inspections`}
+                      alt={`ChenMed Intune project photo ${index + 1} by RK Architect, P.A.`}
+                      width={1200}
+                      height={900}
+                      sizes="(max-width: 700px) 33vw, (max-width: 1100px) 33vw, 25vw"
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

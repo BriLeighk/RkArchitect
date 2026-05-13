@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../../firebase'; // Adjust the path as necessary
-import Head from 'next/head'; // Import Head for SEO
+import { auth } from '../../firebase';
 
 export default function SubmitTestimonial() {
   const [name, setName] = useState('');
@@ -61,10 +60,6 @@ export default function SubmitTestimonial() {
 
   return (
     <div className="">
-      <Head>
-        <title>Submit Feedback | Florida Architect & Builder | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Submit your feedback and testimonials for RK Architect, PA & RK Builders. We value your input to enhance our architecture and building services in Florida." />
-      </Head>
       <Header />
       <main className="flex-grow pt-32">
         <section className="bg-[#1E1412] p-10 relative isolate overflow-hidden max-w-4xl py-0 shadow-lg shadow-[#140D0C] rounded-lg mx-auto m-8">
@@ -77,6 +72,9 @@ export default function SubmitTestimonial() {
                 <p className='text-xs text-gray-300 text-left'>Please provide your name.</p>
                 <input
                   type="text"
+                  id="feedback-name"
+                  name="name"
+                  autoComplete="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
@@ -88,6 +86,9 @@ export default function SubmitTestimonial() {
                 <p className='text-xs text-gray-300 text-left'>Please provide the location where the project was completed (City, State).</p>
                 <input
                   type="text"
+                  id="feedback-location"
+                  name="location"
+                  autoComplete="off"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
@@ -98,6 +99,9 @@ export default function SubmitTestimonial() {
                 <label className="block text-sm text-white">Feedback</label>
                 <p className='text-xs text-gray-300 text-left'>It was a pleasure working with you. Please share your thoughts on my work.</p>
                 <textarea
+                  id="feedback-text"
+                  name="message"
+                  autoComplete="off"
                   value={text}
                   onChange={(e) => setText(e.target.value.slice(0, maxTextLength))}
                   className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black"
@@ -118,6 +122,7 @@ export default function SubmitTestimonial() {
                           type="radio"
                           id={`star${star}`}
                           name="rate"
+                          autoComplete="off"
                           value={star}
                           checked={rating === star}
                           onChange={() => setRating(star)}
@@ -139,6 +144,7 @@ export default function SubmitTestimonial() {
                 <label className="container max-w-4">
                   <input
                     type="checkbox"
+                    autoComplete="off"
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
                   />

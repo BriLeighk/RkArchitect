@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -44,7 +44,14 @@ export default function CourtyardHome() {
                 Johnny's Hungry Hoagies - Restaurant Design
               </h1>
               <h2 className="text-xl font-bold">Efficiency, Safety, and Client-Driven Solutions</h2>
-              <img src="/jhh.jpg" alt="Custom Restuarant Design for Johnny's Hungry Hoagies -  by  RK Architect and Builder - architecture, architect, multifamily building due-diligence inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+              <Image
+                src="/jhh.jpg"
+                alt="Johnny's Hungry Hoagies restaurant design by RK Architect, P.A."
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 672px"
+                className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10"
+              />
             
               <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
                 <h4 className=" text-lg mt-10 text-white">
@@ -65,10 +72,13 @@ export default function CourtyardHome() {
                     columnClassName="my-masonry-grid_column"
                   >
                     {imageUrls.map((url, index) => (
-                      <img
-                        key={index}
+                      <Image
+                        key={url}
                         src={url}
-                        alt={`Architect and Builder Image ${index + 1} - architecture, architect, 40-50 year building safety inspections`}
+                        alt={`Johnny's Hungry Hoagies project photo ${index + 1} by RK Architect, P.A.`}
+                        width={1200}
+                        height={900}
+                        sizes="(max-width: 700px) 33vw, 25vw"
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index);

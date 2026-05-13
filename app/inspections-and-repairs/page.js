@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,11 +8,6 @@ import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 export default function InspectionsAndRepairs() {
   return (
     <div className="">
-      <Head>
-        <title>Inspections and Repairs | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Comprehensive inspections and repair solutions for multifamily buildings. Ensure safety, compliance, and investment security." />
-      </Head>
-
       <Header />
 
 
@@ -47,12 +42,15 @@ export default function InspectionsAndRepairs() {
 
               {/* Inspection & Repair MF Building */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <img 
+                  <Image
+                      width={800}
+                      height={600}
+                      sizes="(max-width: 768px) 90vw, 384px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                       src="/InspectionAndRepairMF.jpg"
-                      alt="Inspection and Repair Project of Multifamily Building - architecture, architect, safety inspections"
+                      alt="Inspection and repair project of a multifamily building by RK Architect, P.A."
                       onClick={() => window.location.href = '/inspection-repair-project-multifamily'}
-                  ></img>
+                  />
                   <div className="flex flex-col items-start align-top h-[100px] max-w-sm">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 self-start text-left">Inspection & Repair of Multifamily Building</p>
                       
@@ -72,12 +70,15 @@ export default function InspectionsAndRepairs() {
 
               {/* Sun & Lake MF Repair */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                  <img 
+                  <Image
+                      width={800}
+                      height={600}
+                      sizes="(max-width: 768px) 90vw, 384px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                       src="/SunAndLakeMF.jpg"
-                      alt="Sun & Lake Multifamily Inspection & Repair - architecture, architect, multifamily building due-diligence inspections"
+                      alt="Sun and Lake multifamily inspection and repair by RK Architect, P.A."
                       onClick={() => window.location.href = '/sun-and-lake-multifamily-inspection-repair'}
-                  ></img>
+                  />
                   <div className="flex flex-col items-start align-top h-[100px] max-w-sm">
                       <p className="text-lg sm:text-xl leading-6 text-gray-200 self-start text-left">Sun & Lake Multifamily Inspection & Repair</p>
                       

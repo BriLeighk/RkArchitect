@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -31,11 +31,6 @@ export default function BocaHouse() {
 
   return (
     <div className="">
-      <Head>
-        <title>Boca Raton House Build | Florida Architect & Disaster-Resistant Homes</title>
-        <meta name="description" content="Explore the Boca Raton House Build by RK Architect, PA & RK Builders, specializing in disaster-resistant homes and construction accuracy in Florida." />
-      </Head>
-
       <Header />
 
       {/* Hero Section */}
@@ -48,7 +43,14 @@ export default function BocaHouse() {
               Boca Raton House Build
             </h1>
             <em className="text-xl font-bold">Ensuring Construction Accuracy</em>
-            <img src="/house3.jpg" alt="Boca Raton House Build - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <Image
+              src="/house3.jpg"
+              alt="Boca Raton House Build by RK Architect, P.A. and RK Builders — disaster-resistant coastal home"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10"
+            />
         
             <div className="mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className="text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> As the builder for this project, I maintained construction accuracy throughout every phase. From the foundation to the finishing touches, attention to detail and adherence to precise construction standards were key in delivering a home that meets the highest levels of quality and craftsmanship.</h4>
@@ -67,10 +69,13 @@ export default function BocaHouse() {
                   columnClassName="my-masonry-grid_column"
                 >
                   {imageUrls.map((url, index) => (
-                    <img
-                      key={index}
+                    <Image
+                      key={url}
                       src={url}
-                      alt={`Boca Raton House Image ${index + 1} - architecture, architect, safety inspections`}
+                      alt={`Boca Raton House project photo ${index + 1} by RK Architect, P.A.`}
+                      width={1200}
+                      height={900}
+                      sizes="(max-width: 700px) 33vw, (max-width: 1100px) 33vw, 25vw"
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

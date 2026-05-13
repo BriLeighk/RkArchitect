@@ -26,6 +26,23 @@ body {
   }
 }
 
+@keyframes heroZoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* reCAPTCHA v3 badge — keep verification; badge hidden per site design (disclosure in contact form). */
+.grecaptcha-badge {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 
 
 

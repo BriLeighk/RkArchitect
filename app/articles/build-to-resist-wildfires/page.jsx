@@ -40,7 +40,7 @@ const BuildToResistWildfiresArticle = () => {
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-sm text-gray-500 mt-2 italic">
-                  Modern construction techniques and materials can help homes withstand extreme wildfires and fire tornadoes. Credit: RK Architect
+                  Modern construction techniques and materials can help homes withstand extreme wildfires and fire tornadoes. Credit: RK Architect, P.A.
                 </p>
               </div>
 
@@ -112,7 +112,7 @@ const BuildToResistWildfiresArticle = () => {
                     className="w-full h-auto rounded-lg"
                   />
                   <p className="text-sm text-gray-500 mt-2 italic">
-                    A home designed and built to withstand extreme wildfires and fire tornadoes. Credit: RK Architect
+                    A home designed and built to withstand extreme wildfires and fire tornadoes. Credit: RK Architect, P.A.
                   </p>
                 </div>
 

@@ -1,16 +1,11 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
 export default function ArchitectureAndBuilds() {
   return (
     <div className="">
-      <Head>
-        <title>Architecture & Builds | Multifamily & Custom Homes | Florida Architect</title>
-        <meta name="description" content="Explore our portfolio of architecture and builds, including multifamily buildings, commercial spaces, and custom homes by RK Architect, PA & RK Builders." />
-      </Head>
-
       <Header />
 
       {/* Hero Section */}
@@ -49,7 +44,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 1100 Courtyard Home */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/1100-courtyard-home">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/hero-image.png"
                       alt="1100 Courtyard Home"
@@ -64,7 +62,10 @@ export default function ArchitectureAndBuilds() {
                 {/* ChenMed Intune Small Medical Center */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/chenmed-primary-care-medical-centers-intune">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-intune.jpg"
                       alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections"
@@ -79,7 +80,10 @@ export default function ArchitectureAndBuilds() {
                 {/* ChenMed Majorca Medical Center */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-20">
                   <a href="/chenmed-primary-care-medical-centers-majorca">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-majorca.jpg"
                       alt="ChenMed Center - Majorca Medical Center - architecture, architect, safety inspections"
@@ -94,7 +98,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 1130 Ongoing Project */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/1130-ongoing-project">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1130home.jpg"
                       alt="1130 Home Design - architecture, architect, disaster resistant homes"
@@ -109,7 +116,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 240 Codrington Ave */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/240-codrington-ave">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/240house.jpg"
                       alt="240 Codrington Ave - architecture, architect, multifamily building due-diligence inspections"
@@ -124,7 +134,10 @@ export default function ArchitectureAndBuilds() {
                 {/* Large Hotel Resort */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/islands-hotel-resort">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/islands-hotel-resort.jpg"
                       alt="Island Hotel Resort - architecture, architect, 40-50 year building safety inspections"
@@ -139,7 +152,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 830 Boca House */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/830-boca-house">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/house3.jpg"
                       alt="830 Boca Raton House - architecture, architect, safety inspections"
@@ -154,7 +170,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 1036 Jefferson House */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/1036-jefferson-house">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1036-jefferson-house.jpg"
                       alt="1036 Jefferson House - architecture, architect, disaster resistant homes"
@@ -169,7 +188,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 42 NE 96th Street - Miami Renovation Home */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/42-ne-miami-renovation-house">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/ne-miami-renovation-home.jpg"
                       alt="42 NE Miami Renovation Home - architecture, architect, multifamily building due-diligence inspections"
@@ -185,7 +207,10 @@ export default function ArchitectureAndBuilds() {
                 {/* Johnny's Hungry Hoagies */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/johnnys-hungry-hoagies">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/jhh.jpg"
                       alt="Johnny's Hungry Hoagies Restaurant Design - architecture, architect, multifamily building due-diligence inspections"
@@ -201,7 +226,10 @@ export default function ArchitectureAndBuilds() {
                 {/* 5309 - Ground Up Build */}
                 <div className="flex justify-center items-center flex-col gap-8 mt-10">
                   <a href="/5309-ground-up-build">
-                    <img 
+                    <Image
+                      width={640}
+                      height={400}
+                      sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/5309.jpg"
                       alt="Ground Up Construction Build - Contractor - architecture, architect, multifamily building due-diligence inspections"

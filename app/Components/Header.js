@@ -1,6 +1,7 @@
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 // Navigation bar
 const navigation = [
@@ -61,11 +62,15 @@ export default function Header() {
             <nav aria-label="Global" className="flex items-center justify-between px-4 py-0">
                 <div className="">
                     <a href="/" className="-m-0.5 p-0.5">
-                        <span className="sr-only">RK Architect, PA | RK Builders, Inc.</span>
-                        <img
-                            alt="RK Architect Logo"
+                        <span className="sr-only">RK Architect, P.A. | RK Builders, Inc.</span>
+                        <Image
+                            alt="RK Architect, P.A. logo"
                             src="/rk-architect-logo.jpg"
+                            width={200}
+                            height={80}
+                            sizes="(max-width: 768px) 160px, 180px"
                             className="h-16 sm:h-16 md:h-16 w-auto"
+                            priority
                         />
                     </a>
                 </div>
@@ -97,11 +102,15 @@ export default function Header() {
                 <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#1E1412] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="/" className="-m-1.5 p-1.5">
-                            <span className="sr-only">RK Architect, PA | RK Builders, Inc.</span>
-                            <img
-                                alt="RK Architect Logo"
+                            <span className="sr-only">RK Architect, P.A. | RK Builders, Inc.</span>
+                            <Image
+                                alt="RK Architect, P.A. logo"
                                 src="/rk-architect-logo.jpg"
+                                width={200}
+                                height={80}
+                                sizes="(max-width: 768px) 160px, 200px"
                                 className="h-14 sm:h-16 md:h-20 w-auto"
+                                priority
                             />
                         </a>
                         <button

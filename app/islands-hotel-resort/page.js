@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -10,7 +11,6 @@ import 'react-18-image-lightbox/style.css';
 import { IoIosArrowRoundBack } from "react-icons/io";
 import Masonry from 'react-masonry-css';
 import '../page.css'; // Ensure this path is correct
-import Head from 'next/head';
 
 export default function IslandsHotelResort() {
   const [imageUrls, setImageUrls] = useState([]);
@@ -31,11 +31,6 @@ export default function IslandsHotelResort() {
 
   return (
     <div className="">
-      <Head>
-        <title>Islands Hotel Resort | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Explore the Islands Hotel Resort by RK Architect, PA & RK Builders. Earthquake-ready and hurricane-resistant design." />
-      </Head>
-
       <Header />
       <div className="relative isolate px-6 pt-20 lg:px-8">
         
@@ -45,7 +40,14 @@ export default function IslandsHotelResort() {
               Islands Hotel Resort
             </h1>
             <em className="text-xl font-bold"> Earthquake-Ready and Hurricane-Resistant Design</em>
-            <img src="/islands-hotel-resort.jpg" alt="Island Hotel Resort - architecture, architect, disaster resistant homes" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <Image
+              src="/islands-hotel-resort.jpg"
+              alt="Islands Hotel Resort by RK Architect, P.A. and RK Builders"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10"
+            />
         
             <div className=" mx-auto max-w-3xl grid grid-row-2 justify-center items-center">
               <h4 className=" text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> This large hotel resort was built using custom forms and earthquake pin connections, designed to withstand the forces of zone 2 earthquakes and 175 mph hurricane winds. The project’s structural integrity was a top priority, ensuring the resort is prepared for both seismic activity and extreme weather conditions.</h4>
@@ -67,10 +69,13 @@ export default function IslandsHotelResort() {
                   columnClassName="my-masonry-grid_column"
                 >
                   {imageUrls.map((url, index) => (
-                    <img
-                      key={index}
+                    <Image
+                      key={url}
                       src={url}
-                      alt={`Island Hotel Resort Image ${index + 1} - architecture, architect, safety inspections`}
+                      alt={`Islands Hotel Resort project photo ${index + 1} by RK Architect, P.A.`}
+                      width={1200}
+                      height={900}
+                      sizes="(max-width: 700px) 33vw, (max-width: 1100px) 33vw, 25vw"
                       className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                       onClick={() => {
                         setPhotoIndex(index);

@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import { useState } from 'react';
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './Footer';
 import Script from 'next/script';
+import { getContactMailtoHref } from '../lib/contact-email';
 
 export default function Contacts() {
     const [message, setMessage] = useState("");
@@ -117,32 +118,39 @@ export default function Contacts() {
                   <div className="flex flex-col gap-4 md:gap-2 text-left mb-10 justify-center my-auto md:justify-start">
                     <div className="flex flex-row gap-2 text-left">
                         <FontAwesomeIcon icon={faHome} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
-                        <a 
-                          href="https://www.google.com/maps?q=500+E+Broward+Blvd,+Suite+1710,+Fort+Lauderdale,+FL+33394" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href="https://www.google.com/maps?q=500+E+Broward+Blvd,+Suite+900,+Fort+Lauderdale,+FL+33394"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-xs sm:text-sm leading-6 text-gray-300 hover:text-[#8E784D] transition-all duration-300"
                         >
-                          500 E Broward Blvd, <br /> Suite 1710, Fort <br /> Lauderdale, FL 33394
+                          500 E Broward Blvd, <br /> Suite 900, Fort <br /> Lauderdale, FL 33394
                         </a>
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
                       <FontAwesomeIcon icon={faPhone} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
-                      <p href="tel:+15619805271" className="text-xs sm:text-sm leading-6 text-white hover:text-[#8E784D] cursor-pointer transition-all duration-300">
+                      <a
+                        href="tel:+18773902394"
+                        className="text-xs sm:text-sm leading-6 text-white hover:text-[#8E784D] transition-all duration-300"
+                      >
                         +1 (877) 390-2394
-                      </p>
+                      </a>
                     </div>
 
                     <div className="flex flex-row items-center gap-2">
                       <FontAwesomeIcon icon={faEnvelope} className="text-xs sm:text-sm md:text-md lg:text-lg text-[#8E784D]" />
-                      <p href="mailto:rkarchitect24@gmail.com" className="text-xs sm:text-sm leading-6 text-gray-300 hover:text-[#8E784D] cursor-pointer transition-all duration-300">
-                        rkarchitect24@gmail.com
-                      </p>
+                      <a
+                        href={getContactMailtoHref()}
+                        className="text-xs sm:text-sm leading-6 text-gray-300 hover:text-[#8E784D] transition-all duration-300 border border-[#8E784D]/40 rounded px-3 py-1"
+                      >
+                        Email us
+                      </a>
                     </div>
                   </div>
                   <div className="col-span-2 mx-auto md:mx-0">
                       <iframe
+                        title="RK Architect, P.A. office location in Fort Lauderdale"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.563123456789!2d-80.137317684935!3d26.122438983471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0b0b0b0b0b0b!2s500%20E%20Broward%20Blvd%2C%20Fort%20Lauderdale%2C%20FL%2033394%2C%20USA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus"
                         allowFullScreen=""
                         loading="lazy"
@@ -175,15 +183,37 @@ export default function Contacts() {
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300">Full Name</label>
-                <input type="text" id="name" name="name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autoComplete="name"
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black"
+                  required
+                />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
-                <input type="email" id="email" name="email" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autoComplete="email"
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black"
+                  required
+                />
               </div>
               <div>
                 <label htmlFor="inquiry" className="block text-sm font-medium text-gray-300">General Inquiry</label>
-                <select id="inquiry" name="inquiry" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black" value={inquiryType} onChange={(e) => setInquiryType(e.target.value)} required>
+                <select
+                  id="inquiry"
+                  name="inquiry"
+                  autoComplete="off"
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-8 shadow-lg shadow-black"
+                  value={inquiryType}
+                  onChange={(e) => setInquiryType(e.target.value)}
+                  required
+                >
                   <option value="" disabled>Please Select</option> 
                   <option value="Architecture">Architecture</option>
                   <option value="Construction">Construction/Building</option>
@@ -193,9 +223,36 @@ export default function Contacts() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300">Message</label>
-                <textarea id="message" name="message" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-24 shadow-lg shadow-black" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  autoComplete="off"
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm text-gray-900 pl-2 h-24 shadow-lg shadow-black"
+                  required
+                ></textarea>
               </div>
               <div >
+                <p className="text-xs text-gray-500 mt-6">
+                  This site is protected by reCAPTCHA; the Google{" "}
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-[#8E784D] hover:text-[#936F27]"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://policies.google.com/terms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-[#8E784D] hover:text-[#936F27]"
+                  >
+                    Terms of Service
+                  </a>{" "}
+                  apply.
+                </p>
                 <button 
                   type="submit" 
                   disabled={isSubmitting}

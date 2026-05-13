@@ -1,19 +1,13 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
-import { Transition } from '@headlessui/react';
 
 export default function NewsInsights() {
   return (
     <div className="">
-      <Head>
-        <title>Architecture News & Insights | Safety Inspections & Disaster-Resistant Homes</title>
-        <meta name="description" content="Stay informed with RK Architect, PA & RK Builders' latest news on architecture, safety inspections, and disaster-resistant home designs." />
-      </Head>
-
       <Header />
 
       {/* Hero Section */}
@@ -55,14 +49,14 @@ export default function NewsInsights() {
 
                   <div className="flex flex-col items-start mt-6">
                     <div className="flex flex-row items-center">
-                      <img src="/CBS4.png" alt="CBS Miami Airing" className="w-16 h-auto text-white mx-auto" />
+                      <Image src="/CBS4.png" alt="CBS Miami logo" width={64} height={64} sizes="64px" className="w-16 h-auto text-white mx-auto" />
                       <div className="flex flex-col pl-4">
                         <p className="text-lg leading-6 text-gray-100 text-left">WFOR Ch. 4 (CBS - Miami)</p>
                         <p className="text-sm leading-6 text-gray-300 text-left">Saturday, April 29th, 2023 @ 12:30 pm EST</p>
                       </div>
                     </div>
                     <div className="flex flex-row items-center mt-4">
-                      <img src="/igtv.png" alt="IGTV Airing" className="w-16 h-auto text-white mx-auto" />
+                      <Image src="/igtv.png" alt="IGTV logo" width={64} height={64} sizes="64px" className="w-16 h-auto text-white mx-auto" />
                       <div className="flex flex-col pl-4">
                         <p className="text-lg leading-6 text-gray-100 text-left">IGTV: Thursday</p>
                         <p className="text-sm leading-6 text-gray-300 text-left">May 4th on @interiorselfie​</p>
@@ -84,10 +78,13 @@ export default function NewsInsights() {
 
             {/* Retrofitting Homes to Stop Embers in Their Tracks: Lessons from California's Wildfires */}
             <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                <img
+                <Image
+                  width={800}
+                  height={533}
+                  sizes="(max-width: 768px) 90vw, 320px"
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/aerial-devastation-view.jpeg"
-                  alt="Aerial Devastation View"
+                  alt="Aerial view of wildfire devastation"
                   onClick={() => window.location.href = '/articles/wildfire-retrofitting'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
@@ -107,10 +104,13 @@ export default function NewsInsights() {
 
               {/* Fire Resistant Homes */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                <img
+                <Image
+                  width={800}
+                  height={533}
+                  sizes="(max-width: 768px) 90vw, 320px"
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/construction.jpg"
-                  alt="Fire Resistant Homes"
+                  alt="Fire-resistant construction"
                   onClick={() => window.location.href = '/articles/build-to-resist-wildfires'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
@@ -129,10 +129,13 @@ export default function NewsInsights() {
 
               {/* 𝐁𝐮𝐢𝐥𝐭 𝐭𝐨 𝐃𝐞𝐟𝐲 𝐍𝐚𝐭𝐮𝐫𝐞’𝐬 𝐅𝐮𝐫𝐲: 𝐀 𝐇𝐨𝐦𝐞 𝐭𝐡𝐚𝐭 𝐒𝐭𝐚𝐧𝐝𝐬 𝐒𝐭𝐫𝐨𝐧𝐠 𝐢𝐧 𝐭𝐡𝐞 𝐇𝐢𝐠𝐡 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐲 𝐇𝐮𝐫𝐫𝐢𝐜𝐚𝐧𝐞 𝐙𝐨𝐧𝐞 (𝐇𝐕𝐇𝐙) */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                <img
+                <Image
+                  width={800}
+                  height={533}
+                  sizes="(max-width: 768px) 90vw, 320px"
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/FireSameHomeBuild.jpg"
-                  alt="Build to Defy Nature’s Fury – A Home that Stands Strong in the High Velocity Hurricane Zone (HVHZ)"
+                  alt="Home engineered for Florida HVHZ hurricane conditions"
                   onClick={() => window.location.href = '/articles/a-home-built-to-endure-hvhz'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">
@@ -151,10 +154,13 @@ export default function NewsInsights() {
 
               {/* Importance of Building Maintenance */}
               <div className="flex justify-center items-center flex-col gap-8 mt-20">
-                <img
+                <Image
+                  width={800}
+                  height={533}
+                  sizes="(max-width: 768px) 90vw, 320px"
                   className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black opacity-100 hover:opacity-70 transition-all duration-300 cursor-pointer"
                   src="/BuildingMaintenance.png"
-                  alt="Building Maintenance"
+                  alt="Building maintenance for safe structures"
                   onClick={() => window.location.href = '/articles/importance-of-building-maintenance'}
                 />
                 <div className="flex flex-col items-center lg:items-start text-center align-top h-[100px] max-w-sm">

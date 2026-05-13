@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head'; // Import Head for SEO
+import Image from "next/image";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -29,11 +29,6 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
 
   return (
     <div className="">
-      <Head>
-        <title>Inspection & Repair Project of Multifamily Building | RK Architect, PA & RK Builders</title>
-        <meta name="description" content="Comprehensive safety inspection and tailored repair solution for structural and electrical integrity in multifamily buildings." />
-      </Head>
-
       <Header />
 
       {/* Hero Section */}
@@ -46,7 +41,14 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
               Inspection & Repair Project of Multifamily Building
             </h1>
             <em className="text-xl font-bold"> Comprehensive Safety Inspection and Tailored Repair Solution for Structural and Electrical Integrity</em>
-            <img src="/InspectionAndRepairMF.jpg" alt="Inspection and Repair - architecture, architect, multifamily building due-diligence inspections" className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10" />
+            <Image
+              src="/InspectionAndRepairMF.jpg"
+              alt="Multifamily inspection and repair project by RK Architect, P.A."
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="w-full max-w-2xl mx-auto h-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black mb-8 mt-10"
+            />
         
             <div className=" mx-auto max-w-3xl grid grid-cols-2 justify-center items-center">
               <h4 className="font-bold text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Structural & Electrical Safety Inspection</h4>
@@ -64,10 +66,13 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
                 <>
                   <div className="grid grid-cols-4 gap-4 items-center">
                     {imageUrls.slice(0, 4).map((url, index) => (
-                      <img
-                        key={index}
+                      <Image
+                        key={url}
                         src={url}
-                        alt={`Multifamily Building Image ${index + 1} - architecture, architect, safety inspections`}
+                        alt={`Multifamily inspection project photo ${index + 1} by RK Architect, P.A.`}
+                        width={1200}
+                        height={900}
+                        sizes="(max-width: 700px) 45vw, 25vw"
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index);
@@ -78,10 +83,13 @@ export default function InspectionRepairProjectMultifamilyBuilding() {
                   </div>
                   <div className="grid grid-cols-3 gap-4 items-center mt-4">
                     {imageUrls.slice(4).map((url, index) => (
-                      <img
-                        key={index + 4}
+                      <Image
+                        key={url}
                         src={url}
-                        alt={`Multifamily Building Image ${index + 5} - architecture, architect, 40-50 year building safety inspections`}
+                        alt={`Multifamily inspection project photo ${index + 5} by RK Architect, P.A.`}
+                        width={1200}
+                        height={900}
+                        sizes="(max-width: 700px) 45vw, 33vw"
                         className="h-auto rounded-lg hover:scale-105 transition-all duration-300 hover:opacity-60 cursor-pointer"
                         onClick={() => {
                           setPhotoIndex(index + 4);

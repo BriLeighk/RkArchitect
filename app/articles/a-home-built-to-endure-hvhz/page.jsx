@@ -42,7 +42,7 @@ const AHomeBuiltToEndureHVHZArticle = () => {
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-sm text-gray-500 mt-2 italic">
-                  A home designed to withstand the most extreme weather conditions in Florida's High Velocity Hurricane Zone. Credit: RK Architect
+                  A home designed to withstand the most extreme weather conditions in Florida's High Velocity Hurricane Zone. Credit: RK Architect, P.A.
                 </p>
               </div>
 
@@ -122,7 +122,7 @@ const AHomeBuiltToEndureHVHZArticle = () => {
                     className="w-full h-auto rounded-lg"
                   />
                   <p className="text-sm text-gray-500 mt-2 italic">
-                    A completed home that stands strong against hurricane-force winds and debris. Credit: RK Architect
+                    A completed home that stands strong against hurricane-force winds and debris. Credit: RK Architect, P.A.
                   </p>
                 </div>
 
