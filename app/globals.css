@@ -43,6 +43,72 @@ body {
   pointer-events: none !important;
 }
 
+/* Submit feedback form — migrated from styled-jsx (styled-jsx uses new Function under strict CSP). */
+.rk-feedback-rating {
+  position: relative;
+}
+
+.rk-feedback-rating input {
+  position: absolute;
+  appearance: none;
+}
+
+.rk-feedback-rating label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rk-feedback-rating label::before {
+  content: "★";
+}
+
+.rk-feedback-rating input:checked + label:hover,
+.rk-feedback-rating input:checked + label:hover ~ label,
+.rk-feedback-rating input:checked ~ label:hover,
+.rk-feedback-rating input:checked ~ label:hover ~ label,
+.rk-feedback-rating label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rk-feedback-rating label:hover,
+.rk-feedback-rating label:hover ~ label {
+  color: #936f27;
+}
+
+.rk-feedback-rating input:checked ~ label {
+  color: #ffa723;
+}
+
+.rk-feedback-checkbox {
+  cursor: pointer;
+}
+
+.rk-feedback-checkbox input {
+  display: none;
+}
+
+.rk-feedback-checkbox svg {
+  overflow: visible;
+}
+
+.rk-feedback-checkbox-path {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.rk-feedback-checkbox input:checked ~ svg .rk-feedback-checkbox-path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
 
 
 

@@ -113,7 +113,7 @@ export default function SubmitTestimonial() {
               <label className="block text-sm text-white">Rating</label>
               <p className='text-xs text-gray-300 text-left'>Please rate your overall experience.</p>
                
-                <div className="rating flex flex-row-reverse justify-center">
+                <div className="rk-feedback-rating flex flex-row-reverse justify-center">
                   {[...Array(5)].map((_, index) => {
                     const star = 5 - index;
                     return (
@@ -126,7 +126,6 @@ export default function SubmitTestimonial() {
                           value={star}
                           checked={rating === star}
                           onChange={() => setRating(star)}
-                          className="hidden"
                         />
                         <label
                           htmlFor={`star${star}`}
@@ -141,7 +140,7 @@ export default function SubmitTestimonial() {
               </div>
               <div>
                 <div className='flex flex-row gap-2 mt-8'>
-                <label className="container max-w-4">
+                <label className="rk-feedback-checkbox max-w-4">
                   <input
                     type="checkbox"
                     autoComplete="off"
@@ -149,7 +148,7 @@ export default function SubmitTestimonial() {
                     onChange={(e) => setIsChecked(e.target.checked)}
                   />
                   <svg viewBox="0 0 64 64" height="1em" width="1em">
-                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" className="path"></path>
+                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" className="rk-feedback-checkbox-path"></path>
                     </svg>
                  
                 </label>
@@ -182,68 +181,6 @@ export default function SubmitTestimonial() {
         </section>
       </main>
       <Footer />
-      <style jsx>{`
-        .rating input {
-          position: absolute;
-          appearance: none;
-        }
-
-        .rating label {
-          float: right;
-          cursor: pointer;
-          font-size: 30px;
-          color: #666;
-        }
-
-        .rating label:before {
-          content: "★";
-        }
-
-        .rating input:checked + label:hover,
-        .rating input:checked + label:hover ~ label,
-        .rating input:checked ~ label:hover,
-        .rating input:checked ~ label:hover ~ label,
-        .rating label:hover ~ input:checked ~ label {
-          color: #e58e09;
-        }
-
-        .rating label:hover,
-        .rating label:hover ~ label {
-          color: #936F27;
-        }
-
-        .rating input:checked ~ label {
-          color: #ffa723;
-        }
-
-        .container {
-          cursor: pointer;
-        }
-
-        .container input {
-          display: none;
-        }
-
-        .container svg {
-          overflow: visible;
-        }
-
-        .path {
-          fill: none;
-          stroke: white;
-          stroke-width: 4;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
-          stroke-dasharray: 241 9999999;
-          stroke-dashoffset: 0;
-        }
-
-        .container input:checked ~ svg .path {
-          stroke-dasharray: 70.5096664428711 9999999;
-          stroke-dashoffset: -262.2723388671875;
-        }
-      `}</style>
     </div>
   );
 }
