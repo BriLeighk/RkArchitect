@@ -7,6 +7,7 @@ import Testimonials from "./Components/Testimonials";
 import Gallery from "./Components/Gallery";
 import HeroCrossfade from "./Components/HeroCrossfade";
 import { getContactMailtoHref } from "./lib/contact-email";
+import CalFloatingButton from "./Components/CalFloatingButton";
 
 export default function Home() {
   const images = ["/hero-image.png", "/interior.jpg", "/interior2.jpg"];
@@ -61,6 +62,7 @@ export default function Home() {
       <div id="contact">
         <Contacts />
       </div>
+      <CalFloatingButton />
     </div>
   );
 }
