@@ -33,9 +33,9 @@ export default function Footer() {
             </Link>
           </nav>
 
-          <div className="flex w-full max-w-[280px] flex-col items-center gap-3 md:items-stretch md:text-left">
+          <div className="flex w-full max-w-[280px] flex-col items-center gap-3 md:items-stretch">
             <span className="text-xs font-medium uppercase tracking-wide text-gray-500">Connect</span>
-            <div className="flex justify-center gap-4 md:justify-start">
+            <div className="flex justify-center gap-4">
               <a href={getContactMailtoHref()} aria-label="Email RK Architect, P.A." className="text-[#8E784D] hover:text-[#936F27]">
                 <FaEnvelope className="text-2xl" />
               </a>

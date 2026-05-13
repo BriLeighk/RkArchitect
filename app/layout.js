@@ -12,7 +12,7 @@ const playfairDisplay = localFont({
   weight: "400 700",
 });
 
-const siteTitle = "RK Architect, P.A. & RK Builders | South Florida Architecture";
+const siteTitle = "RK Architect, P.A. & RK Builders | South Florida";
 const siteDescription =
   "RK Architect, P.A. is a South Florida architecture firm specializing in multifamily, condominium, hospitality, medical, custom residential, code, ADA, and life-safety design.";
 

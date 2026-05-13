@@ -20,7 +20,7 @@ export default function ArchitectureAndBuilds() {
             </h1>
             <em className="text-xl font-bold text-white"> Delivering Expertise, Efficiency, and Precision to Bring Your Vision to Life</em>
 
-            <p className="mx-auto mt-8 max-w-3xl text-left text-sm leading-7 text-gray-300">
+            <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-gray-300">
               Explore focused service pages for{" "}
               <Link href="/services/multifamily-condominium" className="text-[#8E784D] underline-offset-2 hover:underline">
                 multifamily and condominium architecture
@@ -51,12 +51,20 @@ export default function ArchitectureAndBuilds() {
             <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Trusted Expertise, Decades of Proven Experience</h4>
               <p className="text-md text-gray-300">
-                With an extensive portfolio spanning multifamily buildings, commercial spaces, and custom homes, my expertise ensures that every project is handled with the highest level of professionalism and precision. My experience in the field allows me to anticipate potential challenges and offer solutions that lead to successful outcomes.
+                With an extensive portfolio spanning multifamily buildings, commercial spaces, and custom homes, my expertise ensures that every project is handled with the highest level of professionalism and precision. My experience in the field allows me to anticipate potential challenges and offer solutions that lead to successful outcomes. When projects need on-site diligence, we also guide clients through{" "}
+                <Link href="/inspections-and-repairs" className="text-[#8E784D] underline-offset-2 hover:underline">
+                  inspections and repairs
+                </Link>
+                .
               </p>
 
               <h6 className="font-bold text-lg mt-10 text-white"> <span className="text-[#8E784D]">✦</span> Optimizing Processes to Save You Time & Money</h6>
               <p className="text-md text-gray-300">
-                My commitment to efficiency and streamlined processes helps you avoid unnecessary delays and costly errors. I leverage my deep industry knowledge to make smart, cost-effective decisions at every stage of your project, delivering maximum value without compromising quality.
+                My commitment to efficiency and streamlined processes helps you avoid unnecessary delays and costly errors. I leverage my deep industry knowledge to make smart, cost-effective decisions at every stage of your project, delivering maximum value without compromising quality. For project stories and updates, see our{" "}
+                <Link href="/news-articles" className="text-[#8E784D] underline-offset-2 hover:underline">
+                  news and articles
+                </Link>
+                .
               </p>
 
               <h6 className="font-bold text-lg mt-10 text-white"><span className="text-[#8E784D]">✦</span> Meticulous Attention to Every Detail</h6>

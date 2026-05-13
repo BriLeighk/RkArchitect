@@ -105,7 +105,7 @@ export default function Contacts() {
         
         
           {/* Contact Section */}
-          <div className="grid items-center grid-row-3 md:grid-cols-2 mt-20 items-center">
+          <div className="grid items-center grid-row-3 md:grid-cols-2 mt-0 items-center">
             <div className="mx-auto">
               <div className="flex flex-col px-4 mx-auto max-w-2xl mb-12 ">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white mx-2">Get in Touch</h2>
