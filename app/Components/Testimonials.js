@@ -1,6 +1,56 @@
-import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+
+function CaseStudyCard({ testimonial }) {
+  const projectType = testimonial.projectType?.trim();
+  const challenge = testimonial.challenge?.trim();
+  const role = testimonial.role?.trim();
+  const outcome = testimonial.outcome?.trim();
+  const rkRole = testimonial.rkRole?.trim();
+
+  return (
+    <article className="flex h-full flex-col rounded-lg border border-[#8E784D]/30 bg-[#1E1412]/80 p-6 shadow-lg shadow-black">
+      <div className="mb-4 flex flex-col gap-1 border-b border-white/10 pb-4">
+        {projectType ? (
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#8E784D]">{projectType}</p>
+        ) : null}
+        <h3 className="text-xl font-semibold text-white">{testimonial.name}</h3>
+        {testimonial.location ? <p className="text-sm text-gray-400">{testimonial.location}</p> : null}
+        {role ? <p className="text-sm text-gray-300">Role: {role}</p> : null}
+      </div>
+
+      {challenge ? (
+        <div className="mb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">Context</p>
+          <p className="text-sm leading-6 text-gray-300">{challenge}</p>
+        </div>
+      ) : null}
+
+      {rkRole ? (
+        <div className="mb-3">
+          <p className="text-xs font-semibold uppercase text-gray-500">RK Architect&apos;s role</p>
+          <p className="text-sm leading-6 text-gray-300">{rkRole}</p>
+        </div>
+      ) : null}
+
+      {outcome ? (
+        <div className="mb-4">
+          <p className="text-xs font-semibold uppercase text-gray-500">Outcome</p>
+          <p className="text-sm leading-6 text-gray-300">{outcome}</p>
+        </div>
+      ) : null}
+
+      <figure className="mt-auto">
+        <blockquote className="text-left text-sm leading-6 text-gray-300">
+          <p>{testimonial.text}</p>
+        </blockquote>
+        <figcaption className="mt-3 text-xs text-gray-500">Client perspective</figcaption>
+      </figure>
+    </article>
+  );
+}
 
 export default function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
@@ -10,13 +60,17 @@ export default function Testimonials() {
 
   useEffect(() => {
     const fetchTestimonials = async () => {
-      const response = await fetch('/api/testimonials');
+      const response = await fetch("/api/testimonials");
       const data = await response.json();
-      setTestimonials(data.filter(testimonial => testimonial.rating === 5)); // Filter 5-star reviews
+      setTestimonials(data.filter((t) => t.rating === 5));
     };
 
     fetchTestimonials();
   }, []);
+
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [testimonials.length]);
 
   const handlePageChange = (pageIndex) => {
     if (isAnimating) return;
@@ -24,62 +78,74 @@ export default function Testimonials() {
     setTimeout(() => {
       setCurrentPage(pageIndex);
       setIsAnimating(false);
-    }, 500); // Duration of the animation
+    }, 500);
   };
 
-  const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
+  const totalPages = testimonials.length ? Math.ceil(testimonials.length / testimonialsPerPage) : 0;
 
   useEffect(() => {
+    if (testimonials.length === 0 || totalPages <= 1) return undefined;
     const interval = setInterval(() => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
         setIsAnimating(false);
-      }, 500); // Duration of the animation
-    }, 10000); // Change page every 10 seconds
+      }, 500);
+    }, 10000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [totalPages]);
+    return () => clearInterval(interval);
+  }, [totalPages, testimonials.length]);
 
   return (
-    <section className="relative isolate py-10 sm:py-24">
-      <div className="mx-auto p-6 mx-6 lg:mx-14">
-        <div className="relative mb-20">
-          <h2 className="text-left p-2 text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">What My Clients <br /> Are Saying</h2>
-          <div className="absolute -top-6 -left-4 lg:-top-8 lg:-left-8 bg-[#8E784D] text-white rounded-full h-12 w-12 lg:h-16 lg:w-16 flex items-center justify-center -z-10">
+    <section className="relative isolate py-10 sm:py-24" aria-labelledby="case-studies-heading">
+      <div className="mx-auto p-6 lg:mx-14">
+        <div className="relative mb-12">
+          <h2 id="case-studies-heading" className="p-2 text-left text-3xl font-bold leading-8 text-white sm:text-4xl sm:leading-9">
+            Client stories
+            <span className="mt-2 block text-lg font-normal text-gray-400">Selected feedback presented as short case-style highlights. Optional fields appear when provided.</span>
+          </h2>
+          <div className="absolute -left-4 -top-6 -z-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#8E784D] text-white lg:-left-8 lg:-top-8 lg:h-16 lg:w-16">
             <FontAwesomeIcon icon={faQuoteRight} />
           </div>
         </div>
-        <div className="mt-8 overflow-hidden">
-          <div className="flex transition-transform duration-1000" style={{ transform: `translateX(-${currentPage * 100}%)` }}>
-            {Array.from({ length: totalPages }).map((_, pageIndex) => (
-              <div key={pageIndex} className="flex-shrink-0 w-full grid grid-cols-1 sm:grid-cols-2 justify-center">
-                {testimonials.slice(pageIndex * testimonialsPerPage, (pageIndex + 1) * testimonialsPerPage).map((testimonial, index) => (
-                  <figure key={index} className="overflow-hidden relative group flex flex-col justify-start align-middle w-[80%] mx-auto">
-                    <figcaption className='flex text-left'>
-                      <div className="mb-4 flex flex-col">
-                        <div className="font-semibold text-white text-2xl">{testimonial.name}</div>
-                        <div className="text-gray-200 text-lg">{testimonial.location}</div>
-                      </div>
-                    </figcaption>
-                    <blockquote className="text-left text-md text-gray-300 leading-5 sm:leading-6 overflow-hidden group-hover:overflow-visible group-hover:h-auto">
-                      <p className="overflow-hidden text-ellipsis">{testimonial.text}</p>
-                    </blockquote>
-                  </figure>
+
+        {testimonials.length === 0 ? (
+          <p className="text-center text-gray-400">Client highlights will appear here when available.</p>
+        ) : (
+          <>
+            <div className="mt-8 overflow-hidden">
+              <div className="flex transition-transform duration-1000" style={{ transform: `translateX(-${currentPage * 100}%)` }}>
+                {Array.from({ length: totalPages }).map((_, pageIndex) => (
+                  <div key={pageIndex} className="grid w-full flex-shrink-0 grid-cols-1 justify-center gap-8 sm:grid-cols-2">
+                    {testimonials.slice(pageIndex * testimonialsPerPage, (pageIndex + 1) * testimonialsPerPage).map((t) => (
+                      <CaseStudyCard key={t.id || `${t.name}-${pageIndex}`} testimonial={t} />
+                    ))}
+                  </div>
                 ))}
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: totalPages }).map((_, pageIndex) => (
-            <button
-              key={pageIndex}
-              onClick={() => handlePageChange(pageIndex)}
-              className={`w-2 h-2 rounded-full ${currentPage === pageIndex ? 'bg-[#8E784D]' : 'bg-transparent border border-[#936F27]'}`}
-            />
-          ))}
-        </div>
+            </div>
+            <div className="mt-6 flex justify-center space-x-2">
+              {totalPages > 1
+                ? Array.from({ length: totalPages }).map((_, pageIndex) => (
+                    <button
+                      key={pageIndex}
+                      type="button"
+                      aria-label={`Go to testimonial page ${pageIndex + 1}`}
+                      onClick={() => handlePageChange(pageIndex)}
+                      className={`h-2 w-2 rounded-full ${currentPage === pageIndex ? "bg-[#8E784D]" : "border border-[#936F27] bg-transparent"}`}
+                    />
+                  ))
+                : null}
+            </div>
+          </>
+        )}
+        <p className="mt-10 text-center text-sm text-gray-400">
+          Explore{" "}
+          <Link href="/services" className="font-medium text-[#8E784D] underline-offset-2 hover:underline">
+            architecture services
+          </Link>{" "}
+          to see how RK Architect, P.A. supports common South Florida project types.
+        </p>
       </div>
     </section>
   );

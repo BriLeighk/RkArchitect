@@ -2,6 +2,7 @@
 
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect, useMemo } from "react";
+import { getCalComPath } from "../lib/cal";
 
 function trimPublic(value) {
   return typeof value === "string" && value.trim() ? value.trim() : undefined;
@@ -46,7 +47,7 @@ function attachCalFloatingButtonHover(namespace) {
  * NEXT_PUBLIC_CALCOM_EMBED_LINK, NEXT_PUBLIC_CALCOM_NAMESPACE.
  */
 export default function CalFloatingButton() {
-  const calLink = useMemo(() => trimPublic(process.env.NEXT_PUBLIC_CALCOM_EMBED_LINK), []);
+  const calLink = useMemo(() => getCalComPath(), []);
   const namespace = useMemo(() => {
     const explicit = trimPublic(process.env.NEXT_PUBLIC_CALCOM_NAMESPACE);
     if (explicit) return explicit;

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
@@ -18,6 +19,34 @@ export default function ArchitectureAndBuilds() {
               Architecture & Builds
             </h1>
             <em className="text-xl font-bold text-white"> Delivering Expertise, Efficiency, and Precision to Bring Your Vision to Life</em>
+
+            <p className="mx-auto mt-8 max-w-3xl text-left text-sm leading-7 text-gray-300">
+              Explore focused service pages for{" "}
+              <Link href="/services/multifamily-condominium" className="text-[#8E784D] underline-offset-2 hover:underline">
+                multifamily and condominium architecture
+              </Link>
+              ,{" "}
+              <Link href="/services/condominium-amenity-renovation" className="text-[#8E784D] underline-offset-2 hover:underline">
+                amenity renovations
+              </Link>
+              ,{" "}
+              <Link href="/services/code-life-safety-ada" className="text-[#8E784D] underline-offset-2 hover:underline">
+                code, life safety, and ADA support
+              </Link>
+              ,{" "}
+              <Link href="/services/medical-office-architecture" className="text-[#8E784D] underline-offset-2 hover:underline">
+                medical offices
+              </Link>
+              ,{" "}
+              <Link href="/services/custom-homes-additions" className="text-[#8E784D] underline-offset-2 hover:underline">
+                custom homes and additions
+              </Link>
+              , and{" "}
+              <Link href="/services/building-inspections" className="text-[#8E784D] underline-offset-2 hover:underline">
+                inspection-related architectural support
+              </Link>
+              .
+            </p>
 
             <div className="max-w-4xl mx-auto bg-[#1E1412] rounded-lg shadow-lg px-5 pb-4 ">
               <h4 className="font-bold text-lg mt-10 pt-5 text-white"> <span className="text-[#8E784D]">✦</span> Trusted Expertise, Decades of Proven Experience</h4>
@@ -50,7 +79,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/hero-image.png"
-                      alt="1100 Courtyard Home"
+                      alt="Courtyard-style residence at 1100 — architectural design and exterior by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -68,7 +97,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-intune.jpg"
-                      alt="ChenMed Center - Intune Small Medical Center - architecture, architect, inspections"
+                      alt="ChenMed Intune primary care clinic — medical office architecture and exterior by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -86,7 +115,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/chenmed-majorca.jpg"
-                      alt="ChenMed Center - Majorca Medical Center - architecture, architect, safety inspections"
+                      alt="ChenMed Majorca medical office building — architecture and facade by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -104,7 +133,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1130home.jpg"
-                      alt="1130 Home Design - architecture, architect, disaster resistant homes"
+                      alt="1130 home design — architectural visualization and exterior study by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -122,7 +151,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/240house.jpg"
-                      alt="240 Codrington Ave - architecture, architect, multifamily building due-diligence inspections"
+                      alt="240 Codrington Avenue project — residential architecture and exterior by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -140,7 +169,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/islands-hotel-resort.jpg"
-                      alt="Island Hotel Resort - architecture, architect, 40-50 year building safety inspections"
+                      alt="Islands hotel resort — large-scale hospitality architecture by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -158,7 +187,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/house3.jpg"
-                      alt="830 Boca Raton House - architecture, architect, safety inspections"
+                      alt="830 Boca Raton custom residence — architecture and exterior by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -176,7 +205,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/1036-jefferson-house.jpg"
-                      alt="1036 Jefferson House - architecture, architect, disaster resistant homes"
+                      alt="1036 Jefferson personal home — custom residential architecture by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -194,7 +223,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/ne-miami-renovation-home.jpg"
-                      alt="42 NE Miami Renovation Home - architecture, architect, multifamily building due-diligence inspections"
+                      alt="42 NE Miami renovation — residential architecture and exterior by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -213,7 +242,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/jhh.jpg"
-                      alt="Johnny's Hungry Hoagies Restaurant Design - architecture, architect, multifamily building due-diligence inspections"
+                      alt="Johnny's Hungry Hoagies restaurant — commercial architecture and storefront by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">
@@ -232,7 +261,7 @@ export default function ArchitectureAndBuilds() {
                       sizes="(max-width: 768px) 45vw, 256px"
                       className="w-full max-w-sm h-auto mx-auto rounded-lg border-2 border-[#936F27] shadow-lg shadow-black hover:opacity-60 transition duration-300 ease-in-out"
                       src="/5309.jpg"
-                      alt="Ground Up Construction Build - Contractor - architecture, architect, multifamily building due-diligence inspections"
+                      alt="5309 ground-up residential build — construction progress documented by RK Architect, P.A."
                     />
                   </a>
                   <div className="flex flex-col items-center text-center align-top h-[100px]">

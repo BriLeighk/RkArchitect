@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import 'aos/dist/aos.css';
 import { useState } from 'react';
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -110,23 +109,9 @@ export default function Contacts() {
             <div className="mx-auto">
               <div className="flex flex-col px-4 mx-auto max-w-2xl mb-12 ">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white mx-2">Get in Touch</h2>
-                <p className="text-sm md:text-md lg:text-lg text-gray-300 mb-4">
-                  Please use the form to share your inquiry with me. Thank you for considering my services, and I look forward to receiving your message and the opportunity to work together.
+                <p className="text-sm md:text-md lg:text-lg text-gray-300 mb-6">
+                  Please use the form to share your inquiry. Thank you for considering my services—I look forward to your message and the opportunity to work together.
                 </p>
-                {process.env.NEXT_PUBLIC_CALCOM_EMBED_LINK ? (
-                  <p className="text-sm text-gray-200 mb-10">
-                    Prefer to pick a time first?{" "}
-                    <a
-                      href={`https://cal.com/${process.env.NEXT_PUBLIC_CALCOM_EMBED_LINK}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-semibold text-[#8E784D] underline decoration-[#8E784D]/50 underline-offset-2 transition hover:text-[#C4A574]"
-                    >
-                      Book a call (virtual coffee)
-                    </a>{" "}
-                    — phone, Zoom, or Microsoft Teams.
-                  </p>
-                ) : null}
 
                 <div className="grid grid-cols-3 md:grid-cols-1 gap-y-2 md:gap-x-12">
                   <div className="flex flex-col gap-4 md:gap-2 text-left mb-10 justify-center my-auto md:justify-start">
@@ -190,7 +175,7 @@ export default function Contacts() {
                   name="website"
                   value={honeypot}
                   onChange={(e) => setHoneypot(e.target.value)}
-                  tabIndex="-1"
+                  tabIndex={-1}
                   autoComplete="off"
                 />
               </div>

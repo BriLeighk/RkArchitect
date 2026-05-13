@@ -10,11 +10,11 @@ export function getSiteOrigin() {
   return raw.replace(/\/+$/, "");
 }
 
-/** Absolute URL for a pathname (e.g. "/contact" or "/"). */
+/** Absolute URL for a pathname (e.g. "/contact" or "/"). Home uses no trailing slash to match the site canonical. */
 export function absoluteUrl(pathname) {
   const origin = getSiteOrigin();
   if (!pathname || pathname === "/") {
-    return `${origin}/`;
+    return origin;
   }
   const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
   return `${origin}${path}`;

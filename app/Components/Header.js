@@ -1,3 +1,5 @@
+"use client";
+
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState, useEffect } from 'react'
@@ -5,13 +7,13 @@ import Image from 'next/image'
 
 // Navigation bar
 const navigation = [
-    
-    { name: 'About', href: 'about' },
-    { name: 'Contact', href: 'contact' },
-    { name: 'News & Articles', href: '/news-articles' }, 
-    { name: 'Inspections & Repairs', href: '/inspections-and-repairs' },
-    { name: 'Architecture & Builds', href: '/architecture-and-builds' },
-]
+    { name: "About", href: "about" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "contact" },
+    { name: "News & Articles", href: "/news-articles" },
+    { name: "Inspections & Repairs", href: "/inspections-and-repairs" },
+    { name: "Architecture & Builds", href: "/architecture-and-builds" },
+];
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

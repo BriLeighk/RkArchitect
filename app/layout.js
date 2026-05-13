@@ -3,16 +3,18 @@ import Script from "next/script";
 import "./globals.css";
 import { getSiteOrigin, absoluteUrl } from "./lib/site";
 import { createPageMetadata } from "./lib/site-metadata";
+import { getSiteJsonLdGraph, getSiteLastUpdatedIso } from "./lib/json-ld";
 
 const playfairDisplay = localFont({
   src: "./fonts/Playfair-VariableFont_opsz,wdth,wght.ttf",
   variable: "--font-playfair-display",
-  weight: "100 900",
+  display: "swap",
+  weight: "400 700",
 });
 
-const siteTitle = "RK Architect, P.A. & RK Builders | Florida Resilient Design";
+const siteTitle = "RK Architect, P.A. & RK Builders | South Florida Architecture";
 const siteDescription =
-  "Architect and builder Robert Kirchgessner: disaster-resistant homes, multifamily inspections, and structural repairs in Florida and nationwide.";
+  "RK Architect, P.A. is a South Florida architecture firm specializing in multifamily, condominium, hospitality, medical, custom residential, code, ADA, and life-safety design.";
 
 const homeSocial = createPageMetadata("/", { title: siteTitle, description: siteDescription });
 
@@ -29,32 +31,25 @@ export const metadata = {
   icons: {
     apple: [{ url: "/rk-architect-logo.jpg", sizes: "180x180", type: "image/jpeg" }],
   },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  name: siteTitle,
-  description: siteDescription,
-  url: absoluteUrl("/"),
-  publisher: {
-    "@type": "Organization",
-    name: "RK Architect, P.A. & RK Builders, Inc.",
-    logo: {
-      "@type": "ImageObject",
-      url: absoluteUrl("/rk-architect-logo.jpg"),
-    },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  other: {
+    "article:modified_time": getSiteLastUpdatedIso(),
   },
 };
+
+const structuredData = getSiteJsonLdGraph({
+  pageUrl: absoluteUrl("/"),
+  pageDescription: siteDescription,
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${playfairDisplay.variable} antialiased`} style={{ backgroundColor: "#140D0C" }}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <Script id="google-analytics" strategy="lazyOnload">
           {`
             (function () {

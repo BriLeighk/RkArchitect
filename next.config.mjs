@@ -18,7 +18,13 @@ const nextConfig = {
     ],
   },
   experimental: {
-    optimizePackageImports: ["react-icons", "@heroicons/react/24/outline", "@headlessui/react"],
+    optimizePackageImports: [
+      "react-icons",
+      "@heroicons/react/24/outline",
+      "@headlessui/react",
+      "@fortawesome/react-fontawesome",
+      "@fortawesome/free-solid-svg-icons",
+    ],
   },
 };
 
