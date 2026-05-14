@@ -34,22 +34,26 @@ export default function AboutSection() {
         </div>
 
         <div className="lg:sticky lg:top-32 lg:col-start-2 lg:row-span-2 lg:row-start-1 flex-col w-full flex justify-center items-center" data-aos="fade-up">
+        <p className="text-white text-2xl sm:text-4xl font-bold mt-4">Robert Kirchgessner</p>
+        <p className="text-gray-300 text-xl sm:text-3xl">Architect | Builder</p>
+
           <Image
             src="/profile-image.png"
             alt="Robert Kirchgessner, architect and owner of RK Architect, P.A."
             width={600}
             height={750}
             sizes="(max-width: 640px) 240px, 300px"
-            className="h-auto w-[240px] max-w-full rounded-sm border-2 border-[#8E784D] object-cover shadow-lg shadow-black sm:w-[300px]"
+            className="h-auto w-[240px] max-w-full mt-8 rounded-sm border-2 border-[#8E784D] object-cover shadow-lg shadow-black sm:w-[300px]"
           />
-          <p className="text-white text-2xl sm:text-4xl font-bold mt-4">Robert Kirchgessner</p>
-          <p className="text-gray-300 text-xl sm:text-3xl">Architect | Builder</p>
+          
           <div className="flex flex-col text-left mt-8">
-            <p className="text-gray-300 text-sm sm:text-xl text-center">
-              Licensed Architect in the States of <br /> <span className="text-gray-300"> FL, AZ, GA, IN, KY, NC, OH, SC, & VA </span>
+            <p className="text-gray-300 text-md sm:text-xl text-center font-bold mb-2">
+              Licensed Architect in the States of <br /> <span className="text-gray-300 italic"> FL, GA, VA, NC, & SC </span>
             </p>
-            <p className="text-gray-300 text-sm sm:text-xl text-center mt-2">
-              Building Contractor - <span className="text-gray-300">FL</span>
+            <p className="text-gray-300 text-sm sm:text-lg text-center mt-2">
+              Florida Registered Architect - <span className="text-gray-300 italic">AR91920</span><br/>
+              Florida Licensed Building Contractor - <span className="text-gray-300 italic">CBC060255</span><br/>
+              NCARB Certificate - <span className="text-gray-300 italic">57615</span>
             </p>
           </div>
         </div>

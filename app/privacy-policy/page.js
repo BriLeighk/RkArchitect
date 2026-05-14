@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <Header />
       <main className="relative isolate px-6 pb-24 pt-28 lg:px-8">
         <div className="mx-auto max-w-3xl text-gray-300">
-          <h1 className="text-4xl font-bold tracking-tight text-[#F2F4E6]">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-[#F2F4E6] mt-16">Privacy Policy</h1>
           <p className="mt-2 text-sm text-gray-500">Effective date: May 1, 2026</p>
 
           <section className="mt-10 space-y-4">
